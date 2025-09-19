@@ -1,0 +1,6 @@
+name: category
+in: query
+description: Category to search for
+required: true
+schema:
+  $ref: ../../../shared/components/schemas/properties/categoryId.yaml

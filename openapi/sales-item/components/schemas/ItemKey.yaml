@@ -1,0 +1,7 @@
+type: object
+description: Item key (Product ID and Item type)
+properties:
+  itemNo:
+    $ref: ../../../shared/components/schemas/properties/productId.yaml
+  itemType:
+    $ref: ../../../shared/components/schemas/properties/itemType.yaml

@@ -1,0 +1,29 @@
+get:
+  summary: Get product availability with child items
+  description: Returns availability information including child items and packages
+  operationId: getProductAvailability
+  tags:
+    - Availability
+
+  security:
+    - X-Client-ID: []
+
+  parameters:
+    - $ref: ../components/parameters/classUnitType.yaml
+    - $ref: ../components/parameters/classUnitCode.yaml
+    - $ref: ../components/parameters/itemNos.yaml
+    - $ref: ../components/parameters/expand.yaml
+
+  responses:
+    "200":
+      description: Response with availability and errors
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/AvailabilityEnvelope.yaml
+    "422":
+      description: Unprocessable Content
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/AvailabilityError.yaml

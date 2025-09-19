@@ -1,0 +1,23 @@
+type: string
+description: >
+  On the returned data, expand:
+    * `ChildItems` - Child items, e.g. multiple packages that are part of the parent package
+    * `Restocks` - Restock items
+    * `StoresList` - List of stores
+    * `SalesLocations` - Sale locations
+    * `DeliveryPrice` - Deliver Price
+    * `CollectPrice` - Collect Price
+    * `DisplayLocations` - Display locations
+    * `DeliveryTime` - Delivery time
+    * `FoodAvailabilities` - Food availability
+enum:
+  - ChildItems
+  - Restocks
+  - StoresList
+  - SalesLocations
+  - DeliveryPrice
+  - CollectPrice
+  - DisplayLocations
+  - DeliveryTime
+  - FoodAvailabilities
+example: ChildItems

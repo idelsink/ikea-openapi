@@ -1,0 +1,50 @@
+openapi: 3.1.1
+info:
+  title: IKEA Product Catalog API
+  summary: Unofficial API for fetching IKEA categories and navigation data
+  description: |
+    This is an **unofficial** OpenAPI specification for the IKEA Product Catalog API.
+
+    ## FAQ
+
+    **Q: Why is this API called Product Catalog?**
+
+    **A:** The API described here is referring to the products and categories of the
+    main IKEA website. In one if the API responses, `catalogRefs` was returned,
+    so using this seemed like a good match for the name.
+  version: 0.1.0
+  license:
+    name: MIT License
+    url: https://opensource.org/licenses/MIT
+  contact:
+    name: Unofficial IKEA OpenAPI Maintainer
+    url: https://github.com/idelsink/ikea-openapi
+
+tags:
+  - name: Categories
+    description: Everything about Categories
+  - name: Products
+    description: Everything about Products
+  - name: Stores
+    description: Everything about Stores
+
+servers:
+  - url: https://www.ikea.com/{country}/{language}
+    description: IKEA main website
+    variables:
+      country:
+        default: gb
+        description: Country code (e.g., de, gb, fr, us)
+      language:
+        default: en
+        description: Language code (e.g., en, de, fr)
+
+paths:
+  /meta-data/informera/stores-detailed.json:
+    $ref: paths/meta-data_informera_stores-detailed.json.yaml
+
+  /meta-data/navigation/catalog-products-slim.json:
+    $ref: paths/meta-data_navigation_catalog-products-slim.json.yaml
+
+  /products/{productIdSuffix}/{productId}.json:
+    $ref: paths/products_{productIdSuffix}_{productId}.json.yaml

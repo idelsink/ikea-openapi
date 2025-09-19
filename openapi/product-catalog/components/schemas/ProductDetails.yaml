@@ -1,0 +1,128 @@
+type: object
+description: |
+  Product details
+
+  > Note: This Schema does not describe all of the properties returned or does not have a description for all properties. It only describes a sub-set of them.
+required:
+  - catalogRefs
+  - currencyCode
+  - experimental
+  - globalId
+  - id
+  - mainImage
+  - name
+  - pipUrl
+  - price
+  - priceExclTax
+  - priceExclTaxNumeral
+  - priceNumeral
+  - revampPrice
+  - typeName
+  - validDesignText
+properties:
+  catalogRefs:
+    type: object
+    required:
+      - products
+    properties:
+      products:
+        type: object
+        required:
+          - elements
+          - id
+          - name
+          - url
+        properties:
+          elements:
+            type: array
+            items:
+              type: object
+              required:
+                - id
+                - name
+                - url
+              properties:
+                id:
+                  type: string
+                  example: "43632"
+                name:
+                  type: string
+                  example: Fitted wardrobes
+                url:
+                  type: string
+                  format: uri
+                  example: https://www.ikea.com/de/en/cat/fitted-wardrobes-43632/
+          id:
+            type: string
+            example: products
+          name:
+            type: string
+            example: Products
+          url:
+            type: string
+            format: uri
+            example: https://www.ikea.com/de/en/cat/products-products/
+  currencyCode:
+    type: string
+    example: EUR
+  experimental:
+    type: object
+    example: {}
+  globalId:
+    $ref: ../../../shared/components/schemas/properties/productId.yaml
+  id:
+    $ref: ../../../shared/components/schemas/properties/productId.yaml
+  mainImage:
+    type: object
+    required:
+      - alt
+      - id
+      - imageFileName
+      - type
+      - url
+    properties:
+      alt:
+        type: string
+        example: "A white ikea PAX wardrobe with open doors, revealing shelves and a basket."
+      id:
+        type: string
+        example: 1197448_PE903536
+      imageFileName:
+        type: string
+        example: 1197448_PE903536_S5.JPG
+      type:
+        type: string
+        example: "MAIN_PRODUCT_IMAGE"
+      url:
+        type: string
+        format: uri
+        example: https://www.ikea.com/de/en/images/products/pax-forsand-wardrobe-white-white__1197448_pe903536_s5.jpg
+  name:
+    type: string
+    description: Product name
+    example: PAX / FORSAND
+  pipUrl:
+    type: string
+    format: uri
+    example: https://www.ikea.com/de/en/p/pax-forsand-wardrobe-white-white-s09502728/
+  price:
+    type: string
+    description: Product price
+    example: "560.00€"
+  priceExclTax:
+    type: string
+    example: "470.58€"
+  priceExclTaxNumeral:
+    type: number
+    example: 470.58
+  priceNumeral:
+    type: number
+    example: 560
+  revampPrice:
+    type: object
+  typeName:
+    type: string
+    example: "wardrobe"
+  validDesignText:
+    type: string
+    example: "white/white"

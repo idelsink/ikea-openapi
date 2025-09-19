@@ -1,0 +1,13 @@
+name: itemNos
+in: query
+required: true
+style: form
+explode: false # Results in comma-separated format
+description: Product identifier(s)
+example:
+  - "00263850"
+schema:
+  type: array
+  items:
+    $ref: ../../../shared/components/schemas/properties/productId.yaml
+  minItems: 1 # Cannot be empty

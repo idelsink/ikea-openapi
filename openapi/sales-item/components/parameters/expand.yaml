@@ -1,0 +1,15 @@
+name: expand
+in: query
+required: false
+style: form
+explode: false # Results in comma-separated format
+description: |
+  List of expandOption(s), see expandOption for values.
+example:
+  - ChildItems
+  - SalesLocations
+schema:
+  type: array
+  items:
+    $ref: ../schemas/properties/expandOption.yaml
+  minItems: 0 # Can be empty

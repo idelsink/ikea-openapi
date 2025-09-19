@@ -1,0 +1,5 @@
+openapi/*/.hypothesis/
+openapi/*/cats-report/
+openapi/*/schemathesis-report/
+openapi/*/openapi-bundled.yaml
+dist

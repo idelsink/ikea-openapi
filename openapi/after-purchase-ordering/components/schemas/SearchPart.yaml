@@ -1,0 +1,30 @@
+type: object
+description: Replacement part (returned in search results)
+required:
+  - itemId
+  - partName
+  - categoryId
+  - subCategoryId
+  - stock
+  - status
+  - partColor
+  - partReplaceId
+properties:
+  itemId:
+    $ref: ./properties/itemId.yaml
+  partName:
+    $ref: ./properties/partName.yaml
+  partDescription:
+    $ref: ./properties/partDescription.yaml
+  categoryId:
+    $ref: ./properties/categoryId.yaml
+  subCategoryId:
+    $ref: ./properties/subCategoryId.yaml
+  stock:
+    $ref: ./properties/stock.yaml
+  status:
+    $ref: ./properties/status.yaml
+  partColor:
+    $ref: ./properties/partColor.yaml
+  partReplaceId:
+    $ref: ./properties/itemId.yaml

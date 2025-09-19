@@ -1,0 +1,24 @@
+get:
+  summary: Find parts
+  description: Returns multiple parts matching the provided id
+  operationId: searchParts
+  tags:
+    - Parts
+
+  parameters:
+    - $ref: ../components/headers/Accept-Language.yaml
+    - $ref: ../components/parameters/partialPartId.yaml
+
+  responses:
+    "202":
+      description: Found Parts
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/SearchPart.yaml
+    "404":
+      description: "Part(s) not found"
+    "400":
+      description: "Bad search request"

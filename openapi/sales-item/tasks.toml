@@ -1,0 +1,12 @@
+["test:schemathesis:sales-item"]
+description = 'Run schemathesis contract testing on sales-item'
+depends = ['bundle']
+dir = "openapi/sales-item/"
+run = """
+  name=$(basename ${MISE_TASK_DIR})
+  schemathesis run {{ config_root }}/dist/${name}/openapi.yaml \
+    --url https://api.salesitem.ingka.com \
+    --header "X-Client-ID:ef382663-a2a5-40d4-8afe-f0634821c0ed" \
+    --checks all \
+    --report vcr
+"""

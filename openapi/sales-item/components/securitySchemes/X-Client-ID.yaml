@@ -1,0 +1,22 @@
+type: apiKey
+in: header
+name: X-Client-ID
+description: |
+  Client specific identifier (Akamai API Gateway) required for API access
+
+  ## Available Client IDs
+
+  The following public client IDs are available:
+
+  - `ef382663-a2a5-40d4-8afe-f0634821c0ed`
+  - `b6c117e5-ae61-4ef5-b4cc-e0b1e37f0631`
+  - `da465052-7912-43b2-82fa-9dc39cdccef8`
+
+
+  ## How to Find Client IDs
+
+  Visit any IKEA product page (e.g., [BILLY Bookcase](https://www.ikea.com/gb/en/p/billy-bookcase-white-00263850/))
+  and inspect the network requests in browser DevTools. Look for API calls to `api.salesitem.ingka.com`
+  and check the `X-Client-ID` header value.
+
+  Alternatively, search for `ciaApiClientKey` in the page's JavaScript bundles.

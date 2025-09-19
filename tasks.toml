@@ -1,0 +1,66 @@
+["build:docs"]
+depends = ['build:redocly-docs', 'build:swagger-ui']
+description = "Build all the OpenAPI docs"
+run = """
+  cp templates/index.html dist/index.html
+"""
+
+["bundle"]
+description = "Bundle specs to avoid $ref issues"
+sources = [
+  'openapi/**/*.yaml',
+  'docs/COMMON_DESCRIPTION.md',
+  'redocly.yaml',
+]
+outputs = ['{{config_root}}/dist/**/openapi.yaml']
+run = """
+  redocly bundle
+"""
+
+[lint]
+description = 'Run Lint tasks'
+depends = ['lint:*']
+
+["lint:openapi-spec-validator"]
+description = 'Run openapi-spec-validator linter'
+depends=["bundle"]
+run = "openapi-spec-validator dist/**/openapi.yaml"
+
+["lint:vacuum"]
+description = 'Run vacuum linter'
+depends=["bundle"]
+run = """
+  status=0
+  for dir in openapi/*; do
+    name=$(basename $dir)
+    echo $name
+    if [ -f "${dir}/openapi.yaml" ]; then
+      cmd="vacuum lint dist/${name}/openapi.yaml \
+        --no-clip \
+        --no-banner \
+        --details \
+        --ignore-array-circle-ref \
+        --fail-severity info"
+
+      if [ -f "${dir}/.vacuum-ignore-file.yaml" ]; then
+        cmd="$cmd --ignore-file ${dir}/.vacuum-ignore-file.yaml"
+      fi
+      # Run linter and capture exit code
+      if ! eval "${cmd}"; then
+        status=1
+      fi
+    fi
+  done
+  exit ${status}
+"""
+
+[podman]
+description = 'Start a container for debugging'
+run = """
+  podman run --rm -it \
+    -v ${PWD}:/workspace:Z \
+    --workdir /workspace \
+    --entrypoint bash \
+    docker.io/jdxcode/mise:{{vars.mise_container_tag}} \
+    -c 'mise trust && mise install && bash'
+"""

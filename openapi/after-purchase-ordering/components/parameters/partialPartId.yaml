@@ -1,0 +1,22 @@
+name: partialPartId
+in: path
+required: true
+description: |
+  Partial Part identifier. A Part ID is typically 5-8 digit number, may include suffix like `/1` or `-1`
+  Accepts any URL-encoded byte sequence, including invalid UTF-8
+schema:
+  type: string
+  format: byte
+example: "1"
+examples:
+  partial:
+    summary: Simple example that will match multiple parts
+    value: "10000"
+  simple:
+    $ref: ../schemas/examples/itemIdSimple.yaml
+  discontinued:
+    $ref: ../schemas/examples/itemIdDiscontinued.yaml
+  replacement:
+    $ref: ../schemas/examples/itemIdReplacement.yaml
+  jimmyTestPart:
+    $ref: ../schemas/examples/itemIdJimmysTestPart.yaml

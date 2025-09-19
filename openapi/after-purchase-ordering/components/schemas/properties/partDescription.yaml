@@ -1,0 +1,3 @@
+type: string
+description: Part description
+example: "S-SHAPE, WIDTH=20, LENGTH=48, HARDENED HRC 52 +5/-10"

@@ -1,0 +1,16 @@
+get:
+  summary: Get information for all stores
+  description: Returns information about all IKEA stores in the requested region
+  operationId: getStores
+  tags:
+    - Stores
+
+  responses:
+    "200":
+      description: Successful response with store details
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/Store.yaml

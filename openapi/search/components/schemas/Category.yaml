@@ -1,0 +1,20 @@
+type: object
+description: Product Category
+required:
+  - name
+  - key
+properties:
+  name:
+    type: string
+    description: Category name
+    example: "Sofa"
+  key:
+    $ref: ../../../shared/components/schemas/properties/categoryId.yaml
+  url:
+    type: string
+    description: URL to category
+    example: https://www.ikea.com/gb/en/cat/sofa-fu003/
+  imageUrl:
+    type: string
+    description: Image for the category
+    example: https://www.ikea.com/global/assets/range-categorisation/images/sofas-fu003.jpeg

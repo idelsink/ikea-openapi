@@ -1,0 +1,23 @@
+in: path
+name: productIdSuffix
+required: true
+description: |
+  Product ID Suffix (last 3 digits of Product ID)
+  Value can be:
+    *  zero (`0`) or
+    * Product ID Suffix (`406`)
+schema:
+  type: string
+  # 0, 406
+  pattern: "^(0|[0-9]{3})$"
+  maxLength: 3
+examples:
+  empty:
+    summary: Empty value (0)
+    value: "0"
+  billy:
+    summary: BILLY Bookcase (00263850)
+    value: "850"
+  besta:
+    summary: BESTÅ Shelf unit with doors (s59047406)
+    value: "406"

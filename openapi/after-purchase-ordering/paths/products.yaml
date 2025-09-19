@@ -1,0 +1,23 @@
+get:
+  summary: Find parts for product(s)
+  description: Returns replacement parts information for one or more products
+  operationId: getProductParts
+  tags:
+    - Parts
+
+  parameters:
+    - $ref: ../components/headers/Accept-Language.yaml
+    - $ref: ../components/parameters/productIds.yaml
+
+  responses:
+    "202":
+      description: Product parts information
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/ProductParts.yaml
+
+    "400":
+      description: "Bad request for product(s)"

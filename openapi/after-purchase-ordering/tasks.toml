@@ -1,0 +1,17 @@
+["test:schemathesis:after-purchase-ordering"]
+description = 'Run schemathesis contract testing on after-purchase-ordering'
+depends = ['bundle']
+dir = "openapi/after-purchase-ordering/"
+# exclude-checks:
+# - missing_required_header - http header not properly returned when headers are missing (Does not return HTTP 406)
+# - unsupported_method - Don't test unsupported methods as we don't control the API
+run = """
+  name=$(basename ${MISE_TASK_DIR})
+  schemathesis run {{ config_root }}/dist/${name}/openapi.yaml \
+    --url https://api.prod.apo.ingka.com \
+    --checks all \
+    --exclude-checks unsupported_method \
+    --exclude-checks missing_required_header \
+    --header "Accept-Language:en-GB" \
+    --report vcr
+"""

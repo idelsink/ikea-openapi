@@ -1,0 +1,4 @@
+oas3-missing-example:
+  # These examples are provided via schemas
+  - $.paths['/availabilities/{classUnitType}/{classUnitCode}'].get.responses['200'].content['application/json']
+  - $.components.schemas['AvailabilityEnvelope'].properties['availabilities']

@@ -1,0 +1,80 @@
+type: object
+description: Product List Page envelope containing a limited set of Products for a given category.
+required:
+  - category
+  - productWindow
+  - productCount
+  - plannerWindow
+  - plannerCount
+  - filters2
+  - dynamicFiltersV1
+  - dynamicFilters
+  - sortOrders
+properties:
+  category:
+    $ref: ./Category.yaml
+  productWindow:
+    description: Window of filtered products
+    type: array
+    items:
+      $ref: ./Product.yaml
+  productCount:
+    description: Amount of products in this category
+    type: integer
+    example: 1
+  plannerWindow:
+    description: Window of filtered windows
+    type: array
+    items:
+      type: object
+  plannerCount:
+    description: Amount of planner entries
+    type: integer
+    example: 1
+  filters2:
+    type: array
+    items:
+      type: object
+  dynamicFiltersV1:
+    type: array
+    items:
+      type: object
+  dynamicFilters:
+    type: array
+    items:
+      type: object
+  sortOrders:
+    description: What sorting is enabled
+    type: object
+    required:
+      - name
+      - values
+    properties:
+      name:
+        type: string
+        example: Sort
+      values:
+        type: array
+        items:
+          type: object
+          required:
+            - id
+            - name
+            - eventAction
+            - selected
+          properties:
+            id:
+              type: string
+              example: "RELEVANCE"
+              description: Filter identifier
+            name:
+              type: string
+              example: "Best match"
+              description: Name of the filter
+            eventAction:
+              type: string
+              example: "sort_by_relevance"
+            selected:
+              description: Whether or not this sorting option is selected
+              type: boolean
+              example: true

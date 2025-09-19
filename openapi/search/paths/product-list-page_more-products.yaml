@@ -1,0 +1,23 @@
+get:
+  summary: Get a paginated set of filtered products
+  description: Returns a window of paginated products that matches the filtered criteria.
+  operationId: findProductsPaginated
+  tags:
+    - Products
+
+  parameters:
+    - $ref: ../components/parameters/category.yaml
+    - $ref: ../components/parameters/start.yaml
+    - $ref: ../components/parameters/end.yaml
+
+  responses:
+    "200":
+      description: Lists a paginated set of Products for a given category.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/MoreProducts.yaml
+    "400":
+      description: Bad Request for More Products
+    "404":
+      description: More Products Not Found

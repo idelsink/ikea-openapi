@@ -1,0 +1,44 @@
+openapi: 3.1.3
+info:
+  title: IKEA Sales Item API
+  summary: Unofficial API for fetching IKEA product availability information and packaging information
+  description: |
+    This is an **unofficial** OpenAPI specification for the IKEA Sales Item API.
+    Get information for items in different contexts.
+
+    ## FAQ
+
+    **Q: Why is this API called Sales Item?**
+
+    **A:** That is what the API endpoint is called `api.salesitem.ingka.com` and what is being used in
+    other API resources that were found.
+
+    ## Authentication
+
+    This API requires authentication, make sure to provide the required headers.
+  version: 0.1.0
+  license:
+    name: MIT License
+    url: https://opensource.org/licenses/MIT
+  contact:
+    name: Unofficial IKEA OpenAPI Maintainer
+    url: https://github.com/idelsink/ikea-openapi
+
+tags:
+  - name: Availability
+    description: Everything about Availability
+
+servers:
+  - url: https://api.salesitem.ingka.com
+    description: IKEA Sales Item Availability API (Production Global)
+
+components:
+  securitySchemes:
+    X-Client-ID:
+      $ref: components/securitySchemes/X-Client-ID.yaml
+
+security: []
+
+paths:
+  /availabilities/{classUnitType}/{classUnitCode}:
+    $ref: paths/availabilities_{classUnitType}_{classUnitCode}.yaml

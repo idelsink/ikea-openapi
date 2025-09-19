@@ -1,0 +1,27 @@
+min_version = "2025.8.14"
+
+[vars]
+mise_container_tag = "2025.8.14@sha256:5b3e794068f4a92b436ef8e02b968e7e3b9e806f2b90097ffed4b58c565a914d"
+
+[tools]
+"npm:@redocly/cli" = "2.1.5"
+"pipx:openapi-spec-validator" = "0.7.2"
+"pipx:pre-commit" = "4.3.0"
+"pipx:schemathesis" = "4.1.3"
+node = "24.7.0"
+pipx = "1.7.1"
+python = "3.13.7"
+yq = "4.47.1"
+jq = "1.8.1"
+"pipx:jinja2-cli" = "0.8.2"
+"npm:@quobix/vacuum" = "0.17.12"
+
+[task_config]
+includes = [
+  ".mise/tasks",
+  "tasks.toml",
+  "openapi/product-catalog/tasks.toml",
+  "openapi/search/tasks.toml",
+  "openapi/sales-item/tasks.toml",
+  "openapi/after-purchase-ordering/tasks.toml",
+]

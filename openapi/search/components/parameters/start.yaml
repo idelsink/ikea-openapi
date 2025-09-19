@@ -1,0 +1,11 @@
+name: start
+in: query
+required: false
+description: >
+  The zero-based index of the first item to include in the response.
+  For example, `start=0` begins from the very first item.
+  If `start` is provided but not `end`, then default for `end=24`.
+schema:
+  type: integer
+  minimum: 0
+example: 0

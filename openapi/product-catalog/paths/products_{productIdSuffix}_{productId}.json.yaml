@@ -1,0 +1,22 @@
+get:
+  summary: Find product by id
+  description: Returns a single product
+  operationId: getProductById
+  tags:
+    - Products
+
+  parameters:
+    - $ref: ../components/parameters/productIdSuffix.yaml
+    - $ref: ../components/parameters/productId.yaml
+
+  responses:
+    "200":
+      description: Successful response with product details
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ProductDetails.yaml
+    "404":
+      description: Product could not be found
+    "400":
+      description: Bad Request

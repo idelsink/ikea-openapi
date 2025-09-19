@@ -1,0 +1,12 @@
+["test:schemathesis:product-catalog"]
+description = 'Run schemathesis contract testing on product-catalog'
+depends = ['bundle']
+dir = "openapi/product-catalog/"
+run = """
+  name=$(basename ${MISE_TASK_DIR})
+  schemathesis run {{ config_root }}/dist/${name}/openapi.yaml \
+    --url https://www.ikea.com/gb/en \
+    --checks all \
+    --exclude-checks unsupported_method \
+    --report vcr
+"""

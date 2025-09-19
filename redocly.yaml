@@ -1,0 +1,37 @@
+plugins:
+  - .redocly/plugins/append-description.js
+
+decorators:
+  append-description/append-file:
+    file: ./docs/COMMON_DESCRIPTION.md
+    separator: "\n"
+
+# Custom API Docs schema
+# title: Title of the main index page
+# order: Order of the APIs. Used when:
+#   - generating a list of links,
+#   - nav items (for redocly template)
+x-custom-api-docs:
+  title: Unofficial IKEA APIs
+  order:
+    - product-catalog
+    - search
+    - sales-item
+    - after-purchase-ordering
+
+apis:
+  product-catalog:
+    root: openapi/product-catalog/openapi.yaml
+    output: dist/product-catalog/openapi.yaml
+
+  search:
+    root: openapi/search/openapi.yaml
+    output: dist/search/openapi.yaml
+
+  sales-item:
+    root: openapi/sales-item/openapi.yaml
+    output: dist/sales-item/openapi.yaml
+
+  after-purchase-ordering:
+    root: openapi/after-purchase-ordering/openapi.yaml
+    output: dist/after-purchase-ordering/openapi.yaml

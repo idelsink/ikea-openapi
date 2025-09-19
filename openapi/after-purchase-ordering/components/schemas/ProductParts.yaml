@@ -1,0 +1,28 @@
+type: object
+description: Parts in product
+required:
+  - id
+  - productDesc
+  - imageUrl
+  - type
+properties:
+  id:
+    $ref: ../../../shared/components/schemas/properties/productId.yaml
+  productDesc:
+    type: string
+    description: Product description
+    example: BILLY
+  imageUrl:
+    type: string
+    description: Image URL
+    format: uri
+    example: https://www.ikea.com/gb/en/images/products/billy-bookcase-white__0625599_pe692385_s2.jpg
+  type:
+    type: string
+    description: Product type
+    example: bookcase
+  items:
+    type: array
+    description: List pf parts
+    items:
+      $ref: ./Part.yaml

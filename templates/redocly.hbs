@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{title}}</title>
+    <meta charset='utf8' />
+    <meta description='{{{templateOptions.metaDescription}}}' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <style>
+      :root {
+        --ikea-blue: #0057AD;
+        --ikea-yellow: #FBDA0C;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .nav {
+        background: var(--ikea-blue);
+        padding: 0;
+        display: flex;
+        font-family: Arial, sans-serif;
+        flex-wrap: wrap; /* Allow items to wrap */
+      }
+
+      .nav a {
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+        flex: 1 1 auto; /* Allow items to grow and shrink */
+        text-align: center;
+        white-space: nowrap; /* Prevent text from wrapping within links */
+      }
+
+      .nav a:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .nav a[data-active="true"] {
+        background: rgba(255, 255, 255, 0.2);
+        border-bottom: 3px solid var(--ikea-yellow);
+      }
+
+      /* Mobile styles */
+      @media (max-width: 768px) {
+        .nav {
+          flex-direction: column; /* Stack vertically on smaller screens */
+        }
+      }
+
+      /* Ensure proper display on very small screens */
+      @media (max-width: 480px) {
+        .nav a {
+          font-size: 14px; /* Slightly smaller font on very small screens */
+          padding: 10px 15px; /* Reduce padding on very small screens */
+        }
+      }
+    </style>
+    {{{redocHead}}}
+    {{#unless disableGoogleFont}}<link
+        href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700'
+        rel='stylesheet'
+    />{{/unless}}
+  </head>
+  <body>
+    <div class="nav">
+      {{#each templateOptions.navItemsOrder}}
+      {{#with (lookup ../templateOptions.navItems this)}}
+      <a href="{{url}}" data-active="{{isActive}}">
+        {{title}}
+      </a>
+      {{/with}}
+      {{/each}}
+    </div>
+    {{{redocHTML}}}
+  </body>
+</html>

@@ -1,0 +1,16 @@
+name: classUnitType
+in: path
+required: true
+description: |
+  `classUnitType` must be a Retail Unit (`ru`). Or Store (`sto`). It is used together with
+  `classUnitCode` to give context when invoking the AvailabilityClassifications API.
+
+  Unit Type:
+    * `ru` - Retail Unit - Retail Unit must be combined with a valid `classUnitCode`. For example, `SE` for Sweden or `DE` for Germany. A list of valid Retail Units can be found [in CBD](https://iwww.cbdview.ikea.com/) (requires VPN or internal network).
+    * `sto` - Store - The store availability for a given store
+schema:
+  type: string
+  enum:
+    - ru
+    - sto
+  example: ru

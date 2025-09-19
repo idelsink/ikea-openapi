@@ -1,0 +1,22 @@
+get:
+  summary: Find part by id
+  description: Returns a single replacement part
+  operationId: getPartById
+  tags:
+    - Parts
+
+  parameters:
+    - $ref: ../components/headers/Accept-Language.yaml
+    - $ref: ../components/parameters/partId.yaml
+
+  responses:
+    "202":
+      description: Part details
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Part.yaml
+    "404":
+      description: "Part not Found"
+    "400":
+      description: "Bad Request for part"

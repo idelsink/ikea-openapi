@@ -1,0 +1,27 @@
+type: object
+required:
+  - code
+  - message
+description: Error object describing the reason of failure
+properties:
+  code:
+    type: integer
+    description: >
+      Error Codes:
+        * `404` - Not found
+        * `405` - ClassUnitCode doesn't exist
+        * `602` - itemNos in query is required
+        * `604` - itemNos.`n` in query should be at least 8 chars long. Where `n` is the positional indicator for the parameter.
+        * `606` - expand.`n` in query should be one of [ChildItems Restocks StoresList SalesLocations DeliveryPrice CollectPrice DisplayLocations DeliveryTime FoodAvailabilities]. Where `n` is the positional indicator for the parameter.
+    example: 404
+  details:
+    type: object
+    description: Additional error details. These change depending on the context of the query.
+    example:
+      classUnitCode: DE
+      classUnitType: RU
+      itemNo: s59047406
+  message:
+    type: string
+    description: Error message indicating the failure
+    example: "Not found"

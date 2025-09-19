@@ -1,0 +1,15 @@
+type: string
+enum:
+  - AVAILABLE
+  - NOT_AVAILABLE
+  - ORDER_AT_CSC
+  - OUT_OF_STOCK
+  - DISCONTINUED_WITH_REPLACEMENTID
+description: |
+  Part Status:
+    * `AVAILABLE` - Part is available
+    * `NOT_AVAILABLE` - Part is not available
+    * `ORDER_AT_CSC` - Order at the Customer Service Center
+    * `OUT_OF_STOCK` - Part is out of stock
+    * `DISCONTINUED_WITH_REPLACEMENTID` - Part is discontinued and replaced by provided id.
+example: AVAILABLE

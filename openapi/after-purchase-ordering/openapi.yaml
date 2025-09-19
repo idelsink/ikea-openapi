@@ -1,0 +1,44 @@
+openapi: 3.1.1
+info:
+  title: IKEA After Purchase Ordering API
+  summary: Unofficial IKEA API for After Purchase Ordering (APO) of spare parts
+  description: |
+    This is an **unofficial** OpenAPI specification for the IKEA After Purchase Ordering (APO) API.
+
+    ## FAQ
+
+    **Q: Why is this API called After Purchase Ordering?**
+
+    **A:** The URL(s) used have `apo` in the name. We are also dealing with after purchase replacement parts.
+    A common term for this is After Purchase Ordering (APO).
+  version: 0.1.0
+  license:
+    name: MIT License
+    url: https://opensource.org/licenses/MIT
+  contact:
+    name: Unofficial IKEA OpenAPI Maintainer
+    url: https://github.com/idelsink/ikea-openapi
+
+tags:
+  - name: Parts
+    description: Everything about Parts
+
+servers:
+  - url: "https://api.prod.apo.ingka.com"
+    description: Production (Cloudflare)
+  - url: "https://origin-api.prod.apo.ingka.com"
+    description: Production (Google Frontend)
+  - url: "https://api.test.apo.ingka.com"
+    description: Testing (Cloudflare)
+  - url: "https://origin-api.test.apo.ingka.com"
+    description: Testing (Google Frontend)
+
+paths:
+  /part/{partId}:
+    $ref: paths/part_{partId}.yaml
+
+  /search/{partialPartId}:
+    $ref: paths/search_{partialPartId}.yaml
+
+  /products:
+    $ref: paths/products.yaml

@@ -1,0 +1,24 @@
+name: Scheduled Contract Testing
+
+on:
+  schedule:
+    - cron: "2 1 * * *" # Every day at 01:02
+
+  workflow_dispatch:
+
+jobs:
+  contract-testing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5.0.0
+      - uses: jdx/mise-action@v2.0.2
+        with:
+          version: 2025.8.21
+      - run: mise run test:schemathesis:* --phases examples
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4.6.2
+        if: always()
+        with:
+          name: schemathesis-report
+          path: openapi/**/schemathesis-report/*

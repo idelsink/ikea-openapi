@@ -1,0 +1,178 @@
+type: object
+description: Store details
+required:
+  - name
+  - lat
+  - lng
+  - address
+  - homeShoppingUnit
+  - openCloseDates
+  - hours
+  - displayName
+  - extras
+  - hideStore
+  - treatAsStore
+  - displayNameAlternate
+  - weekStartDay
+  - id
+  - buClassification
+properties:
+  name:
+    type: string
+    description: Store name
+    example: IKEA Berlin - Tempelhof
+  lat:
+    type: string
+    description: Store latitude
+    example: "52.46958147"
+  lng:
+    type: string
+    description: Store longitude
+    example: "13.36625688"
+  address:
+    type: object
+    description: Store Address
+    required:
+      - street
+      - zipCode
+      - city
+      - timezone
+      - displayAddress
+    properties:
+      street:
+        type: string
+        description: Street
+        example: Sachsendamm 47
+      zipCode:
+        type: string
+        description: ZIP code / Postal code
+        example: "10829"
+      city:
+        type: string
+        description: City
+        example: Berlin,Tempelhof
+      timezone:
+        type: string
+        description: Timezone
+        example: Europe/Berlin
+      stateProvinceCode:
+        type: string
+        description: Stage and State/province code
+        example: DEBE
+      displayAddress:
+        type: string
+        description: Display Address
+        example: Sachsendamm 47, Berlin,Tempelhof
+  homeShoppingUnit:
+    type: boolean
+    example: false
+  openCloseDates:
+    type: object
+    properties:
+      openingDate:
+        type: string
+        format: date-time
+        example: "2003-11-27T00:00:00Z"
+  hours:
+    type: object
+    description: Various unit opening hours
+    additionalProperties:
+      description: |
+        Opening hour schedule name observed values:
+          * `normal`
+          * `exceptions`
+          * `restaurant`
+          * `bistro`
+          * `cafe`
+          * `clickncollect`
+          * `swedishFoodMarket`
+          * `smaland`
+          * `closed`
+      type: array
+      items:
+        type: object
+        description: Opening hours for unit
+        properties:
+          close:
+            type: string
+            format: time
+            description: Closing time in HH:mm format
+            example: "17:00"
+          day:
+            type: string
+            description: Day of the week (abbreviated, uppercase)
+            enum:
+              - MON
+              - TUE
+              - WED
+              - THU
+              - FRI
+              - SAT
+              - SUN
+            example: MON
+          open:
+            type: string
+            format: time
+            description: Opening time in HH:mm format
+            example: "09:00"
+    example:
+      normal:
+        - close: "20:00"
+          day: "MON"
+          open: "10:00"
+        - close: "20:00"
+          day: "THU"
+          open: "10:00"
+  displayName:
+    type: string
+    description: Store Display Name
+    example: Berlin-Tempelhof
+  externalPickupPoint:
+    type: object
+    example:
+      hours: []
+  extras:
+    type: object
+    example:
+      normal:
+        body: "From September 1, 2025, our store will be open Monday through Saturday from 10:00 a.m. to 8:00 p.m."
+        heading: "New opening hours from September 1, 2025.."
+  hideStore:
+    type: boolean
+    description: Show or Hide the store
+    example: false
+  placeId:
+    type: string
+    description: Place ID
+    example: ChIJw7UyJQVQqEcRzw0vmZtAbTg
+  storePageUrl:
+    type: string
+    format: uri
+    description: Store Page URL
+    example: https://www.ikea.com/de/de/stores/berlin-tempelhof/
+  treatAsStore:
+    type: boolean
+    example: false
+  displayNameAlternate:
+    type: string
+    description: Alternate Store Display Name
+    example: IKEA Berlin-Tempelhof
+  weekStartDay:
+    type: string
+    example: "MON"
+  id:
+    type: string
+    description: Store ID
+    example: "421"
+  buClassification:
+    type: object
+    required:
+      - code
+      - name
+    properties:
+      code:
+        type: string
+        example: STORE
+      name:
+        type: string
+        example: IKEA STORE

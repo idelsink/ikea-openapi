@@ -1,0 +1,3 @@
+oas3-missing-example:
+  # These examples are provided via schemas
+  - $.paths['/products'].get.responses['202'].content['application/json']

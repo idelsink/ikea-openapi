@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+#
+#MISE description="Build (non-static) swagger-ui sites"
+#MISE depends=['bundle']
+
+# set -x
+
+api_order=$(yq '.x-custom-api-docs.order[]' redocly.yaml)
+
+# Collect API metadata
+apis_json='[]'
+while IFS= read -r api_name; do
+  api_title=$(yq '.info.title' "dist/${api_name}/openapi.yaml")
+  api_url="../${api_name}/swagger-ui.html"
+
+  apis_json=$(echo "${apis_json}" | jq ". += [{
+    name: \"${api_name}\",
+    title: \"${api_title}\",
+    url: \"${api_url}\",
+  }]")
+done <<< "${api_order}"
+
+# Generate Swagger UI pages
+while IFS= read -r api_name; do
+  api_title=$(yq '.info.title' "dist/${api_name}/openapi.yaml")
+  api_summary=$(yq '.info.summary' "dist/${api_name}/openapi.yaml")
+
+  # mark the current API as active
+  template_options=$(echo "${apis_json}" | jq "map(
+    if .name == \"${api_name}\" then
+      . + { isActive: true}
+    else
+      .
+    end
+  ) | {
+    title: \"${api_title}\",
+    metaDescription: \"${api_summary}\",
+    apis: .
+  }")
+
+  echo "${template_options}" | jinja2 \
+    "templates/swagger-ui.html.j2" \
+    --outfile="dist/${api_name}/swagger-ui.html"
+done <<< "${api_order}"

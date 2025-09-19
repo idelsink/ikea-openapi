@@ -1,0 +1,26 @@
+type: object
+description: Replacement part
+required:
+  - itemId
+  - partName
+  - categoryId
+  - subCategoryId
+  - replacementId
+  - status
+properties:
+  itemId:
+    $ref: ./properties/itemId.yaml
+  partName:
+    $ref: ./properties/partName.yaml
+  partDescription:
+    $ref: ./properties/partDescription.yaml
+  categoryId:
+    $ref: ./properties/categoryId.yaml
+  subCategoryId:
+    $ref: ./properties/subCategoryId.yaml
+  replacementId:
+    $ref: ./properties/itemId.yaml
+  stock:
+    $ref: ./properties/stock.yaml
+  status:
+    $ref: ./properties/status.yaml

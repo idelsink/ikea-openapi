@@ -1,0 +1,9 @@
+name: size
+in: query
+required: false
+description: Amount of products to return
+schema:
+  type: integer
+  minimum: 0
+  maximum: 1000
+example: 42

@@ -1,0 +1,12 @@
+type: object
+description: Common properties returned in search responses
+required:
+  - usergroup
+  - testActivationTriggers
+properties:
+  usergroup:
+    type: string
+    example: "[]"
+  testActivationTriggers:
+    type: object
+    example: {}

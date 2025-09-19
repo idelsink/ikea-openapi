@@ -1,0 +1,12 @@
+summary: Jimmy test part in production
+description: |
+  Example of one of the "test" parts in the database.
+  Others include (partID, Part Name, Part Description):
+    * `10002250` - `Jimmy test part in production`
+    * `10050287` - `Test M3 upgrade` - `Testar radbrytsom dennahär`
+    * `10067568` - `Test M3 upgrade copied` - `Testar radbrytsom dennahär`
+    * `10066501` - `ALAS TEST` - `Testar description för att se om det rtar bort radbrytningar`
+    * `10092540` - `TestUpgrade`
+    * `10119359` - `test`
+    * `10117240` - `Test Edgeband`
+value: "10002250"

@@ -1,0 +1,18 @@
+name: partId
+in: path
+required: true
+description: What item to find
+schema:
+  allOf:
+    - $ref: ../schemas/properties/itemId.yaml
+    - type: string
+      pattern: "^[^%]*$"
+examples:
+  simple:
+    $ref: ../schemas/examples/itemIdSimple.yaml
+  discontinued:
+    $ref: ../schemas/examples/itemIdDiscontinued.yaml
+  replacement:
+    $ref: ../schemas/examples/itemIdReplacement.yaml
+  jimmyTestPart:
+    $ref: ../schemas/examples/itemIdJimmysTestPart.yaml

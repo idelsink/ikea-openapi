@@ -1,0 +1,30 @@
+type: object
+description: Availability envelope containing availabilities, sales Sales Locations and errors.
+required:
+  - availabilities
+  - timestamp
+  - traceId
+properties:
+  availabilities:
+    type: array
+    description: List of product availabilities
+    items:
+      $ref: ./Availability.yaml
+  salesLocations:
+    type: array
+    items:
+      $ref: ./SalesLocation.yaml
+  errors:
+    type: array
+    description: List of errors
+    items:
+      $ref: ./AvailabilityError.yaml
+  timestamp:
+    type: string
+    description: ISO 8601 formatted timestamp with timezone
+    format: date-time
+    example: "2025-09-10T14:23:33.956Z"
+  traceId:
+    type: string
+    description: Unique trace identifier for debugging and log correlation
+    example: "4119683959736817039"

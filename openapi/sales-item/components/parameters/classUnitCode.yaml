@@ -1,0 +1,33 @@
+name: classUnitCode
+in: path
+required: true
+description: |
+  `classUnitCode` is the unique identifier of a Class Unit when
+  combined with a `classUnitType`.
+
+  A valid `classUnitCode` always has a pattern like `^([A-Z]|[0-9]){2,5}$`. Note that the Selling Range APIs are case insensitive when it comes to the `classUnitCode` path parameter and lower case is always internally converted to upper case.
+
+  This can either be a:
+
+  * **Retail Unit** - Retail Unit must be combined with a valid `classUnitCode`. For example, `SE` for Sweden or `DE` for Germany. A list of valid Class Units can be found [in CBD](https://iwww.cbdview.ikea.com/) (requires VPN or internal network).
+  * **Store ID** - The 3-digit store ID. E.g. `066`.
+schema:
+  type: string
+  minLength: 2
+  maxLength: 5
+examples:
+  lowerCaseGb:
+    summary: Lower Case GB
+    value: "gb"
+  upperCaseGb:
+    summary: Upper Case GB
+    value: "GB"
+  lowerCaseDe:
+    summary: Lower Case DE
+    value: "de"
+  upperCaseDe:
+    summary: Upper Case DE
+    value: "DE"
+  storeBerlin:
+    summary: Store ID for Berlin
+    value: "066"

@@ -1,0 +1,7 @@
+type: string
+description: >
+  Item type code
+enum:
+  - ART
+  - SPR
+example: "SPR"

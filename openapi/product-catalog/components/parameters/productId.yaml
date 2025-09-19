@@ -1,0 +1,24 @@
+name: productId
+in: path
+required: true
+description: |
+  Product identifier
+  Value can be:
+    *  zero (`0`),
+    * product identifier (`00263850`) or
+    * product identifier with `s` prefix (`s59047406`)
+schema:
+  type: string
+  # 0, s59047406, 00263850
+  pattern: "^(0|s[0-9]{8}|[0-9]{8})$"
+  maxLength: 9
+examples:
+  empty:
+    summary: Empty value (0)
+    value: "0"
+  billy:
+    summary: BILLY Bookcase (00263850)
+    value: "00263850"
+  besta:
+    summary: BESTÅ Shelf unit with doors (s59047406)
+    value: "s59047406"

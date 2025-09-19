@@ -1,0 +1,288 @@
+type: object
+description: Project details
+required:
+  - name
+  - typeName
+  - itemMeasureReferenceText
+  - mainImageUrl
+  - pipUrl
+  - filterClass
+  - allProductImage
+  - id
+  - itemNoGlobal
+  - onlineSellable
+  - lastChance
+  - gprDescription
+  - colors
+  - tag
+  - quickFacts
+  - features
+  - availability
+  - itemNo
+  - itemType
+  - salesPrice
+  - contextualImageUrl
+  - contextualImageAlt
+  - mainImageAlt
+  - businessStructure
+  - categoryPath
+  - heroBackoffData
+  - optimizelyAttributes
+properties:
+  name:
+    type: string
+    description: Product name
+    example: "PLATSA"
+  typeName:
+    type: string
+    description: Product type description
+    example: "Wardrobe with 8 doors+3 drawers"
+  itemMeasureReferenceText:
+    type: string
+    description: Dimensions of the product in centimeters
+    example: "240x57x221 cm"
+  mainImageUrl:
+    type: string
+    format: uri
+    description: URL of the main product image
+    example: "https://www.ikea.com/gb/en/images/products/platsa-wardrobe-with-8-doors-3-drawers-white-straumen-mirror-glass-sannidal-white__1017864_pe830974_s5.jpg"
+  pipUrl:
+    type: string
+    format: uri
+    description: Product information page URL
+    example: "https://www.ikea.com/gb/en/p/platsa-wardrobe-with-8-doors-3-drawers-white-straumen-mirror-glass-sannidal-white-s39424871/"
+  filterClass:
+    type: string
+    description: Product filter classification
+    example: "wardrobes"
+  allProductImage:
+    type: array
+    description: List of product images
+    items:
+      type: object
+      required:
+        - altText
+        - type
+        - url
+      properties:
+        altText:
+          type: string
+          description: Alt text of the product image
+          example: "White PLATSA storage system with multiple open shelves and a section with hanging rail and baskets."
+        type:
+          type: string
+          description: Type of product image
+          example: "MAIN_PRODUCT_IMAGE"
+        url:
+          type: string
+          format: uri
+          description: URL of the product image
+          example: "https://www.ikea.com/gb/en/images/products/platsa-wardrobe.jpg"
+  id:
+    $ref: ../../../shared/components/schemas/properties/productId.yaml
+  itemNoGlobal:
+    $ref: ../../../shared/components/schemas/properties/productId.yaml
+  onlineSellable:
+    type: boolean
+    description: Whether the product is available for online purchase
+    example: true
+  lastChance:
+    type: boolean
+    description: Whether the product is in last chance clearance
+    example: false
+  gprDescription:
+    type: object
+    description: Product variants information
+    required:
+      - numberOfVariants
+      - variants
+    properties:
+      numberOfVariants:
+        type: integer
+        example: 0
+      variants:
+        type: array
+        items:
+          type: object
+          description: Variants of a product. This will contain a list of Product items.
+          example: {}
+  colors:
+    type: array
+    description: Available colors
+    items:
+      type: object
+      properties:
+        name:
+          type: string
+          example: "white"
+        id:
+          type: string
+          example: "10156"
+        hex:
+          type: string
+          example: "ffffff"
+  tag:
+    type: string
+    description: Promotional tag
+    example: "FAMILY_PRICE"
+  tagText:
+    type: string
+    description: Promotional tag text
+    example: "IKEA Family price"
+  quickFacts:
+    type: array
+    description: "Quick facts about the product (Note: Type if items is unknown at the time of writing)"
+    items:
+      type: object
+      example:
+        type: "KEY_BENEFITS"
+        id: "100"
+        name: "Large drawers"
+        typeName: Key benefits
+  features:
+    type: array
+    description: "Product features (Note: Type if items is unknown at the time of writing)"
+    items:
+      type: string
+      example: "Note: Type if items is unknown at the time of writing"
+  availability:
+    type: array
+    description: "Availability information (Note: Type if items is unknown at the time of writing)"
+    items:
+      type: string
+      example: "Note: Type if items is unknown at the time of writing"
+  ratingValue:
+    type: number
+    format: float
+    description: Average rating value
+    example: 2.3
+  ratingCount:
+    type: integer
+    description: Number of ratings
+    example: 4
+  itemNo:
+    $ref: ../../../shared/components/schemas/properties/productId.yaml
+  itemType:
+    $ref: ../../../shared/components/schemas/properties/itemType.yaml
+  salesPrice:
+    type: object
+    description: Pricing information
+    properties:
+      currencyCode:
+        type: string
+        example: "EUR"
+      numeral:
+        type: number
+        format: float
+        example: 836.5
+      current:
+        type: object
+        properties:
+          prefix:
+            type: string
+            example: ""
+          wholeNumber:
+            type: string
+            example: "836"
+          separator:
+            type: string
+            example: "."
+          decimals:
+            type: string
+            example: "50"
+          suffix:
+            type: string
+            example: "€"
+          isRegularCurrency:
+            type: boolean
+            example: true
+          style:
+            type: string
+            example: "BASE"
+      previous:
+        type: object
+        properties:
+          prefix: { type: string, example: "" }
+          wholeNumber: { type: string, example: "963" }
+          separator: { type: string, example: "." }
+          decimals: { type: string, example: "50" }
+          suffix: { type: string, example: "€" }
+          isRegularCurrency: { type: boolean, example: true }
+          style: { type: string, example: "BASE" }
+      lowestPreviousSalesPrice:
+        type: object
+        properties:
+          prefix: { type: string, example: "" }
+          wholeNumber: { type: string, example: "963" }
+          separator: { type: string, example: "." }
+          decimals: { type: string, example: "50" }
+          suffix: { type: string, example: "€" }
+          isRegularCurrency: { type: boolean, example: true }
+          style: { type: string, example: "BASE" }
+      isBreathTaking: { type: boolean, example: false }
+      discount: { type: string, example: "" }
+      prevPriceLabel: { type: string, example: "Normal price" }
+      lowestPreviousSalesPriceLabel:
+        { type: string, example: "Lowest price in the last 30 days" }
+      validFrom: { type: string, format: date, example: "2025-08-29" }
+      validTo: { type: string, format: date, example: "2025-09-30" }
+      experimentalDiscountAmount: { type: number, example: 127 }
+      experimentalDiscountPercentage: { type: integer, example: 13 }
+      availabilityDisclaimer:
+        type: string
+        example: "Price valid 29. August 2025 - 30. September 2025 or while supply lasts"
+      tag: { type: string, example: "FAMILY_PRICE" }
+      tagText: { type: string, example: "IKEA Family price" }
+      priceText: { type: string, example: "Price" }
+      tags:
+        type: array
+        items: { type: string, example: "FAMILY_PRICE" }
+      tagWithText:
+        type: object
+        properties:
+          tag: { type: string, example: "FAMILY_PRICE" }
+          text: { type: string, example: "IKEA Family price" }
+  contextualImageUrl:
+    type: string
+    format: uri
+    description: Contextual product image URL
+    example: "https://www.ikea.com/gb/en/images/products/platsa-contextual.jpg"
+  contextualImageAlt:
+    type: string
+    description: Alt text for contextual image
+    example: "PLATSA wardrobe with mirrors, next to bed, mirror, and basket."
+  mainImageAlt:
+    type: string
+    description: Alt text for main product image
+    example: "White PLATSA storage system with multiple open shelves and a section with hanging rail and baskets."
+  businessStructure:
+    type: object
+    description: Product business categorization
+    properties:
+      homeFurnishingBusinessName: { type: string, example: "Bedroom furniture" }
+      homeFurnishingBusinessNo: { type: string, example: "04" }
+      productAreaName: { type: string, example: "System wardrobes" }
+      productAreaNo: { type: string, example: "0421" }
+      productRangeAreaName: { type: string, example: "Wardrobes" }
+      productRangeAreaNo: { type: string, example: "042" }
+  categoryPath:
+    type: array
+    description: Category hierarchy
+    items:
+      type: object
+      properties:
+        name: { type: string, example: "Storage furniture" }
+        key: { type: string, example: "st001" }
+  validDesignText:
+    type: string
+    description: Product design variant description
+    example: "white STRAUMEN mirror glass/SANNIDAL white"
+  heroBackoffData:
+    type: object
+    additionalProperties: true
+  optimizelyAttributes:
+    type: object
+    properties:
+      PRODUCT_TYPE:
+        type: string
+        example: "standard"

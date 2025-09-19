@@ -1,0 +1,11 @@
+["test:schemathesis:search"]
+description = 'Run schemathesis contract testing on search'
+depends = ['bundle']
+dir = "openapi/search/"
+run = """
+  name=$(basename ${MISE_TASK_DIR})
+  schemathesis run {{ config_root }}/dist/${name}/openapi.yaml \
+    --url https://sik.search.blue.cdtapps.com/gb/en/ \
+    --checks all \
+    --report vcr
+"""

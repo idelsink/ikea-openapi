@@ -1,0 +1,31 @@
+type: object
+description: Category details
+required:
+  - id
+  - name
+  - url
+properties:
+  id:
+    $ref: ../../../shared/components/schemas/properties/categoryId.yaml
+  name:
+    type: string
+    description: Category display name
+    example: Storage furniture
+  url:
+    type: string
+    format: iri-reference
+    description: Relative path to the category
+    example: /gb/en/cat/storage-furniture-st001/
+  im:
+    type: string
+    format: uri
+    description: Category image URL
+    example: https://www.ikea.com/images/4e/83/4e83f2c50f6d1cf0e3d90e78662de08b.png?f=sg
+  subs:
+    type: array
+    description: |
+      Array of Category objects (recursive).
+      Each subcategory has the same structure as this schema.
+      Maximum depth observed: 4 levels.
+    items:
+      $ref: ./Category.yaml

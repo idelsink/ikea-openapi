@@ -1,0 +1,9 @@
+description: Page with Product List
+allOf:
+  - $ref: CommonProperties.yaml
+  - type: object
+    required:
+      - productListPage
+    properties:
+      productListPage:
+        $ref: ./ProductListPageEnvelope.yaml

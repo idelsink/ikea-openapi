@@ -1,0 +1,24 @@
+type: object
+description: Availability of a Product
+properties:
+  availableForCashCarry:
+    type: boolean
+    example: true
+  availableForClickCollect:
+    type: boolean
+    example: false
+  buyingOption:
+    type: object
+    example:
+      clickCollect:
+        range:
+          inRange: true
+  childAvailabilities:
+    type: array
+    items:
+      $ref: ./Availability.yaml
+    example: []
+  classUnitKey:
+    $ref: ./ClassUnitKey.yaml
+  itemKey:
+    $ref: ./ItemKey.yaml

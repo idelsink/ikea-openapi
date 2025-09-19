@@ -1,0 +1,9 @@
+description: Page with More Products
+allOf:
+  - $ref: CommonProperties.yaml
+  - type: object
+    required:
+      - moreProducts
+    properties:
+      moreProducts:
+        $ref: ./MoreProductsEnvelope.yaml

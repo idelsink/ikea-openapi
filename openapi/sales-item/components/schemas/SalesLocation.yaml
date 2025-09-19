@@ -1,0 +1,26 @@
+type: object
+description:
+properties:
+  childItems:
+    type: array
+    items:
+      type: object
+      properties:
+        itemKey:
+          $ref: ./ItemKey.yaml
+        salesLocations:
+          type: array
+          items:
+            type: object
+            example:
+              aisleAndBin:
+                aisle: "06"
+                bin: "01"
+              division: SELF_SERVE
+              id: "060100"
+              recommendationRank: 1
+              type: AISLE_AND_BIN
+  classUnitKey:
+    $ref: ./ClassUnitKey.yaml
+  itemKey:
+    $ref: ./ItemKey.yaml

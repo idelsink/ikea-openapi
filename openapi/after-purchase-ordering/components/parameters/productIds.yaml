@@ -1,0 +1,26 @@
+name: ids
+in: query
+required: true
+description: Find parts for the following productIds
+schema:
+  type: array
+  items:
+    $ref: ../../../shared/components/schemas/properties/productId.yaml
+  minItems: 0 # Allows empty array
+style: form
+explode: false # Results in comma-separated format
+allowEmptyValue: true
+examples:
+  singleWithParts:
+    summary: Single Product (HJÄLPA) with parts
+    value:
+      - "60505511"
+  singleWithoutPart:
+    summary: Single Product (PLATSA) without parts
+    value:
+      - "39424871"
+  multipleIds:
+    summary: Multiple Product IDs (Kallax, Billy)
+    value:
+      - "00324518"
+      - "39424871"

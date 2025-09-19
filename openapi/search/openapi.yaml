@@ -1,0 +1,42 @@
+openapi: 3.1.1
+info:
+  title: IKEA Search API
+  summary: Unofficial API for searching and listing IKEA products
+  description: |
+    This is an **unofficial** OpenAPI specification for the IKEA Search API.
+
+    ## FAQ
+
+    **Q: Why is this API called Search?**
+
+    **A:** Search is also being used in the url `sik.search.blue.cdtapps.com`
+    and it allows you to find products.
+  version: 0.1.0
+  license:
+    name: MIT License
+    url: https://opensource.org/licenses/MIT
+  contact:
+    name: Unofficial IKEA OpenAPI Maintainer
+    url: https://github.com/idelsink/ikea-openapi
+
+tags:
+  - name: Products
+    description: Everything about Products
+
+servers:
+  - url: https://sik.search.blue.cdtapps.com/{country}/{language}
+    description: IKEA Search API
+    variables:
+      country:
+        default: gb
+        description: Country code (e.g., de, gb, fr, us, no)
+      language:
+        default: en
+        description: Language code (e.g., en, de, fr)
+
+paths:
+  /product-list-page:
+    $ref: paths/product-list-page.yaml
+
+  /product-list-page/more-products:
+    $ref: paths/product-list-page_more-products.yaml

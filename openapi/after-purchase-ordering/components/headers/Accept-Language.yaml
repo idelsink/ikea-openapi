@@ -1,0 +1,7 @@
+name: Accept-Language
+in: header
+description: Country and Language selection of returned data. in format of language-COUNTRY.
+required: true
+schema:
+  type: string
+example: en-GB

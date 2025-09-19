@@ -1,0 +1,10 @@
+type: object
+description: More Products Page envelope containing a window of paginated products that matches the filtered criteria.
+required:
+  - productWindow
+properties:
+  productWindow:
+    description: Window of paginated products
+    type: array
+    items:
+      $ref: ./Product.yaml

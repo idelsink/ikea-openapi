@@ -1,0 +1,22 @@
+get:
+  summary: Get a limited set of filtered products
+  description: Returns a window of products that matches the filtered criteria.
+  operationId: findProducts
+  tags:
+    - Products
+
+  parameters:
+    - $ref: ../components/parameters/category.yaml
+    - $ref: ../components/parameters/size.yaml
+
+  responses:
+    "200":
+      description: Lists a limited set of Products for a given category.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ProductListPage.yaml
+    "400":
+      description: Bad Request for Listing of Products
+    "404":
+      description: Product List Not Found

@@ -1,0 +1,17 @@
+repos:
+  - repo: local
+    hooks:
+      - id: openapi-spec-validator
+        name: Validate OpenAPI Specs
+        entry: mise run lint:openapi-spec-validator
+        language: system
+        files: ^openapi/.*\.yaml$
+        pass_filenames: false
+
+  - repo: https://github.com/thlorenz/doctoc
+    rev: v2.2.0
+    hooks:
+      - id: doctoc
+        args:
+          - --update-only
+          - --github

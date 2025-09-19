@@ -1,0 +1,6 @@
+oas3-missing-example:
+  # These examples are provided via schemas
+  - $.paths['/meta-data/informera/stores-detailed.json'].get.responses['200'].content['application/json']
+  - $.paths['/meta-data/navigation/catalog-products-slim.json'].get.responses['200'].content['application/json']
+  - $.paths['/products/{productIdSuffix}/{productId}.json'].get.responses['200'].content['application/json']
+  - $.components.schemas['ProductDetails'].properties['catalogRefs']

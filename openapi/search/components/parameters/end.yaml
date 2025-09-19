@@ -1,0 +1,11 @@
+name: end
+in: query
+required: false
+description: >
+  The zero-based index of the last item to include **exclusive**.
+  For example, `start=0&end=2` returns items at index 0 and 1. (2 items)
+  If `end` is provided but not `end`, then default for `start=24`.
+schema:
+  type: integer
+  minimum: 0
+example: 0

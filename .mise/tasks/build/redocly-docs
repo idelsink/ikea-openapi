@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+#
+#MISE description="Build static sites for all OpenAPI specs with cross-references"
+#MISE depends=['bundle']
+
+# set -x
+
+api_order=$(yq '.x-custom-api-docs.order[]' redocly.yaml)
+
+nav_items=()
+while IFS= read -r api_name; do
+  api_title=$(yq '.info.title' "dist/${api_name}/openapi.yaml")
+  api_url="../${api_name}/index.html"
+
+  # Add navigation items as object (cannot simply pass array of objects)
+  nav_items+=(
+    "--templateOptions.navItemsOrder" "${api_name}" # Will be transformed into array of [name1, name2, etc...]
+    "--templateOptions.navItems.${api_name}.name" "${api_name}"
+    "--templateOptions.navItems.${api_name}.title" "${api_title}"
+    "--templateOptions.navItems.${api_name}.url" "${api_url}"
+  )
+done <<< "${api_order}"
+
+# Build the documentation
+while IFS= read -r api_name; do
+  title=$(yq '.info.title' "dist/${api_name}/openapi.yaml")
+  api_summary=$(yq '.info.summary' "dist/${api_name}/openapi.yaml")
+
+  redocly build-docs "dist/${api_name}/openapi.yaml" \
+    --output "dist/${api_name}/index.html" \
+    --template templates/redocly.hbs \
+    --templateOptions.title="${title}" \
+    --templateOptions.metaDescription="${api_summary}" \
+    --templateOptions.navItems.${api_name}.isActive=true \
+    "${nav_items[@]}"
+done <<< "${api_order}"
