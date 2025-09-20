@@ -10,21 +10,21 @@ Unofficial OpenAPI specifications for various IKEA APIs.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
-- [⚠️ Disclaimer](#-disclaimer)
-- [🤖 Available API Specifications](#-available-api-specifications)
+- [:warning: Disclaimer](#warning-disclaimer)
+- [:robot: Available API Specifications](#robot-available-api-specifications)
   - [1. Product Catalog API](#1-product-catalog-api)
   - [2. Search API](#2-search-api)
   - [3. Sales Item API](#3-sales-item-api)
   - [4. After Purchase Ordering API](#4-after-purchase-ordering-api)
-- [⚡️ Quick start](#%EF%B8%8F-quick-start)
+- [:zap: Quick start](#zap-quick-start)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [🧪 Daily tests](#%F0%9F%A7%AA-daily-tests)
-- [⚖️ License](#-license)
+- [:test_tube: Daily tests](#test_tube-daily-tests)
+- [:balance_scale: License](#balance_scale-license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## ⚠️ Disclaimer
+## :warning: Disclaimer
 
 - This project is based on publicly available information and analysis of network requests
 - It is **not affiliated with, endorsed by, or supported by IKEA**
@@ -32,7 +32,7 @@ Unofficial OpenAPI specifications for various IKEA APIs.
 - These specifications may not reflect official or supported APIs
 - Use at your own risk
 
-## 🤖 Available API Specifications
+## :robot: Available API Specifications
 
 All API specifications can be found in their respective [openapi](openapi) directory and are hosted using GitHub Pages at [ingmar.dels.ink/ikea-openapi](https://ingmar.dels.ink/ikea-openapi).
 
@@ -64,7 +64,7 @@ Access IKEA's spare parts and After Purchase Ordering (APO) system.
 - **OpenAPI definition**: [openapi/after-purchase-ordering](openapi/after-purchase-ordering)
 - **API Documentation**: [ingmar.dels.ink/ikea-openapi/after-purchase-ordering](https://ingmar.dels.ink/ikea-openapi/after-purchase-ordering/)
 
-## ⚡️ Quick start
+## :zap: Quick start
 
 ### Prerequisites
 
@@ -84,7 +84,7 @@ mise install
 mise run build:docs
 ```
 
-## 🧪 Daily tests
+## :test_tube: Daily tests
 
 [![Scheduled Contract Testing](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-contract-test.yaml/badge.svg?branch=main&event=schedule)](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-contract-test.yaml)
 
@@ -92,6 +92,6 @@ mise run build:docs
 
 
 
-## ⚖️ License
+## :balance_scale: License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
