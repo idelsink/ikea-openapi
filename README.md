@@ -2,6 +2,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![OpenAPI Version](https://img.shields.io/badge/OpenAPI-3.1-green.svg)](https://www.openapis.org/)
+[![After Purchase Ordering API Contract Test](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-after-purchase-ordering.yaml/badge.svg?branch=main&event=schedule)](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-after-purchase-ordering.yaml)
+[![Product Catalog API Contract Test](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-product-catalog.yaml/badge.svg?branch=main&event=schedule)](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-product-catalog.yaml)
+[![Sales Item API Contract Test](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-sales-item.yaml/badge.svg?branch=main&event=schedule)](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-sales-item.yaml)
+[![Search API Contract Test](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-search.yaml/badge.svg?branch=main&event=schedule)](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-search.yaml)
 
 Unofficial OpenAPI specifications for various IKEA APIs.
 
