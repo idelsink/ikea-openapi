@@ -6,7 +6,6 @@ required:
   - itemMeasureReferenceText
   - mainImageUrl
   - pipUrl
-  - filterClass
   - allProductImage
   - id
   - itemNoGlobal
