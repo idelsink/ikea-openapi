@@ -24,7 +24,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5.0.0
       - name: Setup Mise
-        uses: jdx/mise-action@v2.0.2
+        uses: jdx/mise-action@v3.5.1
         with:
           version: 2025.8.21
       - name: Build docs
