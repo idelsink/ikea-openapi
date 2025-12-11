@@ -1,0 +1,11 @@
+name: Sales Item API Contract Test
+on:
+  schedule:
+    - cron: "2 1 * * *" # Every day at 01:02
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  test:
+    uses: ./.github/workflows/scheduled-test.yaml
+    with:
+      test-target: sales-item
