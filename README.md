@@ -2,10 +2,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![OpenAPI Version](https://img.shields.io/badge/OpenAPI-3.1-green.svg)](https://www.openapis.org/)
-[![After Purchase Ordering API Contract Test](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-after-purchase-ordering.yaml/badge.svg?branch=main&event=schedule)](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-after-purchase-ordering.yaml)
-[![Product Catalog API Contract Test](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-product-catalog.yaml/badge.svg?branch=main&event=schedule)](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-product-catalog.yaml)
-[![Sales Item API Contract Test](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-sales-item.yaml/badge.svg?branch=main&event=schedule)](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-sales-item.yaml)
-[![Search API Contract Test](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-search.yaml/badge.svg?branch=main&event=schedule)](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-search.yaml)
 
 Unofficial OpenAPI specifications for various IKEA APIs.
 
@@ -13,21 +9,21 @@ Unofficial OpenAPI specifications for various IKEA APIs.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
-- [:warning: Disclaimer](#warning-disclaimer)
-- [:robot: Available API Specifications](#robot-available-api-specifications)
-  - [1. Product Catalog API](#1-product-catalog-api)
-  - [2. Search API](#2-search-api)
-  - [3. Sales Item API](#3-sales-item-api)
-  - [4. After Purchase Ordering API](#4-after-purchase-ordering-api)
-- [:zap: Quick start](#zap-quick-start)
+- [Disclaimer](#disclaimer)
+- [Available API Specifications](#available-api-specifications)
+  - [📦 Product Catalog API](#-product-catalog-api)
+  - [🔍 Search API](#-search-api)
+  - [📊 Sales Item API](#-sales-item-api)
+  - [🔧 After Purchase Ordering API](#-after-purchase-ordering-api)
+- [Quick start](#quick-start)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [:test_tube: Daily tests](#test_tube-daily-tests)
-- [:balance_scale: License](#balance_scale-license)
+- [Daily tests](#daily-tests)
+- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## :warning: Disclaimer
+## Disclaimer
 
 - This project is based on publicly available information and analysis of network requests
 - It is **not affiliated with, endorsed by, or supported by IKEA**
@@ -35,39 +31,75 @@ Unofficial OpenAPI specifications for various IKEA APIs.
 - These specifications may not reflect official or supported APIs
 - Use at your own risk
 
-## :robot: Available API Specifications
+## Available API Specifications
 
 All API specifications can be found in their respective [openapi](openapi) directory and are hosted using GitHub Pages at [ingmar.dels.ink/ikea-openapi](https://ingmar.dels.ink/ikea-openapi).
 
-### 1. Product Catalog API
+<table>
+<tr>
+<td>
+
+### 📦 Product Catalog API
 
 Access IKEA's product categories, store information, and detailed product information.
 
-- **OpenAPI definition**: [openapi/product-catalog](openapi/product-catalog)
-- **API Documentation**: [ingmar.dels.ink/ikea-openapi/product-catalog](https://ingmar.dels.ink/ikea-openapi/product-catalog/)
+[![Product Catalog API Contract Test](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-product-catalog.yaml/badge.svg?branch=main&event=schedule)](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-product-catalog.yaml)
 
-### 2. Search API
+**[API Documentation](https://ingmar.dels.ink/ikea-openapi/product-catalog/)** • **[OpenAPI definition](openapi/product-catalog)**
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>
+
+### 🔍 Search API
 
 Search and list IKEA products.
 
-- **OpenAPI definition**: [openapi/search](openapi/search)
-- **API Documentation**: [ingmar.dels.ink/ikea-openapi/search](https://ingmar.dels.ink/ikea-openapi/search/)
+[![Search API Contract Test](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-search.yaml/badge.svg?branch=main&event=schedule)](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-search.yaml)
 
-### 3. Sales Item API
+**[API Documentation](https://ingmar.dels.ink/ikea-openapi/search/)** • **[OpenAPI definition](openapi/search)**
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>
+
+### 📊 Sales Item API
 
 Get real-time product availability and packaging information.
 
-- **OpenAPI definition**: [openapi/sales-item](openapi/sales-item)
-- **API Documentation**: [ingmar.dels.ink/ikea-openapi/sales-item](https://ingmar.dels.ink/ikea-openapi/sales-item/)
+[![Sales Item API Contract Test](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-sales-item.yaml/badge.svg?branch=main&event=schedule)](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-sales-item.yaml)
 
-### 4. After Purchase Ordering API
+**[API Documentation](https://ingmar.dels.ink/ikea-openapi/sales-item/)** • **[OpenAPI definition](openapi/sales-item)**
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>
+
+### 🔧 After Purchase Ordering API
 
 Access IKEA's spare parts and After Purchase Ordering (APO) system.
 
-- **OpenAPI definition**: [openapi/after-purchase-ordering](openapi/after-purchase-ordering)
-- **API Documentation**: [ingmar.dels.ink/ikea-openapi/after-purchase-ordering](https://ingmar.dels.ink/ikea-openapi/after-purchase-ordering/)
+[![After Purchase Ordering API Contract Test](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-after-purchase-ordering.yaml/badge.svg?branch=main&event=schedule)](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-test-after-purchase-ordering.yaml)
 
-## :zap: Quick start
+**[API Documentation](https://ingmar.dels.ink/ikea-openapi/after-purchase-ordering/)** • **[OpenAPI definition](openapi/after-purchase-ordering)**
+
+</td>
+</tr>
+</table>
+
+## Quick start
 
 ### Prerequisites
 
@@ -87,10 +119,10 @@ mise install
 mise run build:docs
 ```
 
-## :test_tube: Daily tests
+## Daily tests
 
-[Daily Tests](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-contract-test.yaml) are ran to validate the defined OpenAPI specs against the IKEA Endpoints and detect API changes.
+[Daily contract tests](https://github.com/idelsink/ikea-openapi/actions/workflows/scheduled-contract-test.yaml) are run to validate the defined OpenAPI specs against the IKEA endpoints and detect API changes.
 
-## :balance_scale: License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
