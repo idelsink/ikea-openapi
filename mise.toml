@@ -6,7 +6,7 @@ mise_container_tag = "2025.8.14@sha256:5b3e794068f4a92b436ef8e02b968e7e3b9e806f2
 [tools]
 "npm:@redocly/cli" = "2.1.5"
 "pipx:openapi-spec-validator" = "0.7.2"
-"pipx:pre-commit" = "4.3.0"
+"pipx:pre-commit" = "4.6.2"
 "pipx:schemathesis" = "4.1.3"
 node = "24.16.0"
 pipx = "1.7.1"
