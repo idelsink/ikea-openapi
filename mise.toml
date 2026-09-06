@@ -14,7 +14,7 @@ python = "3.13.7"
 yq = "4.47.1"
 jq = "1.8.1"
 "pipx:jinja2-cli" = "0.8.2"
-"npm:@quobix/vacuum" = "0.17.12"
+"npm:@quobix/vacuum" = "0.30.3"
 
 [task_config]
 includes = [
