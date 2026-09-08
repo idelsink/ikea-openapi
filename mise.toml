@@ -4,7 +4,7 @@ min_version = "2025.8.14"
 mise_container_tag = "2025.8.14@sha256:5b3e794068f4a92b436ef8e02b968e7e3b9e806f2b90097ffed4b58c565a914d"
 
 [tools]
-"npm:@redocly/cli" = "2.1.5"
+"npm:@redocly/cli" = "2.51.2"
 "pipx:openapi-spec-validator" = "0.7.2"
 "pipx:pre-commit" = "4.3.0"
 "pipx:schemathesis" = "4.1.3"
