@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - uses: jdx/mise-action@146a28175021df8ca24f8ee1828cc2a60f980bd5 # v3.5.1
         with:
-          version: 2025.8.21
+          version: 2025.12.13
       - run: mise run test:schemathesis:${{ inputs.test-target }} --phases examples
 
       - name: Upload test results
