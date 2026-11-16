@@ -1,0 +1,2172 @@
+[2026-11-16T11:07:41.766Z] [command]/usr/bin/docker run --rm --volume /home/runner/work/renovate-runner/renovate-runner/config.js:/usr/src/app/config.js:ro --volume /home/runner/work/_temp/renovate-cache/renovate/repository:/tmp/renovate/cache/renovate/repository --env RENOVATE_RUNNER_REPO --env RENOVATE_TOKEN --env RENOVATE_REPOSITORIES --env LOG_LEVEL --env CI ghcr.io/renovatebot/renovate:44.242.0@sha256:0123dd7efea6978a8347732aac8be14745cebb6b8653e77bc9ee290698d97e89
+[2026-11-16T11:07:41.905Z] Unable to find image 'ghcr.io/renovatebot/renovate:44.242.0@sha256:0123dd7efea6978a8347732aac8be14745cebb6b8653e77bc9ee290698d97e89' locally
+[2026-11-16T11:07:42.085Z] ghcr.io/renovatebot/renovate@sha256:0123dd7efea6978a8347732aac8be14745cebb6b8653e77bc9ee290698d97e89: Pulling from renovatebot/renovate
+[2026-11-16T11:07:42.283Z] 5d22afee9172: Pulling fs layer
+[2026-11-16T11:07:42.283Z] 5f5a41b99647: Pulling fs layer
+[2026-11-16T11:07:42.283Z] 70a76bcb1219: Pulling fs layer
+[2026-11-16T11:07:42.283Z] 086011b07a06: Pulling fs layer
+[2026-11-16T11:07:42.283Z] 85024c89fae2: Pulling fs layer
+[2026-11-16T11:07:42.283Z] 8cbb70b9c280: Pulling fs layer
+[2026-11-16T11:07:42.283Z] e257dce82c3c: Pulling fs layer
+[2026-11-16T11:07:42.283Z] 4f4fb700ef54: Pulling fs layer
+[2026-11-16T11:07:42.283Z] 3098dad760c9: Pulling fs layer
+[2026-11-16T11:07:42.283Z] 2e05767bd361: Pulling fs layer
+[2026-11-16T11:07:42.283Z] 4738799d05f6: Pulling fs layer
+[2026-11-16T11:07:42.283Z] bf0aed853e12: Pulling fs layer
+[2026-11-16T11:07:42.284Z] 26538842dfbf: Pulling fs layer
+[2026-11-16T11:07:42.311Z] 4f4fb700ef54: Already exists
+[2026-11-16T11:07:42.411Z] 4a9c99f03aad: Download complete
+[2026-11-16T11:07:42.411Z] 086011b07a06: Download complete
+[2026-11-16T11:07:42.412Z] 3098dad760c9: Download complete
+[2026-11-16T11:07:42.413Z] 5f5a41b99647: Download complete
+[2026-11-16T11:07:42.414Z] bf0aed853e12: Download complete
+[2026-11-16T11:07:42.514Z] 5d22afee9172: Download complete
+[2026-11-16T11:07:42.712Z] 4738799d05f6: Download complete
+[2026-11-16T11:07:42.811Z] 70a76bcb1219: Download complete
+[2026-11-16T11:07:42.811Z] 26538842dfbf: Download complete
+[2026-11-16T11:07:42.909Z] 85024c89fae2: Download complete
+[2026-11-16T11:07:42.909Z] 2e05767bd361: Download complete
+[2026-11-16T11:07:43.108Z] 8cbb70b9c280: Download complete
+[2026-11-16T11:07:43.608Z] e257dce82c3c: Download complete
+[2026-11-16T11:07:43.719Z] 26538842dfbf: Pull complete
+[2026-11-16T11:07:44.915Z] 5d22afee9172: Pull complete
+[2026-11-16T11:07:45.417Z] 85024c89fae2: Pull complete
+[2026-11-16T11:07:46.117Z] 2e05767bd361: Pull complete
+[2026-11-16T11:07:46.618Z] 70a76bcb1219: Pull complete
+[2026-11-16T11:07:50.318Z] e257dce82c3c: Pull complete
+[2026-11-16T11:07:50.510Z] 086011b07a06: Pull complete
+[2026-11-16T11:07:50.514Z] 5f5a41b99647: Pull complete
+[2026-11-16T11:07:50.517Z] 4738799d05f6: Pull complete
+[2026-11-16T11:07:58.312Z] 8cbb70b9c280: Pull complete
+[2026-11-16T11:07:58.346Z] 4f4fb700ef54: Pull complete
+[2026-11-16T11:07:58.347Z] 3098dad760c9: Pull complete
+[2026-11-16T11:07:58.349Z] bf0aed853e12: Pull complete
+[2026-11-16T11:07:58.349Z] Digest: sha256:0123dd7efea6978a8347732aac8be14745cebb6b8653e77bc9ee290698d97e89
+[2026-11-16T11:07:58.349Z] Status: Downloaded newer image for ghcr.io/renovatebot/renovate@sha256:0123dd7efea6978a8347732aac8be14745cebb6b8653e77bc9ee290698d97e89
+[2026-11-16T11:08:04.329Z]  INFO: Renovate started
+[2026-11-16T11:08:04.329Z]        "renovateVersion": "44.242.0"
+[2026-11-16T11:08:04.329Z] DEBUG: Using RE2 regex engine
+[2026-11-16T11:08:04.330Z] DEBUG: Parsing configs
+[2026-11-16T11:08:04.334Z] DEBUG: Checking for config file in config.js
+[2026-11-16T11:08:04.341Z]  WARN: Config needs migrating
+[2026-11-16T11:08:04.341Z]        "configType": "config.js",
+[2026-11-16T11:08:04.341Z]        "originalConfig": {
+[2026-11-16T11:08:04.341Z]          "platform": "github",
+[2026-11-16T11:08:04.341Z]          "repositoryCache": "enabled",
+[2026-11-16T11:08:04.341Z]          "allowedUnsafeExecutions": ["mise"],
+[2026-11-16T11:08:04.341Z]          "dependencyDashboardFooter": "- [ ] <!-- trigger-run --> Trigger a Renovate run - [workflow runs & logs ↗](https://github.com/idelsink/renovate-runner/actions/workflows/renovate.yaml)",
+[2026-11-16T11:08:04.341Z]          "onboardingConfig": {
+[2026-11-16T11:08:04.341Z]            "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-11-16T11:08:04.341Z]            "extends": ["github>idelsink/renovate-runner"]
+[2026-11-16T11:08:04.341Z]          }
+[2026-11-16T11:08:04.341Z]        },
+[2026-11-16T11:08:04.341Z]        "migratedConfig": {
+[2026-11-16T11:08:04.341Z]          "platform": "github",
+[2026-11-16T11:08:04.341Z]          "repositoryCache": "enabled",
+[2026-11-16T11:08:04.341Z]          "allowedUnsafeExecutions": ["mise"],
+[2026-11-16T11:08:04.341Z]          "dependencyDashboard": {
+[2026-11-16T11:08:04.341Z]            "footer": "- [ ] <!-- trigger-run --> Trigger a Renovate run - [workflow runs & logs ↗](https://github.com/idelsink/renovate-runner/actions/workflows/renovate.yaml)"
+[2026-11-16T11:08:04.341Z]          },
+[2026-11-16T11:08:04.341Z]          "onboardingConfig": {
+[2026-11-16T11:08:04.341Z]            "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-11-16T11:08:04.341Z]            "extends": ["github>idelsink/renovate-runner"]
+[2026-11-16T11:08:04.341Z]          }
+[2026-11-16T11:08:04.341Z]        }
+[2026-11-16T11:08:04.350Z] DEBUG: No additional config file found specified - skipping
+[2026-11-16T11:08:04.368Z] DEBUG: File config
+[2026-11-16T11:08:04.368Z]        "config": {
+[2026-11-16T11:08:04.368Z]          "platform": "github",
+[2026-11-16T11:08:04.368Z]          "repositoryCache": "enabled",
+[2026-11-16T11:08:04.368Z]          "allowedUnsafeExecutions": ["mise"],
+[2026-11-16T11:08:04.368Z]          "dependencyDashboard": {
+[2026-11-16T11:08:04.368Z]            "footer": "- [ ] <!-- trigger-run --> Trigger a Renovate run - [workflow runs & logs ↗](https://github.com/idelsink/renovate-runner/actions/workflows/renovate.yaml)"
+[2026-11-16T11:08:04.368Z]          },
+[2026-11-16T11:08:04.368Z]          "onboardingConfig": {
+[2026-11-16T11:08:04.368Z]            "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-11-16T11:08:04.368Z]            "extends": ["github>idelsink/renovate-runner"]
+[2026-11-16T11:08:04.368Z]          }
+[2026-11-16T11:08:04.368Z]        }
+[2026-11-16T11:08:04.368Z] DEBUG: Additional file config
+[2026-11-16T11:08:04.369Z]        "config": {}
+[2026-11-16T11:08:04.369Z] DEBUG: CLI config
+[2026-11-16T11:08:04.369Z]        "config": {}
+[2026-11-16T11:08:04.369Z] DEBUG: Env config
+[2026-11-16T11:08:04.369Z]        "config": {
+[2026-11-16T11:08:04.369Z]          "hostRules": [],
+[2026-11-16T11:08:04.369Z]          "token": "***********",
+[2026-11-16T11:08:04.369Z]          "repositories": ["idelsink/ikea-openapi"]
+[2026-11-16T11:08:04.369Z]        }
+[2026-11-16T11:08:04.369Z] DEBUG: Resolved global extends
+[2026-11-16T11:08:04.369Z]        "config": undefined
+[2026-11-16T11:08:04.370Z] DEBUG: Combined config
+[2026-11-16T11:08:04.370Z]        "config": {
+[2026-11-16T11:08:04.370Z]          "platform": "github",
+[2026-11-16T11:08:04.370Z]          "repositoryCache": "enabled",
+[2026-11-16T11:08:04.370Z]          "allowedUnsafeExecutions": ["mise"],
+[2026-11-16T11:08:04.370Z]          "dependencyDashboard": {
+[2026-11-16T11:08:04.370Z]            "footer": "- [ ] <!-- trigger-run --> Trigger a Renovate run - [workflow runs & logs ↗](https://github.com/idelsink/renovate-runner/actions/workflows/renovate.yaml)"
+[2026-11-16T11:08:04.370Z]          },
+[2026-11-16T11:08:04.370Z]          "onboardingConfig": {
+[2026-11-16T11:08:04.370Z]            "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-11-16T11:08:04.370Z]            "extends": ["github>idelsink/renovate-runner"]
+[2026-11-16T11:08:04.370Z]          },
+[2026-11-16T11:08:04.370Z]          "hostRules": [],
+[2026-11-16T11:08:04.370Z]          "token": "***********",
+[2026-11-16T11:08:04.370Z]          "repositories": ["idelsink/ikea-openapi"]
+[2026-11-16T11:08:04.370Z]        }
+[2026-11-16T11:08:04.371Z] DEBUG: Enabling forkProcessing while in non-autodiscover mode
+[2026-11-16T11:08:04.371Z] DEBUG: Enabling onboardingNoDeps while in non-autodiscover mode
+[2026-11-16T11:08:04.385Z] DEBUG: Found valid git version: 2.56.1
+[2026-11-16T11:08:04.387Z] DEBUG: Containerbase image version is compatible
+[2026-11-16T11:08:04.387Z]        "version": "14.66.25"
+[2026-11-16T11:08:04.387Z] DEBUG: Setting global hostRules
+[2026-11-16T11:08:04.392Z] DEBUG: Using default github endpoint: https://api.github.com/
+[2026-11-16T11:08:04.400Z] DEBUG: hostRules: authentication already set for api.github.com
+[2026-11-16T11:08:04.404Z] DEBUG: Using queue: host=api.github.com, concurrency=16
+[2026-11-16T11:08:04.574Z] DEBUG: Platform config
+[2026-11-16T11:08:04.574Z]        "platformConfig": {
+[2026-11-16T11:08:04.574Z]          "host": {"type": "github", "apiUrl": {}},
+[2026-11-16T11:08:04.574Z]          "isGHApp": true,
+[2026-11-16T11:08:04.574Z]          "userDetails": {
+[2026-11-16T11:08:04.574Z]            "username": "renovate-iws[bot]",
+[2026-11-16T11:08:04.574Z]            "name": "renovate-iws[bot]",
+[2026-11-16T11:08:04.574Z]            "id": 260228940,
+[2026-11-16T11:08:04.574Z]            "email": null
+[2026-11-16T11:08:04.574Z]          }
+[2026-11-16T11:08:04.574Z]        },
+[2026-11-16T11:08:04.574Z]        "renovateUsername": "renovate-iws[bot]"
+[2026-11-16T11:08:04.578Z] DEBUG: Using platform gitAuthor: renovate-iws[bot] <260228940+renovate-iws[bot]@users.noreply.github.com>
+[2026-11-16T11:08:04.580Z] DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+[2026-11-16T11:08:04.581Z] DEBUG: Using baseDir: /tmp/renovate
+[2026-11-16T11:08:04.582Z] DEBUG: Using cacheDir: /tmp/renovate/cache
+[2026-11-16T11:08:04.582Z] DEBUG: Using containerbaseDir: /tmp/renovate/cache/containerbase
+[2026-11-16T11:08:04.584Z] DEBUG: Initializing Renovate internal cache into /tmp/renovate/cache/renovate/renovate-cache-v1
+[2026-11-16T11:08:04.584Z] DEBUG: Commits limit = null
+[2026-11-16T11:08:04.584Z] DEBUG: Setting global hostRules
+[2026-11-16T11:08:04.587Z] DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+[2026-11-16T11:08:04.588Z] DEBUG: validatePresets()
+[2026-11-16T11:08:04.603Z] DEBUG: Reinitializing hostRules for repo
+[2026-11-16T11:08:04.604Z] DEBUG: Clearing hostRules
+[2026-11-16T11:08:04.604Z] DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+[2026-11-16T11:08:04.608Z]  INFO: Repository started (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:04.609Z]        "renovateVersion": "44.242.0"
+[2026-11-16T11:08:04.610Z] DEBUG: Using localDir: /tmp/renovate/repos/github/idelsink/ikea-openapi (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:04.610Z] DEBUG: PackageFiles.clear() - Package files deleted (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:04.612Z] DEBUG: initRepo("idelsink/ikea-openapi") (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:04.614Z] DEBUG: hostRules: authentication already set for api.github.com (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:04.615Z] DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:04.913Z] DEBUG: idelsink/ikea-openapi default branch = main (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:04.914Z] DEBUG: Issues cache: Adding 1 issues to reconcile queue (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:04.915Z] DEBUG: Using app token for git init (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:04.916Z] DEBUG: fetchBranchCommits(): url=https://**redacted**@github.com/idelsink/ikea-openapi.git (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.053Z] DEBUG: Repository cache is restored from revision 13 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.053Z] DEBUG: Resetting npmrc (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.053Z] DEBUG: Resetting npmrc (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.054Z] DEBUG: checkOnboarding() (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.054Z] DEBUG: isOnboarded() (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.055Z] DEBUG: findPr(renovate/configure, Configure Renovate, !open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.056Z] DEBUG: PR cache: sync fetch (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.501Z] DEBUG: http cache: saving https://api.github.com/repos/idelsink/ikea-openapi/pulls?per_page=20&state=all&sort=updated&direction=desc&page=1 (etag=W/"dd966994738a4084f6a71d80a6c62f0bc4596669b140f7f3efd3b1b483ebf116", lastModified=undefined) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.501Z] DEBUG: PR cache: Filtered 20 PRs to 20 (user=renovate-iws[bot]) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.553Z] DEBUG: PR cache: getPrList success (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.553Z]        "pullsTotal": 37,
+[2026-11-16T11:08:05.553Z]        "requestsTotal": 1,
+[2026-11-16T11:08:05.553Z]        "apiQuotaAffected": true,
+[2026-11-16T11:08:05.553Z]        "durationMs": 497
+[2026-11-16T11:08:05.553Z] DEBUG: findPr(renovate/configure, chore: Configure Renovate, !open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.554Z] DEBUG: Found PR #1 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.554Z] DEBUG: Checking cached config file name (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.716Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/ikea-openapi/contents/renovate.json from 2026-11-15T10:47:12.814Z (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.719Z] DEBUG: Existing config file confirmed (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.720Z] DEBUG: Repository config (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.720Z]        "fileName": "renovate.json",
+[2026-11-16T11:08:05.720Z]        "config": {
+[2026-11-16T11:08:05.720Z]          "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-11-16T11:08:05.720Z]          "extends": ["github>idelsink/renovate-runner"]
+[2026-11-16T11:08:05.720Z]        }
+[2026-11-16T11:08:05.720Z] DEBUG: Repo is onboarded (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.855Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/ikea-openapi/contents/renovate.json from 2026-11-16T11:08:05.716Z (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.855Z] DEBUG: migrateAndValidate() (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.856Z] DEBUG: No config migration necessary (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:05.998Z] DEBUG: http cache: saving https://api.github.com/repos/idelsink/renovate-runner/contents/default.json (etag="df2ffb1cb7cf8d44207b7ded09d051f6a003eecd", lastModified=Mon, 16 Nov 2026 08:02:06 GMT) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:06.007Z] DEBUG: Resolved shallow config, without merging internal presets (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:06.007Z]        "renovateVersion": "44.242.0",
+[2026-11-16T11:08:06.007Z]        "config": {
+[2026-11-16T11:08:06.007Z]          "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-11-16T11:08:06.007Z]          "schedule": ["before 6am on Monday"],
+[2026-11-16T11:08:06.007Z]          "prConcurrentLimit": 5,
+[2026-11-16T11:08:06.007Z]          "postUpdateOptions": ["npmInstallTwice"],
+[2026-11-16T11:08:06.007Z]          "customManagers": [
+[2026-11-16T11:08:06.007Z]            {
+[2026-11-16T11:08:06.007Z]              "customType": "regex",
+[2026-11-16T11:08:06.007Z]              "description": [
+[2026-11-16T11:08:06.007Z]                "Container image references with digest pinning (registry/image:1.2.3@shaabc123...), annotated with # renovate: or // renovate:. Captures tag as currentValue and sha256 as currentDigest for atomic updates."
+[2026-11-16T11:08:06.007Z]              ],
+[2026-11-16T11:08:06.007Z]              "managerFilePatterns": ["/./"],
+[2026-11-16T11:08:06.007Z]              "matchStrings": [
+[2026-11-16T11:08:06.007Z]                "(?:#|//) renovate: datasource=(?<datasource>.*?)(?: depName=(?<depName>.+?))?(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?(?: registryUrl=(?<registryUrl>.+?))?\\n\\s*[^=:\\n]+[=:]\\s*[\"']?[^:]+:(?<currentValue>[^\\s@\"']+)@(?<currentDigest>[^\\s\"']+)"
+[2026-11-16T11:08:06.007Z]              ],
+[2026-11-16T11:08:06.007Z]              "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}"
+[2026-11-16T11:08:06.007Z]            },
+[2026-11-16T11:08:06.007Z]            {
+[2026-11-16T11:08:06.007Z]              "customType": "regex",
+[2026-11-16T11:08:06.007Z]              "description": [
+[2026-11-16T11:08:06.007Z]                "Container image references with tag only (no digest), annotated with # renovate: or // renovate:. Matches key-value lines where the value is a registry/path:tag."
+[2026-11-16T11:08:06.007Z]              ],
+[2026-11-16T11:08:06.007Z]              "managerFilePatterns": ["/./"],
+[2026-11-16T11:08:06.007Z]              "matchStrings": [
+[2026-11-16T11:08:06.007Z]                "(?:#|//) renovate: datasource=(?<datasource>.*?)(?: depName=(?<depName>.+?))?(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?(?: registryUrl=(?<registryUrl>.+?))?\\n\\s*[^=:\\n]+[=:]\\s*[\"']?[^:]+:(?<currentValue>[^\\s@\"']+)(?:[\"'\\s]|$)"
+[2026-11-16T11:08:06.007Z]              ],
+[2026-11-16T11:08:06.007Z]              "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}"
+[2026-11-16T11:08:06.007Z]            },
+[2026-11-16T11:08:06.007Z]            {
+[2026-11-16T11:08:06.007Z]              "customType": "regex",
+[2026-11-16T11:08:06.007Z]              "description": [
+[2026-11-16T11:08:06.007Z]                "Plain version strings annotated with # renovate: or // renovate:. Handles both assignment (KEY=) and key-value (key:) styles for any datasource."
+[2026-11-16T11:08:06.007Z]              ],
+[2026-11-16T11:08:06.007Z]              "managerFilePatterns": ["/./"],
+[2026-11-16T11:08:06.007Z]              "matchStrings": [
+[2026-11-16T11:08:06.007Z]                "(?:#|//) renovate: datasource=(?<datasource>.*?)(?: depName=(?<depName>.+?))?(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?(?: registryUrl=(?<registryUrl>.+?))?\\n\\s*[^=:\\n]+[=:]\\s*[\"']?(?<currentValue>[^\\s@\"'#:]+)(?:[\"'\\s]|$)"
+[2026-11-16T11:08:06.008Z]              ],
+[2026-11-16T11:08:06.008Z]              "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}"
+[2026-11-16T11:08:06.008Z]            }
+[2026-11-16T11:08:06.008Z]          ],
+[2026-11-16T11:08:06.008Z]          "packageRules": [
+[2026-11-16T11:08:06.008Z]            {
+[2026-11-16T11:08:06.008Z]              "description": [
+[2026-11-16T11:08:06.008Z]                "Ensure github-actions inline comments always use full vX.Y.Z semver tags"
+[2026-11-16T11:08:06.008Z]              ],
+[2026-11-16T11:08:06.008Z]              "matchManagers": ["github-actions"],
+[2026-11-16T11:08:06.008Z]              "matchDepTypes": ["action"],
+[2026-11-16T11:08:06.008Z]              "extractVersion": "^(?<version>v?\\d+\\.\\d+\\.\\d+)$",
+[2026-11-16T11:08:06.008Z]              "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$"
+[2026-11-16T11:08:06.008Z]            },
+[2026-11-16T11:08:06.008Z]            {
+[2026-11-16T11:08:06.008Z]              "description": [
+[2026-11-16T11:08:06.008Z]                "Disable digest pinning for regex manager deps without a currentDigest capture group"
+[2026-11-16T11:08:06.008Z]              ],
+[2026-11-16T11:08:06.008Z]              "matchManagers": ["custom.regex"],
+[2026-11-16T11:08:06.008Z]              "matchUpdateTypes": ["pin", "pinDigest"],
+[2026-11-16T11:08:06.008Z]              "enabled": false
+[2026-11-16T11:08:06.008Z]            },
+[2026-11-16T11:08:06.008Z]            {
+[2026-11-16T11:08:06.008Z]              "description": ["Disable digest pinning for kustomize OCI helmCharts"],
+[2026-11-16T11:08:06.008Z]              "matchManagers": ["kustomize"],
+[2026-11-16T11:08:06.008Z]              "matchDepTypes": ["HelmChart"],
+[2026-11-16T11:08:06.008Z]              "matchUpdateTypes": ["pin", "pinDigest"],
+[2026-11-16T11:08:06.008Z]              "enabled": false
+[2026-11-16T11:08:06.008Z]            }
+[2026-11-16T11:08:06.008Z]          ]
+[2026-11-16T11:08:06.008Z]        },
+[2026-11-16T11:08:06.008Z]        "visitedPresets": {
+[2026-11-16T11:08:06.008Z]          "merged": ["github>idelsink/renovate-runner"],
+[2026-11-16T11:08:06.008Z]          "unmerged": ["config:best-practices"]
+[2026-11-16T11:08:06.008Z]        }
+[2026-11-16T11:08:07.096Z] DEBUG: Found repo ignorePaths (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.096Z]        "ignorePaths": [
+[2026-11-16T11:08:07.096Z]          "**/node_modules/**",
+[2026-11-16T11:08:07.096Z]          "**/bower_components/**",
+[2026-11-16T11:08:07.096Z]          "**/vendor/**",
+[2026-11-16T11:08:07.096Z]          "**/examples/**",
+[2026-11-16T11:08:07.096Z]          "**/__tests__/**",
+[2026-11-16T11:08:07.096Z]          "**/test/**",
+[2026-11-16T11:08:07.096Z]          "**/tests/**",
+[2026-11-16T11:08:07.096Z]          "**/__fixtures__/**"
+[2026-11-16T11:08:07.096Z]        ]
+[2026-11-16T11:08:07.121Z] DEBUG: No vulnerability alerts enabled for repo (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.122Z] DEBUG: No vulnerability alerts found (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.124Z] DEBUG: findIssue(Dependency Dashboard) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.124Z] DEBUG: Issues cache: Done reconciling by iterating over all items (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.124Z] DEBUG: Issues cache: synced (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.125Z] DEBUG: Found issue 2 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.389Z] DEBUG: http cache: saving https://api.github.com/repos/idelsink/ikea-openapi/issues/2 (etag=W/"ed1a396e6e6d3a19f6cb4fca29c7205507d520428be2368278c64745f74cb357", lastModified=Mon, 16 Nov 2026 11:07:40 GMT) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.390Z] DEBUG: Issues cache: Updating issue 2 in cache (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.391Z] DEBUG: No baseBranches (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.391Z] DEBUG: extract() (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.498Z] DEBUG: Cached extract for sha=2b5803210da191ae3b12bc8832f9ac78c23e7260 is valid and can be used (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.499Z]  INFO: Dependency extraction complete (repository=idelsink/ikea-openapi, baseBranch=main)
+[2026-11-16T11:08:07.499Z]        "stats": {
+[2026-11-16T11:08:07.499Z]          "managers": {
+[2026-11-16T11:08:07.499Z]            "github-actions": {"fileCount": 3, "depCount": 17},
+[2026-11-16T11:08:07.499Z]            "mise": {"fileCount": 1, "depCount": 11},
+[2026-11-16T11:08:07.499Z]            "renovate-config": {"fileCount": 1, "depCount": 1}
+[2026-11-16T11:08:07.499Z]          },
+[2026-11-16T11:08:07.499Z]          "total": {"fileCount": 5, "depCount": 29}
+[2026-11-16T11:08:07.499Z]        }
+[2026-11-16T11:08:07.607Z] DEBUG: hostRules: no authentication for registry.npmjs.org (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.608Z] DEBUG: Using queue: host=registry.npmjs.org, concurrency=999 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.616Z] DEBUG: hostRules: no authentication for pypi.org (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.617Z] DEBUG: Using queue: host=pypi.org, concurrency=16 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.627Z] DEBUG: hostRules: no authentication for nodejs.org (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:07.628Z] DEBUG: Using queue: host=nodejs.org, concurrency=16 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:08.054Z] DEBUG: http cache: saving https://registry.npmjs.org/@redocly%2Fcli (etag=W/"2b938174344803104cb175f50c5d8627", lastModified=Mon, 16 Nov 2026 08:46:49 GMT) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:08.458Z] DEBUG: http cache: saving https://registry.npmjs.org/@quobix%2Fvacuum (etag=W/"3fa465c76d526ac9b7c07a1c3db21a74", lastModified=Sat, 14 Nov 2026 13:27:52 GMT) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:12.688Z]  INFO: GitHub GraphQL datasource: skipping empty item (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:12.688Z]        "packageName": "python/cpython",
+[2026-11-16T11:08:12.688Z]        "baseUrl": "https://api.github.com/"
+[2026-11-16T11:08:13.238Z] DEBUG: PackageFiles.add() - Package file saved for base branch (repository=idelsink/ikea-openapi, baseBranch=main)
+[2026-11-16T11:08:13.238Z] DEBUG: Package releases lookups complete (repository=idelsink/ikea-openapi, baseBranch=main)
+[2026-11-16T11:08:13.240Z] DEBUG: Repository libYears (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.240Z]        "libYears": {
+[2026-11-16T11:08:13.240Z]          "managers": {
+[2026-11-16T11:08:13.240Z]            "github-actions": 0.09424010654490106,
+[2026-11-16T11:08:13.240Z]            "mise": 1.5118033194444445,
+[2026-11-16T11:08:13.240Z]            "renovate-config": 0
+[2026-11-16T11:08:13.240Z]          },
+[2026-11-16T11:08:13.240Z]          "total": 1.6060434259893455
+[2026-11-16T11:08:13.240Z]        },
+[2026-11-16T11:08:13.240Z]        "dependencyStatus": {"outdated": 8, "total": 20}
+[2026-11-16T11:08:13.240Z] DEBUG: branchifyUpgrades (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.542Z] DEBUG: detectSemanticCommits() (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.542Z] DEBUG: semanticCommits: returning "enabled" from cache (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.548Z] DEBUG: 14 flattened updates found: jdx/mise-action, jdx/mise, jdx/mise-action, jdx/mise, jdx/mise-action, jdx/mise, npm:@redocly/cli, pipx:schemathesis, node, node, pipx, yq, npm:@quobix/vacuum (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.550Z] DEBUG: Returning 10 branch(es) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.551Z] DEBUG: Branch is not pending, removing pending upgrades (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:13.561Z] DEBUG: Branch is not pending, removing pending upgrades (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:13.567Z] DEBUG: Branch is not pending, removing pending upgrades (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:13.571Z] DEBUG: Branch is not pending, removing pending upgrades (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:13.575Z] DEBUG: Branch is not pending, removing pending upgrades (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:13.579Z] DEBUG: Branch is not pending, removing pending upgrades (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:13.583Z] DEBUG: Branch is not pending, removing pending upgrades (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.587Z] DEBUG: Branch is not pending, removing pending upgrades (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:13.590Z] DEBUG: Branch is not pending, removing pending upgrades (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:13.594Z] DEBUG: Branch is not pending, removing pending upgrades (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:13.596Z] DEBUG: config.repoIsOnboarded=true (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.606Z] DEBUG: packageFiles with updates (repository=idelsink/ikea-openapi, baseBranch=main)
+[2026-11-16T11:08:13.606Z]        "config": {
+[2026-11-16T11:08:13.606Z]          "github-actions": [
+[2026-11-16T11:08:13.606Z]            {
+[2026-11-16T11:08:13.606Z]              "deps": [
+[2026-11-16T11:08:13.606Z]                {
+[2026-11-16T11:08:13.606Z]                  "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+[2026-11-16T11:08:13.606Z]                  "commitMessageTopic": "{{{depName}}} action",
+[2026-11-16T11:08:13.606Z]                  "currentDigest": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+[2026-11-16T11:08:13.606Z]                  "currentValue": "v7.0.1",
+[2026-11-16T11:08:13.606Z]                  "datasource": "github-tags",
+[2026-11-16T11:08:13.606Z]                  "depName": "actions/checkout",
+[2026-11-16T11:08:13.606Z]                  "depType": "action",
+[2026-11-16T11:08:13.606Z]                  "packageName": "actions/checkout",
+[2026-11-16T11:08:13.606Z]                  "replaceString": "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1",
+[2026-11-16T11:08:13.606Z]                  "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
+[2026-11-16T11:08:13.606Z]                  "updates": [],
+[2026-11-16T11:08:13.606Z]                  "warnings": [],
+[2026-11-16T11:08:13.606Z]                  "sourceUrl": "https://github.com/actions/checkout",
+[2026-11-16T11:08:13.606Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.606Z]                  "currentVersion": "v7.0.1",
+[2026-11-16T11:08:13.606Z]                  "currentVersionTimestamp": "2026-07-20T15:10:05.000Z",
+[2026-11-16T11:08:13.606Z]                  "currentVersionAgeInDays": 118,
+[2026-11-16T11:08:13.606Z]                  "fixedVersion": "v7.0.1"
+[2026-11-16T11:08:13.606Z]                },
+[2026-11-16T11:08:13.606Z]                {
+[2026-11-16T11:08:13.606Z]                  "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+[2026-11-16T11:08:13.606Z]                  "commitMessageTopic": "{{{depName}}} action",
+[2026-11-16T11:08:13.606Z]                  "currentDigest": "45bfe0192ca1faeb007ade9deae92b16b8254a0d",
+[2026-11-16T11:08:13.606Z]                  "currentValue": "v6.0.0",
+[2026-11-16T11:08:13.607Z]                  "datasource": "github-tags",
+[2026-11-16T11:08:13.607Z]                  "depName": "actions/configure-pages",
+[2026-11-16T11:08:13.607Z]                  "depType": "action",
+[2026-11-16T11:08:13.607Z]                  "packageName": "actions/configure-pages",
+[2026-11-16T11:08:13.607Z]                  "replaceString": "actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0",
+[2026-11-16T11:08:13.607Z]                  "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
+[2026-11-16T11:08:13.607Z]                  "updates": [],
+[2026-11-16T11:08:13.607Z]                  "warnings": [],
+[2026-11-16T11:08:13.607Z]                  "sourceUrl": "https://github.com/actions/configure-pages",
+[2026-11-16T11:08:13.607Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.607Z]                  "mostRecentTimestamp": "2026-03-25T17:00:49.000Z",
+[2026-11-16T11:08:13.607Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.607Z]                  "currentVersion": "v6.0.0",
+[2026-11-16T11:08:13.607Z]                  "currentVersionTimestamp": "2026-03-25T17:00:49.000Z",
+[2026-11-16T11:08:13.607Z]                  "currentVersionAgeInDays": 235,
+[2026-11-16T11:08:13.607Z]                  "fixedVersion": "v6.0.0"
+[2026-11-16T11:08:13.607Z]                },
+[2026-11-16T11:08:13.607Z]                {
+[2026-11-16T11:08:13.607Z]                  "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+[2026-11-16T11:08:13.607Z]                  "commitMessageTopic": "{{{depName}}} action",
+[2026-11-16T11:08:13.607Z]                  "currentDigest": "6be3c7ed4c21d4f76b208d351d95aac273ebb76d",
+[2026-11-16T11:08:13.607Z]                  "currentValue": "v5.2.4",
+[2026-11-16T11:08:13.607Z]                  "datasource": "github-tags",
+[2026-11-16T11:08:13.607Z]                  "depName": "jdx/mise-action",
+[2026-11-16T11:08:13.607Z]                  "depType": "action",
+[2026-11-16T11:08:13.607Z]                  "packageName": "jdx/mise-action",
+[2026-11-16T11:08:13.607Z]                  "replaceString": "jdx/mise-action@6be3c7ed4c21d4f76b208d351d95aac273ebb76d # v5.2.4",
+[2026-11-16T11:08:13.607Z]                  "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
+[2026-11-16T11:08:13.607Z]                  "updates": [
+[2026-11-16T11:08:13.607Z]                    {
+[2026-11-16T11:08:13.607Z]                      "bucket": "non-major",
+[2026-11-16T11:08:13.607Z]                      "newVersion": "v5.2.9",
+[2026-11-16T11:08:13.607Z]                      "newValue": "v5.2.9",
+[2026-11-16T11:08:13.607Z]                      "newDigest": "236a21c3b91f5db6d4e174b348674a0f0caac06d",
+[2026-11-16T11:08:13.607Z]                      "releaseTimestamp": "2026-11-15T16:43:58.000Z",
+[2026-11-16T11:08:13.607Z]                      "newVersionAgeInDays": 0,
+[2026-11-16T11:08:13.607Z]                      "newMajor": 5,
+[2026-11-16T11:08:13.607Z]                      "newMinor": 2,
+[2026-11-16T11:08:13.607Z]                      "newPatch": 9,
+[2026-11-16T11:08:13.607Z]                      "updateType": "patch",
+[2026-11-16T11:08:13.607Z]                      "isBreaking": false,
+[2026-11-16T11:08:13.607Z]                      "libYears": 0.052811199898528664,
+[2026-11-16T11:08:13.607Z]                      "branchName": "renovate/jdx-mise-action-5.x"
+[2026-11-16T11:08:13.607Z]                    }
+[2026-11-16T11:08:13.608Z]                  ],
+[2026-11-16T11:08:13.608Z]                  "warnings": [],
+[2026-11-16T11:08:13.608Z]                  "sourceUrl": "https://github.com/jdx/mise-action",
+[2026-11-16T11:08:13.608Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.608Z]                  "mostRecentTimestamp": "2026-11-15T16:43:58.000Z",
+[2026-11-16T11:08:13.608Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.608Z]                  "currentVersion": "v5.2.4",
+[2026-11-16T11:08:13.608Z]                  "currentVersionTimestamp": "2026-10-27T10:06:24.000Z",
+[2026-11-16T11:08:13.608Z]                  "currentVersionAgeInDays": 20,
+[2026-11-16T11:08:13.608Z]                  "isSingleVersion": true,
+[2026-11-16T11:08:13.608Z]                  "fixedVersion": "v5.2.4"
+[2026-11-16T11:08:13.608Z]                },
+[2026-11-16T11:08:13.608Z]                {
+[2026-11-16T11:08:13.608Z]                  "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+[2026-11-16T11:08:13.608Z]                  "commitMessageTopic": "{{{depName}}} action",
+[2026-11-16T11:08:13.608Z]                  "currentDigest": "fc324d3547104276b827a68afc52ff2a11cc49c9",
+[2026-11-16T11:08:13.608Z]                  "currentValue": "v5.0.0",
+[2026-11-16T11:08:13.608Z]                  "datasource": "github-tags",
+[2026-11-16T11:08:13.608Z]                  "depName": "actions/upload-pages-artifact",
+[2026-11-16T11:08:13.608Z]                  "depType": "action",
+[2026-11-16T11:08:13.608Z]                  "packageName": "actions/upload-pages-artifact",
+[2026-11-16T11:08:13.608Z]                  "replaceString": "actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0",
+[2026-11-16T11:08:13.608Z]                  "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
+[2026-11-16T11:08:13.608Z]                  "updates": [],
+[2026-11-16T11:08:13.608Z]                  "warnings": [],
+[2026-11-16T11:08:13.608Z]                  "sourceUrl": "https://github.com/actions/upload-pages-artifact",
+[2026-11-16T11:08:13.608Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.608Z]                  "mostRecentTimestamp": "2026-04-10T18:22:59.000Z",
+[2026-11-16T11:08:13.608Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.608Z]                  "currentVersion": "v5.0.0",
+[2026-11-16T11:08:13.608Z]                  "currentVersionTimestamp": "2026-04-10T18:22:59.000Z",
+[2026-11-16T11:08:13.608Z]                  "currentVersionAgeInDays": 219,
+[2026-11-16T11:08:13.608Z]                  "fixedVersion": "v5.0.0"
+[2026-11-16T11:08:13.608Z]                },
+[2026-11-16T11:08:13.608Z]                {
+[2026-11-16T11:08:13.608Z]                  "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+[2026-11-16T11:08:13.608Z]                  "commitMessageTopic": "{{{depName}}} action",
+[2026-11-16T11:08:13.608Z]                  "currentDigest": "368f82528645a54fb793d4d04e342629a3f51346",
+[2026-11-16T11:08:13.608Z]                  "currentValue": "v5.0.1",
+[2026-11-16T11:08:13.608Z]                  "datasource": "github-tags",
+[2026-11-16T11:08:13.608Z]                  "depName": "actions/deploy-pages",
+[2026-11-16T11:08:13.608Z]                  "depType": "action",
+[2026-11-16T11:08:13.608Z]                  "packageName": "actions/deploy-pages",
+[2026-11-16T11:08:13.609Z]                  "replaceString": "actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1",
+[2026-11-16T11:08:13.609Z]                  "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
+[2026-11-16T11:08:13.609Z]                  "updates": [],
+[2026-11-16T11:08:13.609Z]                  "warnings": [],
+[2026-11-16T11:08:13.609Z]                  "sourceUrl": "https://github.com/actions/deploy-pages",
+[2026-11-16T11:08:13.609Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.609Z]                  "currentVersion": "v5.0.1",
+[2026-11-16T11:08:13.609Z]                  "currentVersionTimestamp": "2026-09-01T21:31:19.000Z",
+[2026-11-16T11:08:13.609Z]                  "currentVersionAgeInDays": 75,
+[2026-11-16T11:08:13.609Z]                  "fixedVersion": "v5.0.1"
+[2026-11-16T11:08:13.609Z]                },
+[2026-11-16T11:08:13.609Z]                {
+[2026-11-16T11:08:13.609Z]                  "autoReplaceStringTemplate": "{{depName}}-{{newValue}}",
+[2026-11-16T11:08:13.609Z]                  "currentValue": "latest",
+[2026-11-16T11:08:13.609Z]                  "datasource": "github-runners",
+[2026-11-16T11:08:13.609Z]                  "depName": "ubuntu",
+[2026-11-16T11:08:13.609Z]                  "depType": "github-runner",
+[2026-11-16T11:08:13.609Z]                  "packageName": "ubuntu",
+[2026-11-16T11:08:13.609Z]                  "replaceString": "ubuntu-latest",
+[2026-11-16T11:08:13.609Z]                  "skipReason": "invalid-version",
+[2026-11-16T11:08:13.609Z]                  "updates": []
+[2026-11-16T11:08:13.609Z]                },
+[2026-11-16T11:08:13.609Z]                {
+[2026-11-16T11:08:13.609Z]                  "currentValue": "2026.10.23",
+[2026-11-16T11:08:13.609Z]                  "datasource": "github-release-attachments",
+[2026-11-16T11:08:13.609Z]                  "depName": "jdx/mise",
+[2026-11-16T11:08:13.609Z]                  "depType": "uses-with",
+[2026-11-16T11:08:13.609Z]                  "packageName": "jdx/mise",
+[2026-11-16T11:08:13.609Z]                  "updates": [
+[2026-11-16T11:08:13.609Z]                    {
+[2026-11-16T11:08:13.609Z]                      "bucket": "non-major",
+[2026-11-16T11:08:13.609Z]                      "newVersion": "v2026.11.8",
+[2026-11-16T11:08:13.609Z]                      "newValue": "2026.11.8",
+[2026-11-16T11:08:13.609Z]                      "releaseTimestamp": "2026-11-13T13:07:07.000Z",
+[2026-11-16T11:08:13.609Z]                      "newVersionAgeInDays": 2,
+[2026-11-16T11:08:13.609Z]                      "newMajor": 2026,
+[2026-11-16T11:08:13.609Z]                      "newMinor": 11,
+[2026-11-16T11:08:13.609Z]                      "newPatch": 8,
+[2026-11-16T11:08:13.609Z]                      "updateType": "minor",
+[2026-11-16T11:08:13.609Z]                      "isBreaking": false,
+[2026-11-16T11:08:13.609Z]                      "libYears": 0.0414289066463724,
+[2026-11-16T11:08:13.609Z]                      "branchName": "renovate/jdx-mise-2026.x"
+[2026-11-16T11:08:13.610Z]                    }
+[2026-11-16T11:08:13.610Z]                  ],
+[2026-11-16T11:08:13.610Z]                  "versioning": "semver-coerced",
+[2026-11-16T11:08:13.610Z]                  "warnings": [],
+[2026-11-16T11:08:13.610Z]                  "sourceUrl": "https://github.com/jdx/mise",
+[2026-11-16T11:08:13.610Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.610Z]                  "mostRecentTimestamp": "2026-11-13T13:07:07.000Z",
+[2026-11-16T11:08:13.610Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.610Z]                  "currentVersion": "v2026.10.23",
+[2026-11-16T11:08:13.610Z]                  "currentVersionTimestamp": "2026-10-29T10:12:05.000Z",
+[2026-11-16T11:08:13.610Z]                  "currentVersionAgeInDays": 18,
+[2026-11-16T11:08:13.610Z]                  "isSingleVersion": true,
+[2026-11-16T11:08:13.610Z]                  "fixedVersion": "2026.10.23"
+[2026-11-16T11:08:13.610Z]                },
+[2026-11-16T11:08:13.610Z]                {
+[2026-11-16T11:08:13.610Z]                  "autoReplaceStringTemplate": "{{depName}}-{{newValue}}",
+[2026-11-16T11:08:13.610Z]                  "currentValue": "latest",
+[2026-11-16T11:08:13.610Z]                  "datasource": "github-runners",
+[2026-11-16T11:08:13.610Z]                  "depName": "ubuntu",
+[2026-11-16T11:08:13.610Z]                  "depType": "github-runner",
+[2026-11-16T11:08:13.610Z]                  "packageName": "ubuntu",
+[2026-11-16T11:08:13.610Z]                  "replaceString": "ubuntu-latest",
+[2026-11-16T11:08:13.610Z]                  "skipReason": "invalid-version",
+[2026-11-16T11:08:13.610Z]                  "updates": []
+[2026-11-16T11:08:13.610Z]                }
+[2026-11-16T11:08:13.610Z]              ],
+[2026-11-16T11:08:13.610Z]              "packageFile": ".github/workflows/deploy-pages.yaml"
+[2026-11-16T11:08:13.610Z]            },
+[2026-11-16T11:08:13.610Z]            {
+[2026-11-16T11:08:13.610Z]              "deps": [
+[2026-11-16T11:08:13.610Z]                {
+[2026-11-16T11:08:13.610Z]                  "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+[2026-11-16T11:08:13.610Z]                  "commitMessageTopic": "{{{depName}}} action",
+[2026-11-16T11:08:13.610Z]                  "currentDigest": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+[2026-11-16T11:08:13.610Z]                  "currentValue": "v7.0.1",
+[2026-11-16T11:08:13.610Z]                  "datasource": "github-tags",
+[2026-11-16T11:08:13.610Z]                  "depName": "actions/checkout",
+[2026-11-16T11:08:13.610Z]                  "depType": "action",
+[2026-11-16T11:08:13.610Z]                  "packageName": "actions/checkout",
+[2026-11-16T11:08:13.610Z]                  "replaceString": "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1",
+[2026-11-16T11:08:13.610Z]                  "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
+[2026-11-16T11:08:13.610Z]                  "updates": [],
+[2026-11-16T11:08:13.610Z]                  "warnings": [],
+[2026-11-16T11:08:13.610Z]                  "sourceUrl": "https://github.com/actions/checkout",
+[2026-11-16T11:08:13.610Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.610Z]                  "currentVersion": "v7.0.1",
+[2026-11-16T11:08:13.610Z]                  "currentVersionTimestamp": "2026-07-20T15:10:05.000Z",
+[2026-11-16T11:08:13.610Z]                  "currentVersionAgeInDays": 118,
+[2026-11-16T11:08:13.610Z]                  "fixedVersion": "v7.0.1"
+[2026-11-16T11:08:13.611Z]                },
+[2026-11-16T11:08:13.611Z]                {
+[2026-11-16T11:08:13.611Z]                  "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+[2026-11-16T11:08:13.611Z]                  "commitMessageTopic": "{{{depName}}} action",
+[2026-11-16T11:08:13.611Z]                  "currentDigest": "6be3c7ed4c21d4f76b208d351d95aac273ebb76d",
+[2026-11-16T11:08:13.611Z]                  "currentValue": "v5.2.4",
+[2026-11-16T11:08:13.611Z]                  "datasource": "github-tags",
+[2026-11-16T11:08:13.611Z]                  "depName": "jdx/mise-action",
+[2026-11-16T11:08:13.611Z]                  "depType": "action",
+[2026-11-16T11:08:13.611Z]                  "packageName": "jdx/mise-action",
+[2026-11-16T11:08:13.611Z]                  "replaceString": "jdx/mise-action@6be3c7ed4c21d4f76b208d351d95aac273ebb76d # v5.2.4",
+[2026-11-16T11:08:13.611Z]                  "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
+[2026-11-16T11:08:13.611Z]                  "updates": [
+[2026-11-16T11:08:13.611Z]                    {
+[2026-11-16T11:08:13.611Z]                      "bucket": "non-major",
+[2026-11-16T11:08:13.611Z]                      "newVersion": "v5.2.9",
+[2026-11-16T11:08:13.611Z]                      "newValue": "v5.2.9",
+[2026-11-16T11:08:13.611Z]                      "newDigest": "236a21c3b91f5db6d4e174b348674a0f0caac06d",
+[2026-11-16T11:08:13.611Z]                      "releaseTimestamp": "2026-11-15T16:43:58.000Z",
+[2026-11-16T11:08:13.611Z]                      "newVersionAgeInDays": 0,
+[2026-11-16T11:08:13.611Z]                      "newMajor": 5,
+[2026-11-16T11:08:13.611Z]                      "newMinor": 2,
+[2026-11-16T11:08:13.611Z]                      "newPatch": 9,
+[2026-11-16T11:08:13.611Z]                      "updateType": "patch",
+[2026-11-16T11:08:13.611Z]                      "isBreaking": false,
+[2026-11-16T11:08:13.611Z]                      "libYears": 0.052811199898528664,
+[2026-11-16T11:08:13.611Z]                      "branchName": "renovate/jdx-mise-action-5.x"
+[2026-11-16T11:08:13.611Z]                    }
+[2026-11-16T11:08:13.611Z]                  ],
+[2026-11-16T11:08:13.611Z]                  "warnings": [],
+[2026-11-16T11:08:13.611Z]                  "sourceUrl": "https://github.com/jdx/mise-action",
+[2026-11-16T11:08:13.611Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.611Z]                  "mostRecentTimestamp": "2026-11-15T16:43:58.000Z",
+[2026-11-16T11:08:13.611Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.611Z]                  "currentVersion": "v5.2.4",
+[2026-11-16T11:08:13.611Z]                  "currentVersionTimestamp": "2026-10-27T10:06:24.000Z",
+[2026-11-16T11:08:13.611Z]                  "currentVersionAgeInDays": 20,
+[2026-11-16T11:08:13.611Z]                  "isSingleVersion": true,
+[2026-11-16T11:08:13.611Z]                  "fixedVersion": "v5.2.4"
+[2026-11-16T11:08:13.611Z]                },
+[2026-11-16T11:08:13.611Z]                {
+[2026-11-16T11:08:13.611Z]                  "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+[2026-11-16T11:08:13.611Z]                  "commitMessageTopic": "{{{depName}}} action",
+[2026-11-16T11:08:13.611Z]                  "currentDigest": "cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+[2026-11-16T11:08:13.611Z]                  "currentValue": "v7.0.2",
+[2026-11-16T11:08:13.611Z]                  "datasource": "github-tags",
+[2026-11-16T11:08:13.611Z]                  "depName": "actions/upload-artifact",
+[2026-11-16T11:08:13.611Z]                  "depType": "action",
+[2026-11-16T11:08:13.611Z]                  "packageName": "actions/upload-artifact",
+[2026-11-16T11:08:13.611Z]                  "replaceString": "actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2",
+[2026-11-16T11:08:13.611Z]                  "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
+[2026-11-16T11:08:13.611Z]                  "updates": [],
+[2026-11-16T11:08:13.611Z]                  "warnings": [],
+[2026-11-16T11:08:13.611Z]                  "sourceUrl": "https://github.com/actions/upload-artifact",
+[2026-11-16T11:08:13.611Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.611Z]                  "currentVersion": "v7.0.2",
+[2026-11-16T11:08:13.611Z]                  "currentVersionTimestamp": "2026-10-07T10:08:14.000Z",
+[2026-11-16T11:08:13.611Z]                  "currentVersionAgeInDays": 40,
+[2026-11-16T11:08:13.611Z]                  "fixedVersion": "v7.0.2"
+[2026-11-16T11:08:13.611Z]                },
+[2026-11-16T11:08:13.611Z]                {
+[2026-11-16T11:08:13.611Z]                  "autoReplaceStringTemplate": "{{depName}}-{{newValue}}",
+[2026-11-16T11:08:13.612Z]                  "currentValue": "latest",
+[2026-11-16T11:08:13.612Z]                  "datasource": "github-runners",
+[2026-11-16T11:08:13.612Z]                  "depName": "ubuntu",
+[2026-11-16T11:08:13.612Z]                  "depType": "github-runner",
+[2026-11-16T11:08:13.612Z]                  "packageName": "ubuntu",
+[2026-11-16T11:08:13.612Z]                  "replaceString": "ubuntu-latest",
+[2026-11-16T11:08:13.612Z]                  "skipReason": "invalid-version",
+[2026-11-16T11:08:13.612Z]                  "updates": []
+[2026-11-16T11:08:13.612Z]                },
+[2026-11-16T11:08:13.612Z]                {
+[2026-11-16T11:08:13.612Z]                  "currentValue": "2026.10.23",
+[2026-11-16T11:08:13.612Z]                  "datasource": "github-release-attachments",
+[2026-11-16T11:08:13.612Z]                  "depName": "jdx/mise",
+[2026-11-16T11:08:13.612Z]                  "depType": "uses-with",
+[2026-11-16T11:08:13.612Z]                  "packageName": "jdx/mise",
+[2026-11-16T11:08:13.612Z]                  "updates": [
+[2026-11-16T11:08:13.612Z]                    {
+[2026-11-16T11:08:13.612Z]                      "bucket": "non-major",
+[2026-11-16T11:08:13.612Z]                      "newVersion": "v2026.11.8",
+[2026-11-16T11:08:13.612Z]                      "newValue": "2026.11.8",
+[2026-11-16T11:08:13.612Z]                      "releaseTimestamp": "2026-11-13T13:07:07.000Z",
+[2026-11-16T11:08:13.612Z]                      "newVersionAgeInDays": 2,
+[2026-11-16T11:08:13.612Z]                      "newMajor": 2026,
+[2026-11-16T11:08:13.612Z]                      "newMinor": 11,
+[2026-11-16T11:08:13.612Z]                      "newPatch": 8,
+[2026-11-16T11:08:13.612Z]                      "updateType": "minor",
+[2026-11-16T11:08:13.612Z]                      "isBreaking": false,
+[2026-11-16T11:08:13.612Z]                      "libYears": 0.0414289066463724,
+[2026-11-16T11:08:13.612Z]                      "branchName": "renovate/jdx-mise-2026.x"
+[2026-11-16T11:08:13.612Z]                    }
+[2026-11-16T11:08:13.612Z]                  ],
+[2026-11-16T11:08:13.612Z]                  "versioning": "semver-coerced",
+[2026-11-16T11:08:13.612Z]                  "warnings": [],
+[2026-11-16T11:08:13.612Z]                  "sourceUrl": "https://github.com/jdx/mise",
+[2026-11-16T11:08:13.612Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.612Z]                  "mostRecentTimestamp": "2026-11-13T13:07:07.000Z",
+[2026-11-16T11:08:13.612Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.612Z]                  "currentVersion": "v2026.10.23",
+[2026-11-16T11:08:13.612Z]                  "currentVersionTimestamp": "2026-10-29T10:12:05.000Z",
+[2026-11-16T11:08:13.612Z]                  "currentVersionAgeInDays": 18,
+[2026-11-16T11:08:13.612Z]                  "isSingleVersion": true,
+[2026-11-16T11:08:13.612Z]                  "fixedVersion": "2026.10.23"
+[2026-11-16T11:08:13.612Z]                }
+[2026-11-16T11:08:13.612Z]              ],
+[2026-11-16T11:08:13.612Z]              "packageFile": ".github/workflows/scheduled-test.yaml"
+[2026-11-16T11:08:13.612Z]            },
+[2026-11-16T11:08:13.612Z]            {
+[2026-11-16T11:08:13.612Z]              "deps": [
+[2026-11-16T11:08:13.612Z]                {
+[2026-11-16T11:08:13.612Z]                  "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+[2026-11-16T11:08:13.612Z]                  "commitMessageTopic": "{{{depName}}} action",
+[2026-11-16T11:08:13.612Z]                  "currentDigest": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+[2026-11-16T11:08:13.612Z]                  "currentValue": "v7.0.1",
+[2026-11-16T11:08:13.612Z]                  "datasource": "github-tags",
+[2026-11-16T11:08:13.612Z]                  "depName": "actions/checkout",
+[2026-11-16T11:08:13.612Z]                  "depType": "action",
+[2026-11-16T11:08:13.612Z]                  "packageName": "actions/checkout",
+[2026-11-16T11:08:13.613Z]                  "replaceString": "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1",
+[2026-11-16T11:08:13.613Z]                  "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
+[2026-11-16T11:08:13.613Z]                  "updates": [],
+[2026-11-16T11:08:13.613Z]                  "warnings": [],
+[2026-11-16T11:08:13.613Z]                  "sourceUrl": "https://github.com/actions/checkout",
+[2026-11-16T11:08:13.613Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.613Z]                  "currentVersion": "v7.0.1",
+[2026-11-16T11:08:13.613Z]                  "currentVersionTimestamp": "2026-07-20T15:10:05.000Z",
+[2026-11-16T11:08:13.613Z]                  "currentVersionAgeInDays": 118,
+[2026-11-16T11:08:13.613Z]                  "fixedVersion": "v7.0.1"
+[2026-11-16T11:08:13.613Z]                },
+[2026-11-16T11:08:13.613Z]                {
+[2026-11-16T11:08:13.613Z]                  "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+[2026-11-16T11:08:13.613Z]                  "commitMessageTopic": "{{{depName}}} action",
+[2026-11-16T11:08:13.613Z]                  "currentDigest": "6be3c7ed4c21d4f76b208d351d95aac273ebb76d",
+[2026-11-16T11:08:13.613Z]                  "currentValue": "v5.2.4",
+[2026-11-16T11:08:13.613Z]                  "datasource": "github-tags",
+[2026-11-16T11:08:13.613Z]                  "depName": "jdx/mise-action",
+[2026-11-16T11:08:13.613Z]                  "depType": "action",
+[2026-11-16T11:08:13.613Z]                  "packageName": "jdx/mise-action",
+[2026-11-16T11:08:13.613Z]                  "replaceString": "jdx/mise-action@6be3c7ed4c21d4f76b208d351d95aac273ebb76d # v5.2.4",
+[2026-11-16T11:08:13.613Z]                  "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
+[2026-11-16T11:08:13.613Z]                  "updates": [
+[2026-11-16T11:08:13.613Z]                    {
+[2026-11-16T11:08:13.613Z]                      "bucket": "non-major",
+[2026-11-16T11:08:13.613Z]                      "newVersion": "v5.2.9",
+[2026-11-16T11:08:13.613Z]                      "newValue": "v5.2.9",
+[2026-11-16T11:08:13.613Z]                      "newDigest": "236a21c3b91f5db6d4e174b348674a0f0caac06d",
+[2026-11-16T11:08:13.613Z]                      "releaseTimestamp": "2026-11-15T16:43:58.000Z",
+[2026-11-16T11:08:13.613Z]                      "newVersionAgeInDays": 0,
+[2026-11-16T11:08:13.613Z]                      "newMajor": 5,
+[2026-11-16T11:08:13.613Z]                      "newMinor": 2,
+[2026-11-16T11:08:13.613Z]                      "newPatch": 9,
+[2026-11-16T11:08:13.613Z]                      "updateType": "patch",
+[2026-11-16T11:08:13.613Z]                      "isBreaking": false,
+[2026-11-16T11:08:13.613Z]                      "libYears": 0.052811199898528664,
+[2026-11-16T11:08:13.613Z]                      "branchName": "renovate/jdx-mise-action-5.x"
+[2026-11-16T11:08:13.613Z]                    }
+[2026-11-16T11:08:13.613Z]                  ],
+[2026-11-16T11:08:13.613Z]                  "warnings": [],
+[2026-11-16T11:08:13.613Z]                  "sourceUrl": "https://github.com/jdx/mise-action",
+[2026-11-16T11:08:13.613Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.613Z]                  "mostRecentTimestamp": "2026-11-15T16:43:58.000Z",
+[2026-11-16T11:08:13.613Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.613Z]                  "currentVersion": "v5.2.4",
+[2026-11-16T11:08:13.613Z]                  "currentVersionTimestamp": "2026-10-27T10:06:24.000Z",
+[2026-11-16T11:08:13.613Z]                  "currentVersionAgeInDays": 20,
+[2026-11-16T11:08:13.613Z]                  "isSingleVersion": true,
+[2026-11-16T11:08:13.613Z]                  "fixedVersion": "v5.2.4"
+[2026-11-16T11:08:13.613Z]                },
+[2026-11-16T11:08:13.614Z]                {
+[2026-11-16T11:08:13.614Z]                  "autoReplaceStringTemplate": "{{depName}}-{{newValue}}",
+[2026-11-16T11:08:13.614Z]                  "currentValue": "latest",
+[2026-11-16T11:08:13.614Z]                  "datasource": "github-runners",
+[2026-11-16T11:08:13.614Z]                  "depName": "ubuntu",
+[2026-11-16T11:08:13.614Z]                  "depType": "github-runner",
+[2026-11-16T11:08:13.614Z]                  "packageName": "ubuntu",
+[2026-11-16T11:08:13.614Z]                  "replaceString": "ubuntu-latest",
+[2026-11-16T11:08:13.614Z]                  "skipReason": "invalid-version",
+[2026-11-16T11:08:13.614Z]                  "updates": []
+[2026-11-16T11:08:13.614Z]                },
+[2026-11-16T11:08:13.614Z]                {
+[2026-11-16T11:08:13.614Z]                  "currentValue": "2026.10.23",
+[2026-11-16T11:08:13.614Z]                  "datasource": "github-release-attachments",
+[2026-11-16T11:08:13.614Z]                  "depName": "jdx/mise",
+[2026-11-16T11:08:13.614Z]                  "depType": "uses-with",
+[2026-11-16T11:08:13.614Z]                  "packageName": "jdx/mise",
+[2026-11-16T11:08:13.614Z]                  "updates": [
+[2026-11-16T11:08:13.614Z]                    {
+[2026-11-16T11:08:13.614Z]                      "bucket": "non-major",
+[2026-11-16T11:08:13.614Z]                      "newVersion": "v2026.11.8",
+[2026-11-16T11:08:13.614Z]                      "newValue": "2026.11.8",
+[2026-11-16T11:08:13.614Z]                      "releaseTimestamp": "2026-11-13T13:07:07.000Z",
+[2026-11-16T11:08:13.614Z]                      "newVersionAgeInDays": 2,
+[2026-11-16T11:08:13.614Z]                      "newMajor": 2026,
+[2026-11-16T11:08:13.614Z]                      "newMinor": 11,
+[2026-11-16T11:08:13.614Z]                      "newPatch": 8,
+[2026-11-16T11:08:13.614Z]                      "updateType": "minor",
+[2026-11-16T11:08:13.614Z]                      "isBreaking": false,
+[2026-11-16T11:08:13.614Z]                      "libYears": 0.0414289066463724,
+[2026-11-16T11:08:13.614Z]                      "branchName": "renovate/jdx-mise-2026.x"
+[2026-11-16T11:08:13.614Z]                    }
+[2026-11-16T11:08:13.614Z]                  ],
+[2026-11-16T11:08:13.614Z]                  "versioning": "semver-coerced",
+[2026-11-16T11:08:13.614Z]                  "warnings": [],
+[2026-11-16T11:08:13.614Z]                  "sourceUrl": "https://github.com/jdx/mise",
+[2026-11-16T11:08:13.614Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.614Z]                  "mostRecentTimestamp": "2026-11-13T13:07:07.000Z",
+[2026-11-16T11:08:13.614Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.614Z]                  "currentVersion": "v2026.10.23",
+[2026-11-16T11:08:13.614Z]                  "currentVersionTimestamp": "2026-10-29T10:12:05.000Z",
+[2026-11-16T11:08:13.614Z]                  "currentVersionAgeInDays": 18,
+[2026-11-16T11:08:13.614Z]                  "isSingleVersion": true,
+[2026-11-16T11:08:13.614Z]                  "fixedVersion": "2026.10.23"
+[2026-11-16T11:08:13.614Z]                }
+[2026-11-16T11:08:13.614Z]              ],
+[2026-11-16T11:08:13.614Z]              "packageFile": ".github/workflows/test.yaml"
+[2026-11-16T11:08:13.614Z]            }
+[2026-11-16T11:08:13.614Z]          ],
+[2026-11-16T11:08:13.614Z]          "mise": [
+[2026-11-16T11:08:13.614Z]            {
+[2026-11-16T11:08:13.614Z]              "deps": [
+[2026-11-16T11:08:13.614Z]                {
+[2026-11-16T11:08:13.614Z]                  "currentValue": "2.71.1",
+[2026-11-16T11:08:13.614Z]                  "datasource": "npm",
+[2026-11-16T11:08:13.614Z]                  "depName": "npm:@redocly/cli",
+[2026-11-16T11:08:13.614Z]                  "depType": "tools",
+[2026-11-16T11:08:13.614Z]                  "packageName": "@redocly/cli",
+[2026-11-16T11:08:13.614Z]                  "updates": [
+[2026-11-16T11:08:13.614Z]                    {
+[2026-11-16T11:08:13.614Z]                      "bucket": "non-major",
+[2026-11-16T11:08:13.614Z]                      "newVersion": "2.78.0",
+[2026-11-16T11:08:13.614Z]                      "newValue": "2.78.0",
+[2026-11-16T11:08:13.614Z]                      "hasAttestation": true,
+[2026-11-16T11:08:13.614Z]                      "downloadUrl": "https://registry.npmjs.org/@redocly/cli/-/cli-2.78.0.tgz",
+[2026-11-16T11:08:13.614Z]                      "newDigest": "sha512-ozrbcxLabQUxQr62nt0R8HE2T7kmlmIu1hTa/hyN1h5iht9v3Bh4fA2FXLj4wEhtN4xmdqoySHfba8+vFbONJA==",
+[2026-11-16T11:08:13.614Z]                      "releaseTimestamp": "2026-11-12T15:05:34.783Z",
+[2026-11-16T11:08:13.614Z]                      "newVersionAgeInDays": 3,
+[2026-11-16T11:08:13.614Z]                      "newMajor": 2,
+[2026-11-16T11:08:13.614Z]                      "newMinor": 78,
+[2026-11-16T11:08:13.614Z]                      "newPatch": 0,
+[2026-11-16T11:08:13.614Z]                      "updateType": "minor",
+[2026-11-16T11:08:13.614Z]                      "isBreaking": false,
+[2026-11-16T11:08:13.614Z]                      "pendingVersions": ["2.79.0"],
+[2026-11-16T11:08:13.614Z]                      "libYears": 0.046632270706494165,
+[2026-11-16T11:08:13.614Z]                      "branchName": "renovate/npm-redocly-cli-2.x"
+[2026-11-16T11:08:13.614Z]                    }
+[2026-11-16T11:08:13.615Z]                  ],
+[2026-11-16T11:08:13.615Z]                  "versioning": "npm",
+[2026-11-16T11:08:13.615Z]                  "warnings": [],
+[2026-11-16T11:08:13.615Z]                  "sourceUrl": "https://github.com/Redocly/redocly-cli",
+[2026-11-16T11:08:13.615Z]                  "registryUrl": "https://registry.npmjs.org",
+[2026-11-16T11:08:13.615Z]                  "currentVersion": "2.71.1",
+[2026-11-16T11:08:13.615Z]                  "currentVersionTimestamp": "2026-10-26T14:35:39.494Z",
+[2026-11-16T11:08:13.615Z]                  "currentVersionAgeInDays": 20,
+[2026-11-16T11:08:13.615Z]                  "isSingleVersion": true,
+[2026-11-16T11:08:13.615Z]                  "fixedVersion": "2.71.1"
+[2026-11-16T11:08:13.615Z]                },
+[2026-11-16T11:08:13.615Z]                {
+[2026-11-16T11:08:13.615Z]                  "currentValue": "0.9.0",
+[2026-11-16T11:08:13.615Z]                  "datasource": "pypi",
+[2026-11-16T11:08:13.615Z]                  "depName": "pipx:openapi-spec-validator",
+[2026-11-16T11:08:13.615Z]                  "depType": "tools",
+[2026-11-16T11:08:13.615Z]                  "packageName": "openapi-spec-validator",
+[2026-11-16T11:08:13.615Z]                  "updates": [],
+[2026-11-16T11:08:13.615Z]                  "versioning": "pep440",
+[2026-11-16T11:08:13.615Z]                  "warnings": [],
+[2026-11-16T11:08:13.615Z]                  "sourceUrl": "https://github.com/python-openapi/openapi-spec-validator",
+[2026-11-16T11:08:13.615Z]                  "registryUrl": "https://pypi.org/pypi",
+[2026-11-16T11:08:13.615Z]                  "mostRecentTimestamp": "2026-05-20T09:23:17.000Z",
+[2026-11-16T11:08:13.615Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.615Z]                  "currentVersion": "0.9.0",
+[2026-11-16T11:08:13.615Z]                  "currentVersionTimestamp": "2026-05-20T09:23:17.000Z",
+[2026-11-16T11:08:13.615Z]                  "currentVersionAgeInDays": 180,
+[2026-11-16T11:08:13.615Z]                  "fixedVersion": "0.9.0"
+[2026-11-16T11:08:13.615Z]                },
+[2026-11-16T11:08:13.615Z]                {
+[2026-11-16T11:08:13.615Z]                  "currentValue": "4.7.0",
+[2026-11-16T11:08:13.615Z]                  "datasource": "pypi",
+[2026-11-16T11:08:13.615Z]                  "depName": "pipx:pre-commit",
+[2026-11-16T11:08:13.615Z]                  "depType": "tools",
+[2026-11-16T11:08:13.615Z]                  "packageName": "pre-commit",
+[2026-11-16T11:08:13.615Z]                  "updates": [],
+[2026-11-16T11:08:13.615Z]                  "versioning": "pep440",
+[2026-11-16T11:08:13.615Z]                  "warnings": [],
+[2026-11-16T11:08:13.615Z]                  "sourceUrl": "https://github.com/pre-commit/pre-commit",
+[2026-11-16T11:08:13.615Z]                  "registryUrl": "https://pypi.org/pypi",
+[2026-11-16T11:08:13.615Z]                  "mostRecentTimestamp": "2026-10-12T20:45:38.000Z",
+[2026-11-16T11:08:13.615Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.615Z]                  "currentVersion": "4.7.0",
+[2026-11-16T11:08:13.615Z]                  "currentVersionTimestamp": "2026-10-12T20:45:38.000Z",
+[2026-11-16T11:08:13.615Z]                  "currentVersionAgeInDays": 34,
+[2026-11-16T11:08:13.615Z]                  "fixedVersion": "4.7.0"
+[2026-11-16T11:08:13.615Z]                },
+[2026-11-16T11:08:13.615Z]                {
+[2026-11-16T11:08:13.615Z]                  "currentValue": "4.1.3",
+[2026-11-16T11:08:13.615Z]                  "datasource": "pypi",
+[2026-11-16T11:08:13.615Z]                  "depName": "pipx:schemathesis",
+[2026-11-16T11:08:13.615Z]                  "depType": "tools",
+[2026-11-16T11:08:13.615Z]                  "packageName": "schemathesis",
+[2026-11-16T11:08:13.615Z]                  "updates": [
+[2026-11-16T11:08:13.615Z]                    {
+[2026-11-16T11:08:13.615Z]                      "bucket": "non-major",
+[2026-11-16T11:08:13.615Z]                      "newVersion": "4.33.4",
+[2026-11-16T11:08:13.615Z]                      "newValue": "4.33.4",
+[2026-11-16T11:08:13.615Z]                      "releaseTimestamp": "2026-11-12T16:27:38.000Z",
+[2026-11-16T11:08:13.615Z]                      "newVersionAgeInDays": 3,
+[2026-11-16T11:08:13.615Z]                      "newMajor": 4,
+[2026-11-16T11:08:13.615Z]                      "newMinor": 33,
+[2026-11-16T11:08:13.615Z]                      "newPatch": 4,
+[2026-11-16T11:08:13.615Z]                      "updateType": "minor",
+[2026-11-16T11:08:13.615Z]                      "isBreaking": false,
+[2026-11-16T11:08:13.615Z]                      "libYears": 1.209347697869102,
+[2026-11-16T11:08:13.615Z]                      "branchName": "renovate/pipx-schemathesis-4.x"
+[2026-11-16T11:08:13.615Z]                    }
+[2026-11-16T11:08:13.615Z]                  ],
+[2026-11-16T11:08:13.615Z]                  "versioning": "pep440",
+[2026-11-16T11:08:13.615Z]                  "warnings": [],
+[2026-11-16T11:08:13.615Z]                  "sourceUrl": "https://github.com/schemathesis/schemathesis",
+[2026-11-16T11:08:13.615Z]                  "registryUrl": "https://pypi.org/pypi",
+[2026-11-16T11:08:13.615Z]                  "changelogUrl": "https://github.com/schemathesis/schemathesis/blob/master/CHANGELOG.md",
+[2026-11-16T11:08:13.615Z]                  "mostRecentTimestamp": "2026-11-12T16:27:38.000Z",
+[2026-11-16T11:08:13.615Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.615Z]                  "currentVersion": "4.1.3",
+[2026-11-16T11:08:13.615Z]                  "currentVersionTimestamp": "2025-08-28T06:34:29.000Z",
+[2026-11-16T11:08:13.615Z]                  "currentVersionAgeInDays": 445,
+[2026-11-16T11:08:13.615Z]                  "isSingleVersion": true,
+[2026-11-16T11:08:13.615Z]                  "fixedVersion": "4.1.3"
+[2026-11-16T11:08:13.616Z]                },
+[2026-11-16T11:08:13.616Z]                {
+[2026-11-16T11:08:13.616Z]                  "currentValue": "24.22.2",
+[2026-11-16T11:08:13.616Z]                  "datasource": "node-version",
+[2026-11-16T11:08:13.616Z]                  "depName": "node",
+[2026-11-16T11:08:13.616Z]                  "depType": "tools",
+[2026-11-16T11:08:13.616Z]                  "packageName": "node",
+[2026-11-16T11:08:13.616Z]                  "updates": [
+[2026-11-16T11:08:13.616Z]                    {
+[2026-11-16T11:08:13.616Z]                      "bucket": "non-major",
+[2026-11-16T11:08:13.616Z]                      "newVersion": "v24.22.3",
+[2026-11-16T11:08:13.616Z]                      "newValue": "24.22.3",
+[2026-11-16T11:08:13.616Z]                      "releaseTimestamp": "2026-11-10T00:00:00.000Z",
+[2026-11-16T11:08:13.616Z]                      "newVersionAgeInDays": 6,
+[2026-11-16T11:08:13.616Z]                      "newMajor": 24,
+[2026-11-16T11:08:13.616Z]                      "newMinor": 22,
+[2026-11-16T11:08:13.616Z]                      "newPatch": 3,
+[2026-11-16T11:08:13.616Z]                      "updateType": "patch",
+[2026-11-16T11:08:13.616Z]                      "isBreaking": false,
+[2026-11-16T11:08:13.616Z]                      "libYears": 0.038356164383561646,
+[2026-11-16T11:08:13.616Z]                      "branchName": "renovate/node-24.x"
+[2026-11-16T11:08:13.616Z]                    },
+[2026-11-16T11:08:13.616Z]                    {
+[2026-11-16T11:08:13.616Z]                      "bucket": "major",
+[2026-11-16T11:08:13.616Z]                      "newVersion": "v26.13.1",
+[2026-11-16T11:08:13.616Z]                      "newValue": "26.13.1",
+[2026-11-16T11:08:13.616Z]                      "releaseTimestamp": "2026-11-10T00:00:00.000Z",
+[2026-11-16T11:08:13.616Z]                      "newVersionAgeInDays": 6,
+[2026-11-16T11:08:13.616Z]                      "newMajor": 26,
+[2026-11-16T11:08:13.616Z]                      "newMinor": 13,
+[2026-11-16T11:08:13.616Z]                      "newPatch": 1,
+[2026-11-16T11:08:13.616Z]                      "updateType": "major",
+[2026-11-16T11:08:13.616Z]                      "isBreaking": true,
+[2026-11-16T11:08:13.616Z]                      "libYears": 0.038356164383561646,
+[2026-11-16T11:08:13.616Z]                      "branchName": "renovate/node-26.x"
+[2026-11-16T11:08:13.616Z]                    }
+[2026-11-16T11:08:13.616Z]                  ],
+[2026-11-16T11:08:13.616Z]                  "versioning": "node",
+[2026-11-16T11:08:13.616Z]                  "warnings": [],
+[2026-11-16T11:08:13.616Z]                  "sourceUrl": "https://github.com/nodejs/node",
+[2026-11-16T11:08:13.616Z]                  "registryUrl": "https://nodejs.org/dist",
+[2026-11-16T11:08:13.616Z]                  "homepage": "https://nodejs.org",
+[2026-11-16T11:08:13.616Z]                  "mostRecentTimestamp": "2026-11-12T00:00:00.000Z",
+[2026-11-16T11:08:13.616Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.616Z]                  "currentVersion": "v24.22.2",
+[2026-11-16T11:08:13.616Z]                  "currentVersionTimestamp": "2026-10-27T00:00:00.000Z",
+[2026-11-16T11:08:13.616Z]                  "currentVersionAgeInDays": 20,
+[2026-11-16T11:08:13.616Z]                  "isSingleVersion": true,
+[2026-11-16T11:08:13.616Z]                  "fixedVersion": "24.22.2"
+[2026-11-16T11:08:13.616Z]                },
+[2026-11-16T11:08:13.616Z]                {
+[2026-11-16T11:08:13.616Z]                  "currentValue": "1.18.4",
+[2026-11-16T11:08:13.616Z]                  "datasource": "github-releases",
+[2026-11-16T11:08:13.616Z]                  "depName": "pipx",
+[2026-11-16T11:08:13.616Z]                  "depType": "tools",
+[2026-11-16T11:08:13.616Z]                  "packageName": "pypa/pipx",
+[2026-11-16T11:08:13.616Z]                  "updates": [
+[2026-11-16T11:08:13.616Z]                    {
+[2026-11-16T11:08:13.616Z]                      "bucket": "non-major",
+[2026-11-16T11:08:13.616Z]                      "newVersion": "1.18.16",
+[2026-11-16T11:08:13.616Z]                      "newValue": "1.18.16",
+[2026-11-16T11:08:13.616Z]                      "releaseTimestamp": "2026-11-07T08:17:15.000Z",
+[2026-11-16T11:08:13.616Z]                      "newVersionAgeInDays": 9,
+[2026-11-16T11:08:13.616Z]                      "newMajor": 1,
+[2026-11-16T11:08:13.616Z]                      "newMinor": 18,
+[2026-11-16T11:08:13.616Z]                      "newPatch": 16,
+[2026-11-16T11:08:13.616Z]                      "updateType": "patch",
+[2026-11-16T11:08:13.616Z]                      "isBreaking": false,
+[2026-11-16T11:08:13.616Z]                      "libYears": 0.05498176686960934,
+[2026-11-16T11:08:13.616Z]                      "branchName": "renovate/pipx-1.x"
+[2026-11-16T11:08:13.616Z]                    }
+[2026-11-16T11:08:13.616Z]                  ],
+[2026-11-16T11:08:13.616Z]                  "versioning": "semver-coerced",
+[2026-11-16T11:08:13.616Z]                  "warnings": [],
+[2026-11-16T11:08:13.616Z]                  "sourceUrl": "https://github.com/pypa/pipx",
+[2026-11-16T11:08:13.616Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.616Z]                  "mostRecentTimestamp": "2026-11-07T08:17:15.000Z",
+[2026-11-16T11:08:13.616Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.616Z]                  "currentVersion": "1.18.4",
+[2026-11-16T11:08:13.616Z]                  "currentVersionTimestamp": "2026-10-18T06:38:50.000Z",
+[2026-11-16T11:08:13.616Z]                  "currentVersionAgeInDays": 29,
+[2026-11-16T11:08:13.616Z]                  "isSingleVersion": true,
+[2026-11-16T11:08:13.616Z]                  "fixedVersion": "1.18.4"
+[2026-11-16T11:08:13.616Z]                },
+[2026-11-16T11:08:13.616Z]                {
+[2026-11-16T11:08:13.616Z]                  "currentValue": "3.15.2",
+[2026-11-16T11:08:13.616Z]                  "datasource": "github-tags",
+[2026-11-16T11:08:13.616Z]                  "depName": "python",
+[2026-11-16T11:08:13.616Z]                  "depType": "tools",
+[2026-11-16T11:08:13.616Z]                  "extractVersion": "^v(?<version>\\S+)",
+[2026-11-16T11:08:13.616Z]                  "packageName": "python/cpython",
+[2026-11-16T11:08:13.616Z]                  "updates": [],
+[2026-11-16T11:08:13.616Z]                  "versioning": "semver-coerced",
+[2026-11-16T11:08:13.616Z]                  "warnings": [],
+[2026-11-16T11:08:13.616Z]                  "sourceUrl": "https://github.com/python/cpython",
+[2026-11-16T11:08:13.617Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.617Z]                  "mostRecentTimestamp": "2026-11-10T16:57:17.000Z",
+[2026-11-16T11:08:13.617Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.617Z]                  "currentVersion": "3.15.2",
+[2026-11-16T11:08:13.617Z]                  "currentVersionTimestamp": "2026-10-25T16:57:52.000Z",
+[2026-11-16T11:08:13.617Z]                  "currentVersionAgeInDays": 21,
+[2026-11-16T11:08:13.617Z]                  "fixedVersion": "3.15.2"
+[2026-11-16T11:08:13.617Z]                },
+[2026-11-16T11:08:13.617Z]                {
+[2026-11-16T11:08:13.617Z]                  "currentValue": "4.54.1",
+[2026-11-16T11:08:13.617Z]                  "datasource": "github-releases",
+[2026-11-16T11:08:13.617Z]                  "depName": "yq",
+[2026-11-16T11:08:13.617Z]                  "depType": "tools",
+[2026-11-16T11:08:13.617Z]                  "extractVersion": "^v(?<version>\\S+)",
+[2026-11-16T11:08:13.617Z]                  "packageName": "mikefarah/yq",
+[2026-11-16T11:08:13.617Z]                  "updates": [
+[2026-11-16T11:08:13.617Z]                    {
+[2026-11-16T11:08:13.617Z]                      "bucket": "non-major",
+[2026-11-16T11:08:13.617Z]                      "newVersion": "4.54.3",
+[2026-11-16T11:08:13.617Z]                      "newValue": "4.54.3",
+[2026-11-16T11:08:13.617Z]                      "releaseTimestamp": "2026-11-09T04:51:53.000Z",
+[2026-11-16T11:08:13.617Z]                      "newVersionAgeInDays": 7,
+[2026-11-16T11:08:13.617Z]                      "newMajor": 4,
+[2026-11-16T11:08:13.617Z]                      "newMinor": 54,
+[2026-11-16T11:08:13.617Z]                      "newPatch": 3,
+[2026-11-16T11:08:13.617Z]                      "updateType": "patch",
+[2026-11-16T11:08:13.617Z]                      "isBreaking": false,
+[2026-11-16T11:08:13.617Z]                      "libYears": 0.11238467148655505,
+[2026-11-16T11:08:13.617Z]                      "branchName": "renovate/yq-4.x"
+[2026-11-16T11:08:13.617Z]                    }
+[2026-11-16T11:08:13.617Z]                  ],
+[2026-11-16T11:08:13.617Z]                  "versioning": "semver-coerced",
+[2026-11-16T11:08:13.617Z]                  "warnings": [],
+[2026-11-16T11:08:13.617Z]                  "sourceUrl": "https://github.com/mikefarah/yq",
+[2026-11-16T11:08:13.617Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.617Z]                  "mostRecentTimestamp": "2026-11-09T04:51:53.000Z",
+[2026-11-16T11:08:13.617Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.617Z]                  "currentVersion": "4.54.1",
+[2026-11-16T11:08:13.617Z]                  "currentVersionTimestamp": "2026-09-29T04:22:30.000Z",
+[2026-11-16T11:08:13.617Z]                  "currentVersionAgeInDays": 48,
+[2026-11-16T11:08:13.617Z]                  "isSingleVersion": true,
+[2026-11-16T11:08:13.617Z]                  "fixedVersion": "4.54.1"
+[2026-11-16T11:08:13.617Z]                },
+[2026-11-16T11:08:13.617Z]                {
+[2026-11-16T11:08:13.617Z]                  "currentValue": "1.8.2",
+[2026-11-16T11:08:13.617Z]                  "datasource": "github-releases",
+[2026-11-16T11:08:13.617Z]                  "depName": "jq",
+[2026-11-16T11:08:13.617Z]                  "depType": "tools",
+[2026-11-16T11:08:13.617Z]                  "extractVersion": "^jq-(?<version>\\S+)",
+[2026-11-16T11:08:13.617Z]                  "packageName": "jqlang/jq",
+[2026-11-16T11:08:13.617Z]                  "updates": [],
+[2026-11-16T11:08:13.617Z]                  "versioning": "semver-coerced",
+[2026-11-16T11:08:13.617Z]                  "warnings": [],
+[2026-11-16T11:08:13.617Z]                  "sourceUrl": "https://github.com/jqlang/jq",
+[2026-11-16T11:08:13.617Z]                  "registryUrl": "https://github.com",
+[2026-11-16T11:08:13.617Z]                  "mostRecentTimestamp": "2026-06-20T14:11:27.000Z",
+[2026-11-16T11:08:13.617Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.617Z]                  "currentVersion": "1.8.2",
+[2026-11-16T11:08:13.617Z]                  "currentVersionTimestamp": "2026-06-20T14:11:27.000Z",
+[2026-11-16T11:08:13.617Z]                  "currentVersionAgeInDays": 148,
+[2026-11-16T11:08:13.617Z]                  "fixedVersion": "1.8.2"
+[2026-11-16T11:08:13.617Z]                },
+[2026-11-16T11:08:13.617Z]                {
+[2026-11-16T11:08:13.617Z]                  "currentValue": "1.0.1",
+[2026-11-16T11:08:13.617Z]                  "datasource": "pypi",
+[2026-11-16T11:08:13.617Z]                  "depName": "pipx:jinja2-cli",
+[2026-11-16T11:08:13.617Z]                  "depType": "tools",
+[2026-11-16T11:08:13.617Z]                  "packageName": "jinja2-cli",
+[2026-11-16T11:08:13.617Z]                  "updates": [],
+[2026-11-16T11:08:13.617Z]                  "versioning": "pep440",
+[2026-11-16T11:08:13.617Z]                  "warnings": [],
+[2026-11-16T11:08:13.617Z]                  "sourceUrl": "https://github.com/mattrobenolt/jinja2-cli",
+[2026-11-16T11:08:13.617Z]                  "registryUrl": "https://pypi.org/pypi",
+[2026-11-16T11:08:13.617Z]                  "mostRecentTimestamp": "2026-04-05T19:59:23.000Z",
+[2026-11-16T11:08:13.617Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.617Z]                  "currentVersion": "1.0.1",
+[2026-11-16T11:08:13.617Z]                  "currentVersionTimestamp": "2026-04-05T19:59:23.000Z",
+[2026-11-16T11:08:13.617Z]                  "currentVersionAgeInDays": 224,
+[2026-11-16T11:08:13.617Z]                  "fixedVersion": "1.0.1"
+[2026-11-16T11:08:13.617Z]                },
+[2026-11-16T11:08:13.617Z]                {
+[2026-11-16T11:08:13.617Z]                  "currentValue": "0.35.4",
+[2026-11-16T11:08:13.617Z]                  "datasource": "npm",
+[2026-11-16T11:08:13.617Z]                  "depName": "npm:@quobix/vacuum",
+[2026-11-16T11:08:13.617Z]                  "depType": "tools",
+[2026-11-16T11:08:13.617Z]                  "packageName": "@quobix/vacuum",
+[2026-11-16T11:08:13.617Z]                  "updates": [
+[2026-11-16T11:08:13.617Z]                    {
+[2026-11-16T11:08:13.617Z]                      "bucket": "non-major",
+[2026-11-16T11:08:13.617Z]                      "newVersion": "0.40.1",
+[2026-11-16T11:08:13.617Z]                      "newValue": "0.40.1",
+[2026-11-16T11:08:13.617Z]                      "hasAttestation": true,
+[2026-11-16T11:08:13.617Z]                      "downloadUrl": "https://registry.npmjs.org/@quobix/vacuum/-/vacuum-0.40.1.tgz",
+[2026-11-16T11:08:13.617Z]                      "newDigest": "sha512-P7ggbW9gctBSbIEzX/rjYR15uoturEEK4MN5+p99MIvGWOhSvogtCwLim4l+JA4hyuH2DLvDmw0OofbYaz7XUg==",
+[2026-11-16T11:08:13.618Z]                      "releaseTimestamp": "2026-11-12T22:20:07.185Z",
+[2026-11-16T11:08:13.618Z]                      "newVersionAgeInDays": 3,
+[2026-11-16T11:08:13.618Z]                      "newMajor": 0,
+[2026-11-16T11:08:13.618Z]                      "newMinor": 40,
+[2026-11-16T11:08:13.618Z]                      "newPatch": 1,
+[2026-11-16T11:08:13.618Z]                      "updateType": "minor",
+[2026-11-16T11:08:13.618Z]                      "isBreaking": true,
+[2026-11-16T11:08:13.618Z]                      "pendingVersions": ["0.41.0"],
+[2026-11-16T11:08:13.618Z]                      "libYears": 0.050100748129122276,
+[2026-11-16T11:08:13.618Z]                      "branchName": "renovate/npm-quobix-vacuum-0.x"
+[2026-11-16T11:08:13.618Z]                    }
+[2026-11-16T11:08:13.618Z]                  ],
+[2026-11-16T11:08:13.618Z]                  "versioning": "npm",
+[2026-11-16T11:08:13.618Z]                  "warnings": [],
+[2026-11-16T11:08:13.618Z]                  "sourceUrl": "https://github.com/daveshanley/vacuum",
+[2026-11-16T11:08:13.618Z]                  "registryUrl": "https://registry.npmjs.org",
+[2026-11-16T11:08:13.618Z]                  "homepage": "https://quobix.com/vacuum",
+[2026-11-16T11:08:13.618Z]                  "mostRecentTimestamp": "2026-11-14T13:27:50.153Z",
+[2026-11-16T11:08:13.618Z]                  "isAbandoned": false,
+[2026-11-16T11:08:13.618Z]                  "currentVersion": "0.35.4",
+[2026-11-16T11:08:13.618Z]                  "currentVersionTimestamp": "2026-10-25T15:27:09.992Z",
+[2026-11-16T11:08:13.618Z]                  "currentVersionAgeInDays": 21,
+[2026-11-16T11:08:13.618Z]                  "isSingleVersion": true,
+[2026-11-16T11:08:13.618Z]                  "fixedVersion": "0.35.4"
+[2026-11-16T11:08:13.618Z]                }
+[2026-11-16T11:08:13.618Z]              ],
+[2026-11-16T11:08:13.618Z]              "packageFile": "mise.toml",
+[2026-11-16T11:08:13.618Z]              "sharedConstraintsScope": {
+[2026-11-16T11:08:13.618Z]                "constraints": {
+[2026-11-16T11:08:13.618Z]                  "node": {"depName": "node", "value": "24.22.2"},
+[2026-11-16T11:08:13.618Z]                  "python": {"depName": "python", "value": "3.15.2"}
+[2026-11-16T11:08:13.618Z]                },
+[2026-11-16T11:08:13.618Z]                "directory": "",
+[2026-11-16T11:08:13.618Z]                "precedence": 7
+[2026-11-16T11:08:13.618Z]              }
+[2026-11-16T11:08:13.618Z]            }
+[2026-11-16T11:08:13.618Z]          ],
+[2026-11-16T11:08:13.618Z]          "renovate-config": [
+[2026-11-16T11:08:13.618Z]            {
+[2026-11-16T11:08:13.618Z]              "deps": [
+[2026-11-16T11:08:13.618Z]                {
+[2026-11-16T11:08:13.618Z]                  "depName": "idelsink/renovate-runner",
+[2026-11-16T11:08:13.618Z]                  "packageName": "idelsink/renovate-runner",
+[2026-11-16T11:08:13.618Z]                  "skipReason": "unspecified-version",
+[2026-11-16T11:08:13.618Z]                  "updates": []
+[2026-11-16T11:08:13.618Z]                }
+[2026-11-16T11:08:13.618Z]              ],
+[2026-11-16T11:08:13.618Z]              "packageFile": "renovate.json"
+[2026-11-16T11:08:13.618Z]            }
+[2026-11-16T11:08:13.618Z]          ]
+[2026-11-16T11:08:13.618Z]        }
+[2026-11-16T11:08:13.619Z] DEBUG: detectSemanticCommits() (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: semanticCommits: returning "enabled" from cache (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: processRepo() (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: Processing 10 branches: renovate/jdx-mise-2026.x, renovate/jdx-mise-action-5.x, renovate/lock-file-maintenance, renovate/node-24.x, renovate/node-26.x, renovate/npm-quobix-vacuum-0.x, renovate/npm-redocly-cli-2.x, renovate/pipx-1.x, renovate/pipx-schemathesis-4.x, renovate/yq-4.x (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: getBranchPr(renovate/pipx-1.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: findPr(renovate/pipx-1.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: Found PR #35 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: getBranchPr(renovate/yq-4.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: findPr(renovate/yq-4.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: getBranchPr(renovate/jdx-mise-action-5.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: findPr(renovate/jdx-mise-action-5.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: getBranchPr(renovate/node-24.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: findPr(renovate/node-24.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: getBranchPr(renovate/jdx-mise-2026.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: findPr(renovate/jdx-mise-2026.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: getBranchPr(renovate/npm-quobix-vacuum-0.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: findPr(renovate/npm-quobix-vacuum-0.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: getBranchPr(renovate/npm-redocly-cli-2.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: findPr(renovate/npm-redocly-cli-2.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: getBranchPr(renovate/pipx-schemathesis-4.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: findPr(renovate/pipx-schemathesis-4.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: Found PR #27 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: getBranchPr(renovate/node-26.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: findPr(renovate/node-26.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: Found PR #38 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: getBranchPr(renovate/lock-file-maintenance) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: findPr(renovate/lock-file-maintenance, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: 3 PRs are currently open (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: ConcurrentPRs count = 3 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: 0 PRs are currently open (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: VulnerabilityConcurrentPRs count = 0 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: 6 already existing branches found. (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: Branches count = 6 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: 0 already existing branches found. (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: VulnerabilityBranches count = 0 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: Calculating PRs created so far in this hour currentHourStart=2026-11-16T11:00:00.000Z (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: 0 PRs have been created so far in this hour. (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: HourlyPRs count = 0 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: Calculating commits so far in this hour currentHourStart=2026-11-16T11:00:00.000Z, for 10 branches (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: getAllBranchUpdateDates (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.619Z] DEBUG: syncGit(): Initializing git repository into /tmp/renovate/repos/github/idelsink/ikea-openapi (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.620Z] DEBUG: Performing blobless clone (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.892Z] DEBUG: git clone completed (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.892Z]        "durationMs": 273
+[2026-11-16T11:08:13.921Z] DEBUG: latest repository commit (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.921Z]        "latestCommit": {
+[2026-11-16T11:08:13.921Z]          "hash": "2b5803210da191ae3b12bc8832f9ac78c23e7260",
+[2026-11-16T11:08:13.921Z]          "date": "2026-10-30T12:02:13+01:00",
+[2026-11-16T11:08:13.921Z]          "message": "chore(deps): update dependency npm:@redocly/cli to v2.71.1 (#6)",
+[2026-11-16T11:08:13.921Z]          "refs": "HEAD -> main, origin/main, origin/HEAD",
+[2026-11-16T11:08:13.921Z]          "body": "Co-authored-by: renovate-iws[bot] <260228940+renovate-iws[bot]@users.noreply.github.com>",
+[2026-11-16T11:08:13.921Z]          "author_name": "renovate-iws[bot]",
+[2026-11-16T11:08:13.921Z]          "author_email": "260228940+renovate-iws[bot]@users.noreply.github.com"
+[2026-11-16T11:08:13.921Z]        }
+[2026-11-16T11:08:13.933Z] DEBUG: Current branch SHA: 2b5803210da191ae3b12bc8832f9ac78c23e7260 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.947Z] DEBUG: 0 commits so far in this hour. (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.947Z] DEBUG: HourlyCommits count = 0 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:13.948Z] DEBUG: syncBranchState() (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.948Z] DEBUG: branch.isUpToDate(): using cached result "true" (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.950Z] DEBUG: getBranchPr(renovate/pipx-1.x) (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.950Z] DEBUG: findPr(renovate/pipx-1.x, undefined, open) (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.950Z] DEBUG: Found PR #35 (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.951Z] DEBUG: branchExists=true (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.951Z] DEBUG: dependencyDashboardCheck=undefined (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.951Z] DEBUG: PR rebase requested=false (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.961Z] DEBUG: Open PR Count: 3, Existing Branch Count: 6, Hourly PR Count: 0, Hourly Commit Count: 0 (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.961Z] DEBUG: commitHourlyLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.961Z]        "limits": [{"depName": "pipx", "commitHourlyLimit": 0}]
+[2026-11-16T11:08:13.962Z] DEBUG: commitHourlyLimit of this branch is unlimited, because at least one of the upgrade has it's commitHourlyLimit set to "No limit" ie. 0 or null (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.962Z] DEBUG: Checking if PR has been edited (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.963Z] DEBUG: branch.isModified(): using cached result "false" (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.963Z] DEBUG: Found existing branch PR #35 (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.963Z] DEBUG: Checking schedule(schedule=before 6am on Monday, tz=null, now=2026-11-16T11:08:13.963Z) (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.966Z] DEBUG: Checking 1 schedule(s) (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.967Z] DEBUG: Checking schedule "before 6am on Monday" (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.967Z]        "parsedSchedule": {"schedules": [{"t_b": [21600], "d": [2]}], "exceptions": [], "error": -1}
+[2026-11-16T11:08:13.968Z] DEBUG: Package not scheduled (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:13.968Z] DEBUG: Branch + PR exists but is not scheduled -- will update if necessary (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.224Z] DEBUG: http cache: saving https://api.github.com/repos/idelsink/ikea-openapi/rules/branches/main (etag="3cfc6e1bd72579c901e58d8c342330f274d0b3b83cb3e46e54c7fc6d41b65f3d", lastModified=undefined) (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.442Z] DEBUG: GET https://api.github.com/repos/idelsink/ikea-openapi/branches/main/protection = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=403 retryCount=0, duration=213) (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.444Z] DEBUG: GitHub failure: Resource not accessible by integration (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.444Z]        "err": {
+[2026-11-16T11:08:14.444Z]          "name": "HTTPError",
+[2026-11-16T11:08:14.444Z]          "code": "ERR_NON_2XX_3XX_RESPONSE",
+[2026-11-16T11:08:14.444Z]          "timings": {
+[2026-11-16T11:08:14.445Z]            "start": 1794827294226,
+[2026-11-16T11:08:14.445Z]            "socket": 1794827294226,
+[2026-11-16T11:08:14.445Z]            "lookup": 1794827294226,
+[2026-11-16T11:08:14.445Z]            "connect": 1794827294226,
+[2026-11-16T11:08:14.445Z]            "secureConnect": 1794827294226,
+[2026-11-16T11:08:14.445Z]            "upload": 1794827294226,
+[2026-11-16T11:08:14.445Z]            "response": 1794827294438,
+[2026-11-16T11:08:14.445Z]            "end": 1794827294439,
+[2026-11-16T11:08:14.445Z]            "phases": {
+[2026-11-16T11:08:14.445Z]              "wait": 0,
+[2026-11-16T11:08:14.445Z]              "dns": 13,
+[2026-11-16T11:08:14.445Z]              "tcp": 25,
+[2026-11-16T11:08:14.445Z]              "tls": 4,
+[2026-11-16T11:08:14.445Z]              "request": 0,
+[2026-11-16T11:08:14.445Z]              "firstByte": 212,
+[2026-11-16T11:08:14.445Z]              "download": 1,
+[2026-11-16T11:08:14.445Z]              "total": 213
+[2026-11-16T11:08:14.445Z]            }
+[2026-11-16T11:08:14.445Z]          },
+[2026-11-16T11:08:14.445Z]          "options": {
+[2026-11-16T11:08:14.445Z]            "headers": {
+[2026-11-16T11:08:14.445Z]              "user-agent": "Renovate/44.242.0 (https://github.com/renovatebot/renovate)",
+[2026-11-16T11:08:14.445Z]              "accept": "application/json, application/vnd.github.v3+json",
+[2026-11-16T11:08:14.445Z]              "authorization": "***********",
+[2026-11-16T11:08:14.445Z]              "accept-encoding": "gzip, deflate, br, zstd"
+[2026-11-16T11:08:14.445Z]            },
+[2026-11-16T11:08:14.445Z]            "url": "https://api.github.com/repos/idelsink/ikea-openapi/branches/main/protection",
+[2026-11-16T11:08:14.445Z]            "hostType": "github",
+[2026-11-16T11:08:14.445Z]            "username": "",
+[2026-11-16T11:08:14.445Z]            "password": "",
+[2026-11-16T11:08:14.445Z]            "method": "GET",
+[2026-11-16T11:08:14.445Z]            "http2": false
+[2026-11-16T11:08:14.445Z]          },
+[2026-11-16T11:08:14.445Z]          "message": "Request failed with status code 403 (Forbidden): GET https://api.github.com/repos/idelsink/ikea-openapi/branches/main/protection",
+[2026-11-16T11:08:14.445Z]          "response": {
+[2026-11-16T11:08:14.445Z]            "statusCode": 403,
+[2026-11-16T11:08:14.445Z]            "statusMessage": "Forbidden",
+[2026-11-16T11:08:14.445Z]            "body": {
+[2026-11-16T11:08:14.445Z]              "message": "Resource not accessible by integration",
+[2026-11-16T11:08:14.445Z]              "documentation_url": "https://docs.github.com/rest/branches/branch-protection#get-branch-protection",
+[2026-11-16T11:08:14.445Z]              "status": "403"
+[2026-11-16T11:08:14.445Z]            },
+[2026-11-16T11:08:14.445Z]            "headers": {
+[2026-11-16T11:08:14.445Z]              "date": "Mon, 16 Nov 2026 11:08:14 GMT",
+[2026-11-16T11:08:14.445Z]              "content-type": "application/json; charset=utf-8",
+[2026-11-16T11:08:14.445Z]              "x-github-media-type": "github.v3",
+[2026-11-16T11:08:14.445Z]              "x-accepted-github-permissions": "administration=read",
+[2026-11-16T11:08:14.445Z]              "x-github-api-version-selected": "2022-11-28",
+[2026-11-16T11:08:14.445Z]              "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning",
+[2026-11-16T11:08:14.445Z]              "access-control-allow-origin": "*",
+[2026-11-16T11:08:14.445Z]              "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+[2026-11-16T11:08:14.445Z]              "x-frame-options": "deny",
+[2026-11-16T11:08:14.445Z]              "x-content-type-options": "nosniff",
+[2026-11-16T11:08:14.445Z]              "x-xss-protection": "0",
+[2026-11-16T11:08:14.445Z]              "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+[2026-11-16T11:08:14.445Z]              "content-security-policy": "default-src 'none'",
+[2026-11-16T11:08:14.445Z]              "vary": "Accept-Encoding, Accept, X-Requested-With",
+[2026-11-16T11:08:14.445Z]              "transfer-encoding": "chunked",
+[2026-11-16T11:08:14.445Z]              "server": "github.com",
+[2026-11-16T11:08:14.446Z]              "x-ratelimit-limit": "7050",
+[2026-11-16T11:08:14.446Z]              "x-ratelimit-remaining": "6766",
+[2026-11-16T11:08:14.446Z]              "x-ratelimit-reset": "1794830880",
+[2026-11-16T11:08:14.446Z]              "x-ratelimit-used": "284",
+[2026-11-16T11:08:14.446Z]              "x-ratelimit-resource": "core",
+[2026-11-16T11:08:14.446Z]              "x-github-request-id": "B805:13090F:1128A7AC:36925533:6AFAE41E",
+[2026-11-16T11:08:14.446Z]              "x-github-edge-region": "iad"
+[2026-11-16T11:08:14.446Z]            },
+[2026-11-16T11:08:14.446Z]            "httpVersion": "1.1",
+[2026-11-16T11:08:14.446Z]            "retryCount": 0
+[2026-11-16T11:08:14.446Z]          }
+[2026-11-16T11:08:14.446Z]        }
+[2026-11-16T11:08:14.446Z]        HTTPError: Request failed with status code 403 (Forbidden): GET https://**redacted**@16.2.0/node_modules/got/dist/source/as-promise/index.js:143:46
+[2026-11-16T11:08:14.446Z]            at Request.<anonymous> (file:///usr/local/renovate/node_modules/.pnpm/got@16.2.0/node_modules/got/dist/source/as-promise/index.js:147:19)
+[2026-11-16T11:08:14.446Z]            at Request.wrapper (node:events:639:12)
+[2026-11-16T11:08:14.446Z]            at Request.emit (node:events:514:28)
+[2026-11-16T11:08:14.446Z]            at Request.emit (node:domain:489:12)
+[2026-11-16T11:08:14.446Z]            at Request._onResponseBase (file:///usr/local/renovate/node_modules/.pnpm/got@16.2.0/node_modules/got/dist/source/core/index.js:1272:22)
+[2026-11-16T11:08:14.446Z]            at processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-11-16T11:08:14.446Z]            at Request._onResponse (file:///usr/local/renovate/node_modules/.pnpm/got@16.2.0/node_modules/got/dist/source/core/index.js:1348:13)
+[2026-11-16T11:08:14.446Z] DEBUG: Branch protection: Do not have permissions to detect branch-protection for main (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.446Z] DEBUG: Converting rebaseWhen=auto to rebaseWhen=conflicted because no rule for behind-base-branch applies (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.446Z] DEBUG: Branch already exists (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.446Z] DEBUG: Skipping behind base branch check due to rebaseWhen=conflicted (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.446Z] DEBUG: isBranchConflicted(main, renovate/pipx-1.x) (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.446Z] DEBUG: branch.isConflicted(): using cached result "false" (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.446Z] DEBUG: Branch does not need rebasing (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.447Z] DEBUG: Using reuseExistingBranch: true (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.447Z] DEBUG: Checking if we can automerge branch (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.447Z] DEBUG: mergeStatus=no automerge (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.448Z] DEBUG: Ensuring PR (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.448Z] DEBUG: There are 0 errors and 0 warnings (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.449Z] DEBUG: getBranchPr(renovate/pipx-1.x) (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.451Z] DEBUG: findPr(renovate/pipx-1.x, undefined, open) (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.451Z] DEBUG: Found PR #35 (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.451Z] DEBUG: Found existing PR (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.451Z] DEBUG: PR cache matches and no PR changes in last 24hrs, so skipping PR body check (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.451Z] DEBUG: PR is not configured for automerge (repository=idelsink/ikea-openapi, branch=renovate/pipx-1.x)
+[2026-11-16T11:08:14.451Z] DEBUG: syncBranchState() (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.451Z] DEBUG: getBranchPr(renovate/yq-4.x) (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.452Z] DEBUG: findPr(renovate/yq-4.x, undefined, open) (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.452Z] DEBUG: branchExists=false (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.452Z] DEBUG: dependencyDashboardCheck=undefined (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.452Z] DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.453Z] DEBUG: findPr(renovate/yq-4.x, chore(deps): update dependency yq to v4.54.3, !open) (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.453Z] DEBUG: prAlreadyExisted=false (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.453Z] DEBUG: Open PR Count: 3, Existing Branch Count: 6, Hourly PR Count: 0, Hourly Commit Count: 0 (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.453Z] DEBUG: prHourlyLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.453Z]        "limits": [{"depName": "yq", "prHourlyLimit": 2}]
+[2026-11-16T11:08:14.454Z] DEBUG: Calculated lowest prHourlyLimit among the upgrades present in this branch is 2. (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.454Z] DEBUG: branchConcurrentLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.454Z]        "limits": [{"depName": "yq", "branchConcurrentLimit": null}]
+[2026-11-16T11:08:14.454Z] DEBUG: Calculated lowest branchConcurrentLimit among the upgrades present in this branch is 5. (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.455Z] DEBUG: Branches limit reached (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.455Z]        "limitKey": "branchConcurrentLimit",
+[2026-11-16T11:08:14.455Z]        "currentCount": 6
+[2026-11-16T11:08:14.455Z] DEBUG: Reached branch limit - skipping branch creation (repository=idelsink/ikea-openapi, branch=renovate/yq-4.x)
+[2026-11-16T11:08:14.455Z] DEBUG: syncBranchState() (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.455Z] DEBUG: getBranchPr(renovate/jdx-mise-action-5.x) (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.456Z] DEBUG: findPr(renovate/jdx-mise-action-5.x, undefined, open) (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.456Z] DEBUG: branchExists=false (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.456Z] DEBUG: dependencyDashboardCheck=undefined (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.457Z] DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.457Z] DEBUG: findPr(renovate/jdx-mise-action-5.x, chore(deps): update jdx/mise-action action to v5.2.9, !open) (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.457Z] DEBUG: prAlreadyExisted=false (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.457Z] DEBUG: Open PR Count: 3, Existing Branch Count: 6, Hourly PR Count: 0, Hourly Commit Count: 0 (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.458Z] DEBUG: prHourlyLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.458Z]        "limits": [{"depName": "jdx/mise-action", "prHourlyLimit": 2}]
+[2026-11-16T11:08:14.458Z] DEBUG: Calculated lowest prHourlyLimit among the upgrades present in this branch is 2. (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.458Z] DEBUG: branchConcurrentLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.458Z]        "limits": [{"depName": "jdx/mise-action", "branchConcurrentLimit": null}]
+[2026-11-16T11:08:14.459Z] DEBUG: Calculated lowest branchConcurrentLimit among the upgrades present in this branch is 5. (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.460Z] DEBUG: Branches limit reached (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.460Z]        "limitKey": "branchConcurrentLimit",
+[2026-11-16T11:08:14.460Z]        "currentCount": 6
+[2026-11-16T11:08:14.460Z] DEBUG: Reached branch limit - skipping branch creation (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-action-5.x)
+[2026-11-16T11:08:14.460Z] DEBUG: syncBranchState() (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.460Z] DEBUG: getBranchPr(renovate/node-24.x) (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.460Z] DEBUG: findPr(renovate/node-24.x, undefined, open) (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.460Z] DEBUG: branchExists=false (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.461Z] DEBUG: dependencyDashboardCheck=undefined (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.461Z] DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.461Z] DEBUG: findPr(renovate/node-24.x, chore(deps): update node.js to v24.22.3, !open) (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.461Z] DEBUG: prAlreadyExisted=false (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.462Z] DEBUG: Open PR Count: 3, Existing Branch Count: 6, Hourly PR Count: 0, Hourly Commit Count: 0 (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.462Z] DEBUG: prHourlyLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.462Z]        "limits": [{"depName": "node", "prHourlyLimit": 2}]
+[2026-11-16T11:08:14.462Z] DEBUG: Calculated lowest prHourlyLimit among the upgrades present in this branch is 2. (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.463Z] DEBUG: branchConcurrentLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.463Z]        "limits": [{"depName": "node", "branchConcurrentLimit": null}]
+[2026-11-16T11:08:14.463Z] DEBUG: Calculated lowest branchConcurrentLimit among the upgrades present in this branch is 5. (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.463Z] DEBUG: Branches limit reached (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.463Z]        "limitKey": "branchConcurrentLimit",
+[2026-11-16T11:08:14.463Z]        "currentCount": 6
+[2026-11-16T11:08:14.463Z] DEBUG: Reached branch limit - skipping branch creation (repository=idelsink/ikea-openapi, branch=renovate/node-24.x)
+[2026-11-16T11:08:14.464Z] DEBUG: syncBranchState() (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.464Z] DEBUG: branch.isUpToDate(): needs recalculation (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.464Z] DEBUG: getBranchPr(renovate/jdx-mise-2026.x) (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.465Z] DEBUG: findPr(renovate/jdx-mise-2026.x, undefined, open) (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.465Z] DEBUG: branchExists=true (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.465Z] DEBUG: dependencyDashboardCheck=undefined (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.465Z] DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.465Z] DEBUG: findPr(renovate/jdx-mise-2026.x, chore(deps): update dependency jdx/mise to v2026.11.8, !open) (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.466Z] DEBUG: prAlreadyExisted=false (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.466Z] DEBUG: Open PR Count: 3, Existing Branch Count: 6, Hourly PR Count: 0, Hourly Commit Count: 0 (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.466Z] DEBUG: commitHourlyLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.466Z]        "limits": [{"depName": "jdx/mise", "commitHourlyLimit": 0}]
+[2026-11-16T11:08:14.467Z] DEBUG: commitHourlyLimit of this branch is unlimited, because at least one of the upgrade has it's commitHourlyLimit set to "No limit" ie. 0 or null (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.467Z] DEBUG: Checking if PR has been edited (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.467Z] DEBUG: branch.isModified(): using cached result "false" (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.467Z] DEBUG: Checking schedule(schedule=before 6am on Monday, tz=null, now=2026-11-16T11:08:14.467Z) (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.468Z] DEBUG: Checking 1 schedule(s) (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.469Z] DEBUG: Checking schedule "before 6am on Monday" (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.469Z]        "parsedSchedule": {"schedules": [{"t_b": [21600], "d": [2]}], "exceptions": [], "error": -1}
+[2026-11-16T11:08:14.469Z] DEBUG: Package not scheduled (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.469Z] DEBUG: Skipping PR creation out of schedule (repository=idelsink/ikea-openapi, branch=renovate/jdx-mise-2026.x)
+[2026-11-16T11:08:14.470Z] DEBUG: syncBranchState() (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.470Z] DEBUG: branch.isUpToDate(): needs recalculation (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.470Z] DEBUG: getBranchPr(renovate/npm-quobix-vacuum-0.x) (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.470Z] DEBUG: findPr(renovate/npm-quobix-vacuum-0.x, undefined, open) (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.471Z] DEBUG: branchExists=true (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.471Z] DEBUG: dependencyDashboardCheck=undefined (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.471Z] DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.471Z] DEBUG: findPr(renovate/npm-quobix-vacuum-0.x, chore(deps): update dependency npm:@quobix/vacuum to v0.40.1, !open) (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.472Z] DEBUG: prAlreadyExisted=false (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.472Z] DEBUG: Open PR Count: 3, Existing Branch Count: 6, Hourly PR Count: 0, Hourly Commit Count: 0 (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.472Z] DEBUG: commitHourlyLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.472Z]        "limits": [{"depName": "npm:@quobix/vacuum", "commitHourlyLimit": 0}]
+[2026-11-16T11:08:14.473Z] DEBUG: commitHourlyLimit of this branch is unlimited, because at least one of the upgrade has it's commitHourlyLimit set to "No limit" ie. 0 or null (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.473Z] DEBUG: Checking if PR has been edited (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.473Z] DEBUG: branch.isModified(): using cached result "false" (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.473Z] DEBUG: Checking schedule(schedule=before 6am on Monday, tz=null, now=2026-11-16T11:08:14.473Z) (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.474Z] DEBUG: Checking 1 schedule(s) (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.475Z] DEBUG: Checking schedule "before 6am on Monday" (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.475Z]        "parsedSchedule": {"schedules": [{"t_b": [21600], "d": [2]}], "exceptions": [], "error": -1}
+[2026-11-16T11:08:14.475Z] DEBUG: Package not scheduled (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.475Z] DEBUG: Skipping PR creation out of schedule (repository=idelsink/ikea-openapi, branch=renovate/npm-quobix-vacuum-0.x)
+[2026-11-16T11:08:14.476Z] DEBUG: syncBranchState() (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.477Z] DEBUG: branch.isUpToDate(): needs recalculation (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.477Z] DEBUG: getBranchPr(renovate/npm-redocly-cli-2.x) (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.477Z] DEBUG: findPr(renovate/npm-redocly-cli-2.x, undefined, open) (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.477Z] DEBUG: branchExists=true (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.477Z] DEBUG: dependencyDashboardCheck=undefined (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.478Z] DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.478Z] DEBUG: findPr(renovate/npm-redocly-cli-2.x, chore(deps): update dependency npm:@redocly/cli to v2.78.0, !open) (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.478Z] DEBUG: prAlreadyExisted=false (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.478Z] DEBUG: Open PR Count: 3, Existing Branch Count: 6, Hourly PR Count: 0, Hourly Commit Count: 0 (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.479Z] DEBUG: commitHourlyLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.479Z]        "limits": [{"depName": "npm:@redocly/cli", "commitHourlyLimit": 0}]
+[2026-11-16T11:08:14.479Z] DEBUG: commitHourlyLimit of this branch is unlimited, because at least one of the upgrade has it's commitHourlyLimit set to "No limit" ie. 0 or null (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.479Z] DEBUG: Checking if PR has been edited (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.479Z] DEBUG: branch.isModified(): using cached result "false" (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.480Z] DEBUG: Checking schedule(schedule=before 6am on Monday, tz=null, now=2026-11-16T11:08:14.479Z) (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.480Z] DEBUG: Checking 1 schedule(s) (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.481Z] DEBUG: Checking schedule "before 6am on Monday" (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.481Z]        "parsedSchedule": {"schedules": [{"t_b": [21600], "d": [2]}], "exceptions": [], "error": -1}
+[2026-11-16T11:08:14.481Z] DEBUG: Package not scheduled (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.481Z] DEBUG: Skipping PR creation out of schedule (repository=idelsink/ikea-openapi, branch=renovate/npm-redocly-cli-2.x)
+[2026-11-16T11:08:14.482Z] DEBUG: syncBranchState() (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.482Z] DEBUG: branch.isUpToDate(): using cached result "true" (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.482Z] DEBUG: getBranchPr(renovate/pipx-schemathesis-4.x) (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.482Z] DEBUG: findPr(renovate/pipx-schemathesis-4.x, undefined, open) (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.483Z] DEBUG: Found PR #27 (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.483Z] DEBUG: branchExists=true (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.483Z] DEBUG: dependencyDashboardCheck=undefined (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.483Z] DEBUG: PR rebase requested=false (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.484Z] DEBUG: Open PR Count: 3, Existing Branch Count: 6, Hourly PR Count: 0, Hourly Commit Count: 0 (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.484Z] DEBUG: commitHourlyLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.484Z]        "limits": [{"depName": "pipx:schemathesis", "commitHourlyLimit": 0}]
+[2026-11-16T11:08:14.484Z] DEBUG: commitHourlyLimit of this branch is unlimited, because at least one of the upgrade has it's commitHourlyLimit set to "No limit" ie. 0 or null (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.484Z] DEBUG: Checking if PR has been edited (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.485Z] DEBUG: branch.isModified(): using cached result "false" (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.485Z] DEBUG: Found existing branch PR #27 (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.485Z] DEBUG: Checking schedule(schedule=before 6am on Monday, tz=null, now=2026-11-16T11:08:14.485Z) (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.486Z] DEBUG: Checking 1 schedule(s) (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.486Z] DEBUG: Checking schedule "before 6am on Monday" (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.486Z]        "parsedSchedule": {"schedules": [{"t_b": [21600], "d": [2]}], "exceptions": [], "error": -1}
+[2026-11-16T11:08:14.486Z] DEBUG: Package not scheduled (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.486Z] DEBUG: Branch + PR exists but is not scheduled -- will update if necessary (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.487Z] DEBUG: Converting rebaseWhen=auto to rebaseWhen=conflicted because no rule for behind-base-branch applies (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.487Z] DEBUG: Branch already exists (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.487Z] DEBUG: Skipping behind base branch check due to rebaseWhen=conflicted (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.487Z] DEBUG: isBranchConflicted(main, renovate/pipx-schemathesis-4.x) (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.488Z] DEBUG: branch.isConflicted(): using cached result "false" (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.488Z] DEBUG: Branch does not need rebasing (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.488Z] DEBUG: Using reuseExistingBranch: true (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.489Z] DEBUG: Checking if we can automerge branch (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.489Z] DEBUG: mergeStatus=no automerge (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.489Z] DEBUG: Ensuring PR (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.489Z] DEBUG: There are 0 errors and 0 warnings (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.490Z] DEBUG: getBranchPr(renovate/pipx-schemathesis-4.x) (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.490Z] DEBUG: findPr(renovate/pipx-schemathesis-4.x, undefined, open) (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.490Z] DEBUG: Found PR #27 (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.490Z] DEBUG: Found existing PR (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.491Z] DEBUG: PR cache matches and no PR changes in last 24hrs, so skipping PR body check (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.491Z] DEBUG: PR is not configured for automerge (repository=idelsink/ikea-openapi, branch=renovate/pipx-schemathesis-4.x)
+[2026-11-16T11:08:14.491Z] DEBUG: syncBranchState() (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.492Z] DEBUG: branch.isUpToDate(): using cached result "true" (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.492Z] DEBUG: getBranchPr(renovate/node-26.x) (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.492Z] DEBUG: findPr(renovate/node-26.x, undefined, open) (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.492Z] DEBUG: Found PR #38 (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.493Z] DEBUG: branchExists=true (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.493Z] DEBUG: dependencyDashboardCheck=undefined (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.493Z] DEBUG: PR rebase requested=false (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.493Z] DEBUG: Open PR Count: 3, Existing Branch Count: 6, Hourly PR Count: 0, Hourly Commit Count: 0 (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.494Z] DEBUG: commitHourlyLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.494Z]        "limits": [{"depName": "node", "commitHourlyLimit": 0}]
+[2026-11-16T11:08:14.494Z] DEBUG: commitHourlyLimit of this branch is unlimited, because at least one of the upgrade has it's commitHourlyLimit set to "No limit" ie. 0 or null (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.494Z] DEBUG: Checking if PR has been edited (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.495Z] DEBUG: branch.isModified(): using cached result "false" (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.495Z] DEBUG: Found existing branch PR #38 (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.495Z] DEBUG: Checking schedule(schedule=before 6am on Monday, tz=null, now=2026-11-16T11:08:14.495Z) (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.496Z] DEBUG: Checking 1 schedule(s) (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.496Z] DEBUG: Checking schedule "before 6am on Monday" (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.496Z]        "parsedSchedule": {"schedules": [{"t_b": [21600], "d": [2]}], "exceptions": [], "error": -1}
+[2026-11-16T11:08:14.496Z] DEBUG: Package not scheduled (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.497Z] DEBUG: Branch + PR exists but is not scheduled -- will update if necessary (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.497Z] DEBUG: Converting rebaseWhen=auto to rebaseWhen=conflicted because no rule for behind-base-branch applies (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.497Z] DEBUG: Branch already exists (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.497Z] DEBUG: Skipping behind base branch check due to rebaseWhen=conflicted (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.497Z] DEBUG: isBranchConflicted(main, renovate/node-26.x) (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.498Z] DEBUG: branch.isConflicted(): using cached result "false" (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.498Z] DEBUG: Branch does not need rebasing (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.498Z] DEBUG: Using reuseExistingBranch: true (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.498Z] DEBUG: Checking if we can automerge branch (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.499Z] DEBUG: mergeStatus=no automerge (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.499Z] DEBUG: Ensuring PR (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.499Z] DEBUG: There are 0 errors and 0 warnings (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.499Z] DEBUG: getBranchPr(renovate/node-26.x) (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.500Z] DEBUG: findPr(renovate/node-26.x, undefined, open) (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.500Z] DEBUG: Found PR #38 (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.500Z] DEBUG: Found existing PR (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.500Z] DEBUG: PR cache matches and no PR changes in last 24hrs, so skipping PR body check (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.501Z] DEBUG: PR is not configured for automerge (repository=idelsink/ikea-openapi, branch=renovate/node-26.x)
+[2026-11-16T11:08:14.501Z] DEBUG: syncBranchState() (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:14.501Z] DEBUG: getBranchPr(renovate/lock-file-maintenance) (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:14.502Z] DEBUG: findPr(renovate/lock-file-maintenance, undefined, open) (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:14.502Z] DEBUG: branchExists=false (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:14.502Z] DEBUG: dependencyDashboardCheck=undefined (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:14.502Z] DEBUG: recreateClosed is true. No need to check for closed PR. (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:14.503Z] DEBUG: Open PR Count: 3, Existing Branch Count: 6, Hourly PR Count: 0, Hourly Commit Count: 0 (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:14.503Z] DEBUG: prHourlyLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:14.503Z]        "limits": [{"prHourlyLimit": 2}]
+[2026-11-16T11:08:14.503Z] DEBUG: Calculated lowest prHourlyLimit among the upgrades present in this branch is 2. (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:14.503Z] DEBUG: branchConcurrentLimit of the upgrades present in this branch (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:14.503Z]        "limits": [{"branchConcurrentLimit": null}]
+[2026-11-16T11:08:14.504Z] DEBUG: Calculated lowest branchConcurrentLimit among the upgrades present in this branch is 5. (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:14.504Z] DEBUG: Branches limit reached (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:14.504Z]        "limitKey": "branchConcurrentLimit",
+[2026-11-16T11:08:14.504Z]        "currentCount": 6
+[2026-11-16T11:08:14.504Z] DEBUG: Reached branch limit - skipping branch creation (repository=idelsink/ikea-openapi, branch=renovate/lock-file-maintenance)
+[2026-11-16T11:08:14.505Z] DEBUG: getBranchPr(renovate/pipx-1.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.505Z] DEBUG: findPr(renovate/pipx-1.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.505Z] DEBUG: Found PR #35 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.506Z] DEBUG: getBranchUpdateDate(): using cached result "2026-11-07T10:00:58.000+00:00" (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.506Z] DEBUG: getBranchPr(renovate/jdx-mise-2026.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.506Z] DEBUG: findPr(renovate/jdx-mise-2026.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.507Z] DEBUG: getBranchUpdateDate(): using cached result "2026-10-29T22:00:24.000+00:00" (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.507Z] DEBUG: getBranchPr(renovate/npm-quobix-vacuum-0.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.507Z] DEBUG: findPr(renovate/npm-quobix-vacuum-0.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.508Z] DEBUG: getBranchUpdateDate(): using cached result "2026-10-29T22:00:47.000+00:00" (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.509Z] DEBUG: getBranchPr(renovate/npm-redocly-cli-2.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.509Z] DEBUG: findPr(renovate/npm-redocly-cli-2.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.509Z] DEBUG: getBranchUpdateDate(): using cached result "2026-10-29T22:01:25.000+00:00" (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.509Z] DEBUG: getBranchPr(renovate/pipx-schemathesis-4.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.509Z] DEBUG: findPr(renovate/pipx-schemathesis-4.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.509Z] DEBUG: Found PR #27 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.509Z] DEBUG: getBranchUpdateDate(): using cached result "2026-11-13T10:55:29.000+00:00" (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.510Z] DEBUG: getBranchPr(renovate/node-26.x) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.510Z] DEBUG: findPr(renovate/node-26.x, undefined, open) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.510Z] DEBUG: Found PR #38 (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.511Z] DEBUG: getBranchUpdateDate(): using cached result "2026-11-12T11:01:35.000+00:00" (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.664Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/ikea-openapi/contents/renovate.json from 2026-11-16T11:08:05.854Z (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.664Z] DEBUG: Config does not need migration (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.665Z] DEBUG: ensureDependencyDashboard() (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.666Z] DEBUG: Ensuring Dependency Dashboard (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.666Z] DEBUG: Checking packageFiles for deprecated or replacement packages (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.930Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/ikea-openapi/issues/2 from 2026-11-16T11:08:07.389Z (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:14.931Z] DEBUG: Issues cache: Updating issue 2 in cache (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:15.146Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/ikea-openapi/issues/2 from 2026-11-16T11:08:14.930Z (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:15.146Z] DEBUG: Issues cache: Updating issue 2 in cache (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:15.188Z] DEBUG: ensureIssue(Dependency Dashboard) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:15.487Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/ikea-openapi/issues/2 from 2026-11-16T11:08:15.146Z (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:15.487Z] DEBUG: Issues cache: Updating issue 2 in cache (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:15.487Z] DEBUG: Patching issue (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.098Z] DEBUG: Issues cache: Updating issue 2 in cache (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.099Z] DEBUG: Issue updated (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.099Z] DEBUG: checkReconfigureBranch() (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.099Z] DEBUG: No reconfigure branch found (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.099Z]        "reconfigureBranch": "renovate/reconfigure"
+[2026-11-16T11:08:16.100Z] DEBUG: Removing any stale branches (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.100Z] DEBUG: config.repoIsOnboarded=true (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.100Z] DEBUG: Branch lists (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.100Z]        "branchList": [
+[2026-11-16T11:08:16.100Z]          "renovate/jdx-mise-2026.x",
+[2026-11-16T11:08:16.100Z]          "renovate/jdx-mise-action-5.x",
+[2026-11-16T11:08:16.100Z]          "renovate/lock-file-maintenance",
+[2026-11-16T11:08:16.100Z]          "renovate/node-24.x",
+[2026-11-16T11:08:16.100Z]          "renovate/node-26.x",
+[2026-11-16T11:08:16.100Z]          "renovate/npm-quobix-vacuum-0.x",
+[2026-11-16T11:08:16.101Z]          "renovate/npm-redocly-cli-2.x",
+[2026-11-16T11:08:16.101Z]          "renovate/pipx-1.x",
+[2026-11-16T11:08:16.101Z]          "renovate/pipx-schemathesis-4.x",
+[2026-11-16T11:08:16.101Z]          "renovate/yq-4.x"
+[2026-11-16T11:08:16.101Z]        ],
+[2026-11-16T11:08:16.101Z]        "renovateBranches": [
+[2026-11-16T11:08:16.101Z]          "renovate/jdx-mise-2026.x",
+[2026-11-16T11:08:16.101Z]          "renovate/node-26.x",
+[2026-11-16T11:08:16.101Z]          "renovate/npm-quobix-vacuum-0.x",
+[2026-11-16T11:08:16.101Z]          "renovate/npm-redocly-cli-2.x",
+[2026-11-16T11:08:16.101Z]          "renovate/pipx-1.x",
+[2026-11-16T11:08:16.101Z]          "renovate/pipx-schemathesis-4.x"
+[2026-11-16T11:08:16.101Z]        ]
+[2026-11-16T11:08:16.101Z] DEBUG: remainingBranches= (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.101Z] DEBUG: No branches to clean up (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.142Z] DEBUG: PackageFiles.clear() - Package files deleted (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.142Z] DEBUG: Repo is activated (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.151Z] DEBUG: Branch summary (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.151Z]        "cacheModified": true,
+[2026-11-16T11:08:16.151Z]        "baseBranches": [{"branchName": "main", "sha": "2b5803210da191ae3b12bc8832f9ac78c23e7260"}],
+[2026-11-16T11:08:16.151Z]        "branches": [
+[2026-11-16T11:08:16.151Z]          {
+[2026-11-16T11:08:16.152Z]            "automerge": false,
+[2026-11-16T11:08:16.152Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.152Z]            "baseBranchSha": "2b5803210da191ae3b12bc8832f9ac78c23e7260",
+[2026-11-16T11:08:16.152Z]            "branchName": "renovate/pipx-1.x",
+[2026-11-16T11:08:16.152Z]            "branchSha": "4dc0b6c0810ec7e3a5c81393337627c4b3849e18",
+[2026-11-16T11:08:16.152Z]            "isModified": false,
+[2026-11-16T11:08:16.152Z]            "isPristine": true
+[2026-11-16T11:08:16.152Z]          },
+[2026-11-16T11:08:16.152Z]          {
+[2026-11-16T11:08:16.152Z]            "automerge": false,
+[2026-11-16T11:08:16.152Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.152Z]            "baseBranchSha": "2b5803210da191ae3b12bc8832f9ac78c23e7260",
+[2026-11-16T11:08:16.152Z]            "branchName": "renovate/jdx-mise-2026.x",
+[2026-11-16T11:08:16.152Z]            "branchSha": "37cb7f374c67508e341f923f17f6c2922cf5d561",
+[2026-11-16T11:08:16.152Z]            "isModified": false,
+[2026-11-16T11:08:16.152Z]            "isPristine": false
+[2026-11-16T11:08:16.152Z]          },
+[2026-11-16T11:08:16.152Z]          {
+[2026-11-16T11:08:16.152Z]            "automerge": false,
+[2026-11-16T11:08:16.152Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.152Z]            "baseBranchSha": "2b5803210da191ae3b12bc8832f9ac78c23e7260",
+[2026-11-16T11:08:16.152Z]            "branchName": "renovate/npm-quobix-vacuum-0.x",
+[2026-11-16T11:08:16.152Z]            "branchSha": "fe99808f21eb9d21268f8764d167c94362c1ba75",
+[2026-11-16T11:08:16.152Z]            "isModified": false,
+[2026-11-16T11:08:16.152Z]            "isPristine": false
+[2026-11-16T11:08:16.152Z]          },
+[2026-11-16T11:08:16.152Z]          {
+[2026-11-16T11:08:16.152Z]            "automerge": false,
+[2026-11-16T11:08:16.152Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.152Z]            "baseBranchSha": "2b5803210da191ae3b12bc8832f9ac78c23e7260",
+[2026-11-16T11:08:16.152Z]            "branchName": "renovate/npm-redocly-cli-2.x",
+[2026-11-16T11:08:16.152Z]            "branchSha": "a7ac45ee6782a681d9c339298c8237d271abef63",
+[2026-11-16T11:08:16.152Z]            "isModified": false,
+[2026-11-16T11:08:16.152Z]            "isPristine": false
+[2026-11-16T11:08:16.152Z]          },
+[2026-11-16T11:08:16.152Z]          {
+[2026-11-16T11:08:16.152Z]            "automerge": false,
+[2026-11-16T11:08:16.152Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.152Z]            "baseBranchSha": "2b5803210da191ae3b12bc8832f9ac78c23e7260",
+[2026-11-16T11:08:16.152Z]            "branchName": "renovate/pipx-schemathesis-4.x",
+[2026-11-16T11:08:16.152Z]            "branchSha": "9b3b8a1e88abf06633fb46ac21428f21eb99e02f",
+[2026-11-16T11:08:16.152Z]            "isModified": false,
+[2026-11-16T11:08:16.152Z]            "isPristine": true
+[2026-11-16T11:08:16.152Z]          },
+[2026-11-16T11:08:16.152Z]          {
+[2026-11-16T11:08:16.152Z]            "automerge": false,
+[2026-11-16T11:08:16.152Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.152Z]            "baseBranchSha": "2b5803210da191ae3b12bc8832f9ac78c23e7260",
+[2026-11-16T11:08:16.152Z]            "branchName": "renovate/node-26.x",
+[2026-11-16T11:08:16.152Z]            "branchSha": "c1e202d8b23c3cf204b98145fbf7865d65d4ab62",
+[2026-11-16T11:08:16.152Z]            "isModified": false,
+[2026-11-16T11:08:16.152Z]            "isPristine": true
+[2026-11-16T11:08:16.152Z]          }
+[2026-11-16T11:08:16.152Z]        ],
+[2026-11-16T11:08:16.152Z]        "defaultBranch": "main",
+[2026-11-16T11:08:16.152Z]        "inactiveBranches": [
+[2026-11-16T11:08:16.152Z]          "renovate/yq-4.x",
+[2026-11-16T11:08:16.152Z]          "renovate/jdx-mise-action-5.x",
+[2026-11-16T11:08:16.152Z]          "renovate/node-24.x",
+[2026-11-16T11:08:16.152Z]          "renovate/lock-file-maintenance"
+[2026-11-16T11:08:16.152Z]        ]
+[2026-11-16T11:08:16.155Z] DEBUG: branches info extended (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.155Z]        "branchesInformation": [
+[2026-11-16T11:08:16.155Z]          {
+[2026-11-16T11:08:16.155Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.155Z]            "branchName": "renovate/pipx-1.x",
+[2026-11-16T11:08:16.155Z]            "prNo": 35,
+[2026-11-16T11:08:16.155Z]            "prTitle": "chore(deps): update dependency pipx to v1.18.16",
+[2026-11-16T11:08:16.155Z]            "result": "done",
+[2026-11-16T11:08:16.155Z]            "upgrades": [
+[2026-11-16T11:08:16.155Z]              {
+[2026-11-16T11:08:16.155Z]                "datasource": "github-releases",
+[2026-11-16T11:08:16.155Z]                "depName": "pipx",
+[2026-11-16T11:08:16.155Z]                "displayPending": "",
+[2026-11-16T11:08:16.155Z]                "fixedVersion": "1.18.4",
+[2026-11-16T11:08:16.155Z]                "currentVersion": "1.18.4",
+[2026-11-16T11:08:16.155Z]                "currentValue": "1.18.4",
+[2026-11-16T11:08:16.155Z]                "newValue": "1.18.16",
+[2026-11-16T11:08:16.155Z]                "newVersion": "1.18.16",
+[2026-11-16T11:08:16.155Z]                "packageFile": "mise.toml",
+[2026-11-16T11:08:16.155Z]                "updateType": "patch",
+[2026-11-16T11:08:16.155Z]                "packageName": "pypa/pipx"
+[2026-11-16T11:08:16.155Z]              }
+[2026-11-16T11:08:16.155Z]            ]
+[2026-11-16T11:08:16.155Z]          },
+[2026-11-16T11:08:16.155Z]          {
+[2026-11-16T11:08:16.155Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.155Z]            "branchName": "renovate/yq-4.x",
+[2026-11-16T11:08:16.155Z]            "prNo": null,
+[2026-11-16T11:08:16.155Z]            "prTitle": "chore(deps): update dependency yq to v4.54.3",
+[2026-11-16T11:08:16.155Z]            "result": "branch-limit-reached",
+[2026-11-16T11:08:16.155Z]            "upgrades": [
+[2026-11-16T11:08:16.156Z]              {
+[2026-11-16T11:08:16.156Z]                "datasource": "github-releases",
+[2026-11-16T11:08:16.156Z]                "depName": "yq",
+[2026-11-16T11:08:16.156Z]                "displayPending": "",
+[2026-11-16T11:08:16.156Z]                "fixedVersion": "4.54.1",
+[2026-11-16T11:08:16.156Z]                "currentVersion": "4.54.1",
+[2026-11-16T11:08:16.156Z]                "currentValue": "4.54.1",
+[2026-11-16T11:08:16.156Z]                "newValue": "4.54.3",
+[2026-11-16T11:08:16.156Z]                "newVersion": "4.54.3",
+[2026-11-16T11:08:16.156Z]                "packageFile": "mise.toml",
+[2026-11-16T11:08:16.156Z]                "updateType": "patch",
+[2026-11-16T11:08:16.156Z]                "packageName": "mikefarah/yq"
+[2026-11-16T11:08:16.156Z]              }
+[2026-11-16T11:08:16.156Z]            ]
+[2026-11-16T11:08:16.156Z]          },
+[2026-11-16T11:08:16.156Z]          {
+[2026-11-16T11:08:16.156Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.156Z]            "branchName": "renovate/jdx-mise-action-5.x",
+[2026-11-16T11:08:16.156Z]            "prNo": null,
+[2026-11-16T11:08:16.156Z]            "prTitle": "chore(deps): update jdx/mise-action action to v5.2.9",
+[2026-11-16T11:08:16.156Z]            "result": "branch-limit-reached",
+[2026-11-16T11:08:16.156Z]            "upgrades": [
+[2026-11-16T11:08:16.156Z]              {
+[2026-11-16T11:08:16.156Z]                "datasource": "github-tags",
+[2026-11-16T11:08:16.156Z]                "depName": "jdx/mise-action",
+[2026-11-16T11:08:16.156Z]                "displayPending": "",
+[2026-11-16T11:08:16.156Z]                "fixedVersion": "v5.2.4",
+[2026-11-16T11:08:16.156Z]                "currentVersion": "v5.2.4",
+[2026-11-16T11:08:16.156Z]                "currentValue": "v5.2.4",
+[2026-11-16T11:08:16.156Z]                "currentDigest": "6be3c7ed4c21d4f76b208d351d95aac273ebb76d",
+[2026-11-16T11:08:16.156Z]                "newValue": "v5.2.9",
+[2026-11-16T11:08:16.156Z]                "newVersion": "v5.2.9",
+[2026-11-16T11:08:16.156Z]                "newDigest": "236a21c3b91f5db6d4e174b348674a0f0caac06d",
+[2026-11-16T11:08:16.156Z]                "packageFile": ".github/workflows/test.yaml",
+[2026-11-16T11:08:16.156Z]                "updateType": "patch",
+[2026-11-16T11:08:16.156Z]                "packageName": "jdx/mise-action"
+[2026-11-16T11:08:16.156Z]              },
+[2026-11-16T11:08:16.156Z]              {
+[2026-11-16T11:08:16.156Z]                "datasource": "github-tags",
+[2026-11-16T11:08:16.156Z]                "depName": "jdx/mise-action",
+[2026-11-16T11:08:16.156Z]                "displayPending": "",
+[2026-11-16T11:08:16.156Z]                "fixedVersion": "v5.2.4",
+[2026-11-16T11:08:16.156Z]                "currentVersion": "v5.2.4",
+[2026-11-16T11:08:16.156Z]                "currentValue": "v5.2.4",
+[2026-11-16T11:08:16.156Z]                "currentDigest": "6be3c7ed4c21d4f76b208d351d95aac273ebb76d",
+[2026-11-16T11:08:16.156Z]                "newValue": "v5.2.9",
+[2026-11-16T11:08:16.156Z]                "newVersion": "v5.2.9",
+[2026-11-16T11:08:16.156Z]                "newDigest": "236a21c3b91f5db6d4e174b348674a0f0caac06d",
+[2026-11-16T11:08:16.156Z]                "packageFile": ".github/workflows/scheduled-test.yaml",
+[2026-11-16T11:08:16.156Z]                "updateType": "patch",
+[2026-11-16T11:08:16.156Z]                "packageName": "jdx/mise-action"
+[2026-11-16T11:08:16.156Z]              },
+[2026-11-16T11:08:16.156Z]              {
+[2026-11-16T11:08:16.156Z]                "datasource": "github-tags",
+[2026-11-16T11:08:16.156Z]                "depName": "jdx/mise-action",
+[2026-11-16T11:08:16.156Z]                "displayPending": "",
+[2026-11-16T11:08:16.156Z]                "fixedVersion": "v5.2.4",
+[2026-11-16T11:08:16.156Z]                "currentVersion": "v5.2.4",
+[2026-11-16T11:08:16.156Z]                "currentValue": "v5.2.4",
+[2026-11-16T11:08:16.157Z]                "currentDigest": "6be3c7ed4c21d4f76b208d351d95aac273ebb76d",
+[2026-11-16T11:08:16.157Z]                "newValue": "v5.2.9",
+[2026-11-16T11:08:16.157Z]                "newVersion": "v5.2.9",
+[2026-11-16T11:08:16.157Z]                "newDigest": "236a21c3b91f5db6d4e174b348674a0f0caac06d",
+[2026-11-16T11:08:16.157Z]                "packageFile": ".github/workflows/deploy-pages.yaml",
+[2026-11-16T11:08:16.157Z]                "updateType": "patch",
+[2026-11-16T11:08:16.157Z]                "packageName": "jdx/mise-action"
+[2026-11-16T11:08:16.157Z]              }
+[2026-11-16T11:08:16.157Z]            ]
+[2026-11-16T11:08:16.157Z]          },
+[2026-11-16T11:08:16.157Z]          {
+[2026-11-16T11:08:16.157Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.157Z]            "branchName": "renovate/node-24.x",
+[2026-11-16T11:08:16.157Z]            "prNo": null,
+[2026-11-16T11:08:16.157Z]            "prTitle": "chore(deps): update node.js to v24.22.3",
+[2026-11-16T11:08:16.157Z]            "result": "branch-limit-reached",
+[2026-11-16T11:08:16.157Z]            "upgrades": [
+[2026-11-16T11:08:16.157Z]              {
+[2026-11-16T11:08:16.157Z]                "datasource": "node-version",
+[2026-11-16T11:08:16.157Z]                "depName": "node",
+[2026-11-16T11:08:16.157Z]                "displayPending": "",
+[2026-11-16T11:08:16.157Z]                "fixedVersion": "24.22.2",
+[2026-11-16T11:08:16.157Z]                "currentVersion": "v24.22.2",
+[2026-11-16T11:08:16.157Z]                "currentValue": "24.22.2",
+[2026-11-16T11:08:16.157Z]                "newValue": "24.22.3",
+[2026-11-16T11:08:16.157Z]                "newVersion": "v24.22.3",
+[2026-11-16T11:08:16.157Z]                "packageFile": "mise.toml",
+[2026-11-16T11:08:16.157Z]                "updateType": "patch",
+[2026-11-16T11:08:16.157Z]                "packageName": "node"
+[2026-11-16T11:08:16.157Z]              }
+[2026-11-16T11:08:16.157Z]            ]
+[2026-11-16T11:08:16.157Z]          },
+[2026-11-16T11:08:16.157Z]          {
+[2026-11-16T11:08:16.157Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.157Z]            "branchName": "renovate/jdx-mise-2026.x",
+[2026-11-16T11:08:16.157Z]            "prNo": null,
+[2026-11-16T11:08:16.157Z]            "prTitle": "chore(deps): update dependency jdx/mise to v2026.11.8",
+[2026-11-16T11:08:16.157Z]            "result": "not-scheduled",
+[2026-11-16T11:08:16.157Z]            "upgrades": [
+[2026-11-16T11:08:16.157Z]              {
+[2026-11-16T11:08:16.157Z]                "datasource": "github-release-attachments",
+[2026-11-16T11:08:16.157Z]                "depName": "jdx/mise",
+[2026-11-16T11:08:16.157Z]                "displayPending": "",
+[2026-11-16T11:08:16.157Z]                "fixedVersion": "2026.10.23",
+[2026-11-16T11:08:16.157Z]                "currentVersion": "v2026.10.23",
+[2026-11-16T11:08:16.157Z]                "currentValue": "2026.10.23",
+[2026-11-16T11:08:16.157Z]                "newValue": "2026.11.8",
+[2026-11-16T11:08:16.157Z]                "newVersion": "v2026.11.8",
+[2026-11-16T11:08:16.157Z]                "packageFile": ".github/workflows/test.yaml",
+[2026-11-16T11:08:16.157Z]                "updateType": "minor",
+[2026-11-16T11:08:16.157Z]                "packageName": "jdx/mise"
+[2026-11-16T11:08:16.157Z]              },
+[2026-11-16T11:08:16.157Z]              {
+[2026-11-16T11:08:16.157Z]                "datasource": "github-release-attachments",
+[2026-11-16T11:08:16.157Z]                "depName": "jdx/mise",
+[2026-11-16T11:08:16.157Z]                "displayPending": "",
+[2026-11-16T11:08:16.157Z]                "fixedVersion": "2026.10.23",
+[2026-11-16T11:08:16.157Z]                "currentVersion": "v2026.10.23",
+[2026-11-16T11:08:16.157Z]                "currentValue": "2026.10.23",
+[2026-11-16T11:08:16.157Z]                "newValue": "2026.11.8",
+[2026-11-16T11:08:16.157Z]                "newVersion": "v2026.11.8",
+[2026-11-16T11:08:16.157Z]                "packageFile": ".github/workflows/scheduled-test.yaml",
+[2026-11-16T11:08:16.157Z]                "updateType": "minor",
+[2026-11-16T11:08:16.157Z]                "packageName": "jdx/mise"
+[2026-11-16T11:08:16.157Z]              },
+[2026-11-16T11:08:16.157Z]              {
+[2026-11-16T11:08:16.157Z]                "datasource": "github-release-attachments",
+[2026-11-16T11:08:16.157Z]                "depName": "jdx/mise",
+[2026-11-16T11:08:16.157Z]                "displayPending": "",
+[2026-11-16T11:08:16.157Z]                "fixedVersion": "2026.10.23",
+[2026-11-16T11:08:16.157Z]                "currentVersion": "v2026.10.23",
+[2026-11-16T11:08:16.157Z]                "currentValue": "2026.10.23",
+[2026-11-16T11:08:16.157Z]                "newValue": "2026.11.8",
+[2026-11-16T11:08:16.157Z]                "newVersion": "v2026.11.8",
+[2026-11-16T11:08:16.157Z]                "packageFile": ".github/workflows/deploy-pages.yaml",
+[2026-11-16T11:08:16.157Z]                "updateType": "minor",
+[2026-11-16T11:08:16.157Z]                "packageName": "jdx/mise"
+[2026-11-16T11:08:16.157Z]              }
+[2026-11-16T11:08:16.157Z]            ]
+[2026-11-16T11:08:16.157Z]          },
+[2026-11-16T11:08:16.158Z]          {
+[2026-11-16T11:08:16.158Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.158Z]            "branchName": "renovate/npm-quobix-vacuum-0.x",
+[2026-11-16T11:08:16.158Z]            "prNo": null,
+[2026-11-16T11:08:16.158Z]            "prTitle": "chore(deps): update dependency npm:@quobix/vacuum to v0.40.1",
+[2026-11-16T11:08:16.158Z]            "result": "not-scheduled",
+[2026-11-16T11:08:16.158Z]            "upgrades": [
+[2026-11-16T11:08:16.158Z]              {
+[2026-11-16T11:08:16.158Z]                "datasource": "npm",
+[2026-11-16T11:08:16.158Z]                "depName": "npm:@quobix/vacuum",
+[2026-11-16T11:08:16.158Z]                "displayPending": "`0.41.0`",
+[2026-11-16T11:08:16.158Z]                "fixedVersion": "0.35.4",
+[2026-11-16T11:08:16.158Z]                "currentVersion": "0.35.4",
+[2026-11-16T11:08:16.158Z]                "currentValue": "0.35.4",
+[2026-11-16T11:08:16.158Z]                "newValue": "0.40.1",
+[2026-11-16T11:08:16.158Z]                "newVersion": "0.40.1",
+[2026-11-16T11:08:16.158Z]                "newDigest": "sha512-P7ggbW9gctBSbIEzX/rjYR15uoturEEK4MN5+p99MIvGWOhSvogtCwLim4l+JA4hyuH2DLvDmw0OofbYaz7XUg==",
+[2026-11-16T11:08:16.158Z]                "packageFile": "mise.toml",
+[2026-11-16T11:08:16.158Z]                "updateType": "minor",
+[2026-11-16T11:08:16.158Z]                "packageName": "@quobix/vacuum"
+[2026-11-16T11:08:16.158Z]              }
+[2026-11-16T11:08:16.158Z]            ]
+[2026-11-16T11:08:16.158Z]          },
+[2026-11-16T11:08:16.158Z]          {
+[2026-11-16T11:08:16.158Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.158Z]            "branchName": "renovate/npm-redocly-cli-2.x",
+[2026-11-16T11:08:16.158Z]            "prNo": null,
+[2026-11-16T11:08:16.158Z]            "prTitle": "chore(deps): update dependency npm:@redocly/cli to v2.78.0",
+[2026-11-16T11:08:16.158Z]            "result": "not-scheduled",
+[2026-11-16T11:08:16.158Z]            "upgrades": [
+[2026-11-16T11:08:16.158Z]              {
+[2026-11-16T11:08:16.158Z]                "datasource": "npm",
+[2026-11-16T11:08:16.158Z]                "depName": "npm:@redocly/cli",
+[2026-11-16T11:08:16.158Z]                "displayPending": "`2.79.0`",
+[2026-11-16T11:08:16.158Z]                "fixedVersion": "2.71.1",
+[2026-11-16T11:08:16.158Z]                "currentVersion": "2.71.1",
+[2026-11-16T11:08:16.158Z]                "currentValue": "2.71.1",
+[2026-11-16T11:08:16.158Z]                "newValue": "2.78.0",
+[2026-11-16T11:08:16.158Z]                "newVersion": "2.78.0",
+[2026-11-16T11:08:16.158Z]                "newDigest": "sha512-ozrbcxLabQUxQr62nt0R8HE2T7kmlmIu1hTa/hyN1h5iht9v3Bh4fA2FXLj4wEhtN4xmdqoySHfba8+vFbONJA==",
+[2026-11-16T11:08:16.158Z]                "packageFile": "mise.toml",
+[2026-11-16T11:08:16.158Z]                "updateType": "minor",
+[2026-11-16T11:08:16.158Z]                "packageName": "@redocly/cli"
+[2026-11-16T11:08:16.158Z]              }
+[2026-11-16T11:08:16.158Z]            ]
+[2026-11-16T11:08:16.158Z]          },
+[2026-11-16T11:08:16.158Z]          {
+[2026-11-16T11:08:16.158Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.158Z]            "branchName": "renovate/pipx-schemathesis-4.x",
+[2026-11-16T11:08:16.158Z]            "prNo": 27,
+[2026-11-16T11:08:16.158Z]            "prTitle": "chore(deps): update dependency pipx:schemathesis to v4.33.4",
+[2026-11-16T11:08:16.158Z]            "result": "done",
+[2026-11-16T11:08:16.158Z]            "upgrades": [
+[2026-11-16T11:08:16.158Z]              {
+[2026-11-16T11:08:16.158Z]                "datasource": "pypi",
+[2026-11-16T11:08:16.158Z]                "depName": "pipx:schemathesis",
+[2026-11-16T11:08:16.158Z]                "displayPending": "",
+[2026-11-16T11:08:16.158Z]                "fixedVersion": "4.1.3",
+[2026-11-16T11:08:16.158Z]                "currentVersion": "4.1.3",
+[2026-11-16T11:08:16.158Z]                "currentValue": "4.1.3",
+[2026-11-16T11:08:16.158Z]                "newValue": "4.33.4",
+[2026-11-16T11:08:16.158Z]                "newVersion": "4.33.4",
+[2026-11-16T11:08:16.158Z]                "packageFile": "mise.toml",
+[2026-11-16T11:08:16.158Z]                "updateType": "minor",
+[2026-11-16T11:08:16.158Z]                "packageName": "schemathesis"
+[2026-11-16T11:08:16.158Z]              }
+[2026-11-16T11:08:16.158Z]            ]
+[2026-11-16T11:08:16.158Z]          },
+[2026-11-16T11:08:16.158Z]          {
+[2026-11-16T11:08:16.158Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.158Z]            "branchName": "renovate/node-26.x",
+[2026-11-16T11:08:16.158Z]            "prNo": 38,
+[2026-11-16T11:08:16.158Z]            "prTitle": "chore(deps): update node.js to v26",
+[2026-11-16T11:08:16.158Z]            "result": "done",
+[2026-11-16T11:08:16.158Z]            "upgrades": [
+[2026-11-16T11:08:16.158Z]              {
+[2026-11-16T11:08:16.159Z]                "datasource": "node-version",
+[2026-11-16T11:08:16.159Z]                "depName": "node",
+[2026-11-16T11:08:16.159Z]                "displayPending": "",
+[2026-11-16T11:08:16.159Z]                "fixedVersion": "24.22.2",
+[2026-11-16T11:08:16.159Z]                "currentVersion": "v24.22.2",
+[2026-11-16T11:08:16.159Z]                "currentValue": "24.22.2",
+[2026-11-16T11:08:16.159Z]                "newValue": "26.13.1",
+[2026-11-16T11:08:16.159Z]                "newVersion": "v26.13.1",
+[2026-11-16T11:08:16.159Z]                "packageFile": "mise.toml",
+[2026-11-16T11:08:16.159Z]                "updateType": "major",
+[2026-11-16T11:08:16.159Z]                "packageName": "node"
+[2026-11-16T11:08:16.159Z]              }
+[2026-11-16T11:08:16.159Z]            ]
+[2026-11-16T11:08:16.159Z]          },
+[2026-11-16T11:08:16.159Z]          {
+[2026-11-16T11:08:16.159Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.159Z]            "branchName": "renovate/lock-file-maintenance",
+[2026-11-16T11:08:16.159Z]            "prNo": null,
+[2026-11-16T11:08:16.159Z]            "prTitle": "chore(deps): lock file maintenance",
+[2026-11-16T11:08:16.159Z]            "result": "branch-limit-reached",
+[2026-11-16T11:08:16.159Z]            "upgrades": [
+[2026-11-16T11:08:16.159Z]              {
+[2026-11-16T11:08:16.159Z]                "displayPending": "",
+[2026-11-16T11:08:16.159Z]                "packageFile": "mise.toml",
+[2026-11-16T11:08:16.159Z]                "updateType": "lockFileMaintenance"
+[2026-11-16T11:08:16.159Z]              }
+[2026-11-16T11:08:16.159Z]            ]
+[2026-11-16T11:08:16.159Z]          }
+[2026-11-16T11:08:16.159Z]        ]
+[2026-11-16T11:08:16.160Z] DEBUG: Updates summary (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.160Z]        "updateSummary": [
+[2026-11-16T11:08:16.160Z]          {
+[2026-11-16T11:08:16.160Z]            "baseBranch": "main",
+[2026-11-16T11:08:16.160Z]            "total": 14,
+[2026-11-16T11:08:16.160Z]            "vulnerabilityAlert": 0,
+[2026-11-16T11:08:16.160Z]            "updates": {"patch": 6, "minor": 6, "major": 1, "lockFileMaintenance": 1},
+[2026-11-16T11:08:16.160Z]            "managers": {
+[2026-11-16T11:08:16.160Z]              "mise": {
+[2026-11-16T11:08:16.160Z]                "total": 8,
+[2026-11-16T11:08:16.160Z]                "vulnerabilityAlert": 0,
+[2026-11-16T11:08:16.160Z]                "updates": {
+[2026-11-16T11:08:16.160Z]                  "patch": 3,
+[2026-11-16T11:08:16.160Z]                  "minor": 3,
+[2026-11-16T11:08:16.160Z]                  "major": 1,
+[2026-11-16T11:08:16.160Z]                  "lockFileMaintenance": 1
+[2026-11-16T11:08:16.160Z]                }
+[2026-11-16T11:08:16.160Z]              },
+[2026-11-16T11:08:16.160Z]              "github-actions": {
+[2026-11-16T11:08:16.160Z]                "total": 6,
+[2026-11-16T11:08:16.160Z]                "vulnerabilityAlert": 0,
+[2026-11-16T11:08:16.160Z]                "updates": {"patch": 3, "minor": 3}
+[2026-11-16T11:08:16.160Z]              }
+[2026-11-16T11:08:16.161Z]            }
+[2026-11-16T11:08:16.161Z]          }
+[2026-11-16T11:08:16.161Z]        ]
+[2026-11-16T11:08:16.161Z] DEBUG: Renovate repository PR statistics (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.161Z]        "stats": {"total": 37, "open": 3, "closed": 6, "merged": 28},
+[2026-11-16T11:08:16.161Z]        "lastPRMergedAt": "2026-10-30T11:02:13Z"
+[2026-11-16T11:08:16.161Z] DEBUG: Repository result: done, status: activated, enabled: true, onboarded: true (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.164Z] DEBUG: Repository timing splits (milliseconds) (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.164Z]        "splits": {"init": 2518, "onboarding": 1, "extract": 377, "lookup": 6106, "update": 898},
+[2026-11-16T11:08:16.164Z]        "total": 11560
+[2026-11-16T11:08:16.165Z] DEBUG: Package cache statistics (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.165Z]        "get": {"count": 43, "avgMs": 9, "medianMs": 2, "maxMs": 35, "totalMs": 400},
+[2026-11-16T11:08:16.165Z]        "set": {"count": 43, "avgMs": 19, "medianMs": 7, "maxMs": 127, "totalMs": 833}
+[2026-11-16T11:08:16.166Z] DEBUG: Datasource cache statistics (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.166Z]        "pypi": {"https://pypi.org/pypi": {"hit": 0, "miss": 4, "set": 4, "skip": 0}},
+[2026-11-16T11:08:16.166Z]        "node-version": {"https://nodejs.org/dist": {"hit": 0, "miss": 0, "set": 0, "skip": 1}},
+[2026-11-16T11:08:16.166Z]        "npm": {"https://registry.npmjs.org": {"hit": 0, "miss": 0, "set": 0, "skip": 2}},
+[2026-11-16T11:08:16.166Z]        "github-tags": {"https://github.com": {"hit": 0, "miss": 0, "set": 0, "skip": 7}},
+[2026-11-16T11:08:16.166Z]        "github-releases": {"https://github.com": {"hit": 0, "miss": 0, "set": 0, "skip": 3}},
+[2026-11-16T11:08:16.166Z]        "github-release-attachments": {"https://github.com": {"hit": 0, "miss": 0, "set": 0, "skip": 1}}
+[2026-11-16T11:08:16.167Z] DEBUG: HTTP statistics (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.167Z]        "hosts": {
+[2026-11-16T11:08:16.167Z]          "api.github.com": {
+[2026-11-16T11:08:16.167Z]            "count": 46,
+[2026-11-16T11:08:16.167Z]            "reqAvgMs": 411,
+[2026-11-16T11:08:16.167Z]            "reqMedianMs": 368,
+[2026-11-16T11:08:16.167Z]            "reqMaxMs": 1208,
+[2026-11-16T11:08:16.167Z]            "queueAvgMs": 0,
+[2026-11-16T11:08:16.167Z]            "queueMedianMs": 0,
+[2026-11-16T11:08:16.167Z]            "queueMaxMs": 2
+[2026-11-16T11:08:16.167Z]          },
+[2026-11-16T11:08:16.167Z]          "nodejs.org": {
+[2026-11-16T11:08:16.167Z]            "count": 1,
+[2026-11-16T11:08:16.167Z]            "reqAvgMs": 84,
+[2026-11-16T11:08:16.167Z]            "reqMedianMs": 84,
+[2026-11-16T11:08:16.167Z]            "reqMaxMs": 84,
+[2026-11-16T11:08:16.167Z]            "queueAvgMs": 0,
+[2026-11-16T11:08:16.167Z]            "queueMedianMs": 0,
+[2026-11-16T11:08:16.167Z]            "queueMaxMs": 0
+[2026-11-16T11:08:16.167Z]          },
+[2026-11-16T11:08:16.167Z]          "pypi.org": {
+[2026-11-16T11:08:16.167Z]            "count": 4,
+[2026-11-16T11:08:16.167Z]            "reqAvgMs": 39,
+[2026-11-16T11:08:16.167Z]            "reqMedianMs": 52,
+[2026-11-16T11:08:16.167Z]            "reqMaxMs": 53,
+[2026-11-16T11:08:16.167Z]            "queueAvgMs": 0,
+[2026-11-16T11:08:16.167Z]            "queueMedianMs": 0,
+[2026-11-16T11:08:16.167Z]            "queueMaxMs": 1
+[2026-11-16T11:08:16.167Z]          },
+[2026-11-16T11:08:16.167Z]          "registry.npmjs.org": {
+[2026-11-16T11:08:16.167Z]            "count": 2,
+[2026-11-16T11:08:16.167Z]            "reqAvgMs": 240,
+[2026-11-16T11:08:16.167Z]            "reqMedianMs": 389,
+[2026-11-16T11:08:16.167Z]            "reqMaxMs": 389,
+[2026-11-16T11:08:16.167Z]            "queueAvgMs": 18,
+[2026-11-16T11:08:16.167Z]            "queueMedianMs": 35,
+[2026-11-16T11:08:16.167Z]            "queueMaxMs": 35
+[2026-11-16T11:08:16.167Z]          }
+[2026-11-16T11:08:16.167Z]        },
+[2026-11-16T11:08:16.167Z]        "requests": 53
+[2026-11-16T11:08:16.168Z] DEBUG: HTTP cache statistics (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.168Z]        "https://api.github.com": {
+[2026-11-16T11:08:16.168Z]          "/repos/idelsink/ikea-openapi/contents/renovate.json": {"hit": 3, "miss": 0},
+[2026-11-16T11:08:16.168Z]          "/repos/idelsink/ikea-openapi/issues/2": {"hit": 3, "miss": 1},
+[2026-11-16T11:08:16.168Z]          "/repos/idelsink/ikea-openapi/pulls": {"hit": 0, "miss": 1},
+[2026-11-16T11:08:16.168Z]          "/repos/idelsink/ikea-openapi/rules/branches/main": {"hit": 0, "miss": 1},
+[2026-11-16T11:08:16.168Z]          "/repos/idelsink/renovate-runner/contents/default.json": {"hit": 0, "miss": 1}
+[2026-11-16T11:08:16.168Z]        },
+[2026-11-16T11:08:16.168Z]        "https://registry.npmjs.org": {
+[2026-11-16T11:08:16.168Z]          "/@quobix%2Fvacuum": {"hit": 0, "miss": 1},
+[2026-11-16T11:08:16.168Z]          "/@redocly%2Fcli": {"hit": 0, "miss": 1}
+[2026-11-16T11:08:16.168Z]        }
+[2026-11-16T11:08:16.168Z] DEBUG: Lookup statistics (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.168Z]        "pypi": {"count": 4, "avgMs": 167, "medianMs": 230, "maxMs": 264, "totalMs": 669},
+[2026-11-16T11:08:16.169Z]        "node-version": {"count": 1, "avgMs": 366, "medianMs": 366, "maxMs": 366, "totalMs": 366},
+[2026-11-16T11:08:16.169Z]        "npm": {"count": 2, "avgMs": 462, "medianMs": 710, "maxMs": 710, "totalMs": 923},
+[2026-11-16T11:08:16.169Z]        "github-tags": {"count": 11, "avgMs": 1330, "medianMs": 903, "maxMs": 5406, "totalMs": 14635},
+[2026-11-16T11:08:16.169Z]        "github-releases": {"count": 3, "avgMs": 847, "medianMs": 981, "maxMs": 1082, "totalMs": 2540},
+[2026-11-16T11:08:16.169Z]        "github-release-attachments": {"count": 3, "avgMs": 2713, "medianMs": 2970, "maxMs": 2971, "totalMs": 8140}
+[2026-11-16T11:08:16.170Z] DEBUG: getReleases statistics summary (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.170Z]        "stats": {
+[2026-11-16T11:08:16.170Z]          "count": 18,
+[2026-11-16T11:08:16.170Z]          "avgMs": 982,
+[2026-11-16T11:08:16.170Z]          "medianMs": 766.282822,
+[2026-11-16T11:08:16.170Z]          "maxMs": 5373.425969,
+[2026-11-16T11:08:16.170Z]          "totalMs": 17682.655779
+[2026-11-16T11:08:16.170Z]        },
+[2026-11-16T11:08:16.170Z]        "datasources": {
+[2026-11-16T11:08:16.170Z]          "pypi": {
+[2026-11-16T11:08:16.170Z]            "stats": {
+[2026-11-16T11:08:16.170Z]              "count": 4,
+[2026-11-16T11:08:16.170Z]              "avgMs": 68,
+[2026-11-16T11:08:16.170Z]              "medianMs": 88.592721,
+[2026-11-16T11:08:16.170Z]              "maxMs": 101.326264,
+[2026-11-16T11:08:16.170Z]              "totalMs": 270.490563
+[2026-11-16T11:08:16.170Z]            },
+[2026-11-16T11:08:16.170Z]            "registryUrls": {
+[2026-11-16T11:08:16.170Z]              "https://pypi.org/pypi": {
+[2026-11-16T11:08:16.170Z]                "stats": {
+[2026-11-16T11:08:16.170Z]                  "count": 4,
+[2026-11-16T11:08:16.170Z]                  "avgMs": 68,
+[2026-11-16T11:08:16.170Z]                  "medianMs": 88.592721,
+[2026-11-16T11:08:16.170Z]                  "maxMs": 101.326264,
+[2026-11-16T11:08:16.170Z]                  "totalMs": 270.490563
+[2026-11-16T11:08:16.170Z]                }
+[2026-11-16T11:08:16.170Z]              }
+[2026-11-16T11:08:16.170Z]            }
+[2026-11-16T11:08:16.170Z]          },
+[2026-11-16T11:08:16.170Z]          "node-version": {
+[2026-11-16T11:08:16.170Z]            "stats": {
+[2026-11-16T11:08:16.170Z]              "count": 1,
+[2026-11-16T11:08:16.170Z]              "avgMs": 279,
+[2026-11-16T11:08:16.170Z]              "medianMs": 279.118872,
+[2026-11-16T11:08:16.170Z]              "maxMs": 279.118872,
+[2026-11-16T11:08:16.170Z]              "totalMs": 279.118872
+[2026-11-16T11:08:16.170Z]            },
+[2026-11-16T11:08:16.170Z]            "registryUrls": {
+[2026-11-16T11:08:16.170Z]              "https://nodejs.org/dist": {
+[2026-11-16T11:08:16.170Z]                "stats": {
+[2026-11-16T11:08:16.170Z]                  "count": 1,
+[2026-11-16T11:08:16.170Z]                  "avgMs": 279,
+[2026-11-16T11:08:16.170Z]                  "medianMs": 279.118872,
+[2026-11-16T11:08:16.170Z]                  "maxMs": 279.118872,
+[2026-11-16T11:08:16.170Z]                  "totalMs": 279.118872
+[2026-11-16T11:08:16.170Z]                }
+[2026-11-16T11:08:16.170Z]              }
+[2026-11-16T11:08:16.170Z]            }
+[2026-11-16T11:08:16.170Z]          },
+[2026-11-16T11:08:16.170Z]          "npm": {
+[2026-11-16T11:08:16.170Z]            "stats": {
+[2026-11-16T11:08:16.170Z]              "count": 2,
+[2026-11-16T11:08:16.170Z]              "avgMs": 391,
+[2026-11-16T11:08:16.170Z]              "medianMs": 611.585773,
+[2026-11-16T11:08:16.170Z]              "maxMs": 611.585773,
+[2026-11-16T11:08:16.171Z]              "totalMs": 781.704428
+[2026-11-16T11:08:16.171Z]            },
+[2026-11-16T11:08:16.171Z]            "registryUrls": {
+[2026-11-16T11:08:16.171Z]              "https://registry.npmjs.org": {
+[2026-11-16T11:08:16.171Z]                "stats": {
+[2026-11-16T11:08:16.171Z]                  "count": 2,
+[2026-11-16T11:08:16.171Z]                  "avgMs": 391,
+[2026-11-16T11:08:16.171Z]                  "medianMs": 611.585773,
+[2026-11-16T11:08:16.171Z]                  "maxMs": 611.585773,
+[2026-11-16T11:08:16.171Z]                  "totalMs": 781.704428
+[2026-11-16T11:08:16.171Z]                }
+[2026-11-16T11:08:16.171Z]              }
+[2026-11-16T11:08:16.171Z]            }
+[2026-11-16T11:08:16.171Z]          },
+[2026-11-16T11:08:16.171Z]          "github-tags": {
+[2026-11-16T11:08:16.171Z]            "stats": {
+[2026-11-16T11:08:16.171Z]              "count": 7,
+[2026-11-16T11:08:16.171Z]              "avgMs": 1569,
+[2026-11-16T11:08:16.171Z]              "medianMs": 867.756023,
+[2026-11-16T11:08:16.171Z]              "maxMs": 5373.425969,
+[2026-11-16T11:08:16.171Z]              "totalMs": 10983.483535
+[2026-11-16T11:08:16.171Z]            },
+[2026-11-16T11:08:16.171Z]            "registryUrls": {
+[2026-11-16T11:08:16.171Z]              "https://github.com": {
+[2026-11-16T11:08:16.171Z]                "stats": {
+[2026-11-16T11:08:16.171Z]                  "count": 7,
+[2026-11-16T11:08:16.171Z]                  "avgMs": 1569,
+[2026-11-16T11:08:16.171Z]                  "medianMs": 867.756023,
+[2026-11-16T11:08:16.171Z]                  "maxMs": 5373.425969,
+[2026-11-16T11:08:16.171Z]                  "totalMs": 10983.483535
+[2026-11-16T11:08:16.171Z]                }
+[2026-11-16T11:08:16.171Z]              }
+[2026-11-16T11:08:16.171Z]            }
+[2026-11-16T11:08:16.171Z]          },
+[2026-11-16T11:08:16.171Z]          "github-releases": {
+[2026-11-16T11:08:16.171Z]            "stats": {
+[2026-11-16T11:08:16.171Z]              "count": 3,
+[2026-11-16T11:08:16.171Z]              "avgMs": 833,
+[2026-11-16T11:08:16.171Z]              "medianMs": 961.72167,
+[2026-11-16T11:08:16.171Z]              "maxMs": 1064.549573,
+[2026-11-16T11:08:16.171Z]              "totalMs": 2497.682175
+[2026-11-16T11:08:16.171Z]            },
+[2026-11-16T11:08:16.171Z]            "registryUrls": {
+[2026-11-16T11:08:16.171Z]              "https://github.com": {
+[2026-11-16T11:08:16.171Z]                "stats": {
+[2026-11-16T11:08:16.171Z]                  "count": 3,
+[2026-11-16T11:08:16.171Z]                  "avgMs": 833,
+[2026-11-16T11:08:16.171Z]                  "medianMs": 961.72167,
+[2026-11-16T11:08:16.171Z]                  "maxMs": 1064.549573,
+[2026-11-16T11:08:16.171Z]                  "totalMs": 2497.682175
+[2026-11-16T11:08:16.171Z]                }
+[2026-11-16T11:08:16.171Z]              }
+[2026-11-16T11:08:16.171Z]            }
+[2026-11-16T11:08:16.171Z]          },
+[2026-11-16T11:08:16.171Z]          "github-release-attachments": {
+[2026-11-16T11:08:16.171Z]            "stats": {
+[2026-11-16T11:08:16.171Z]              "count": 1,
+[2026-11-16T11:08:16.171Z]              "avgMs": 2870,
+[2026-11-16T11:08:16.171Z]              "medianMs": 2870.176206,
+[2026-11-16T11:08:16.171Z]              "maxMs": 2870.176206,
+[2026-11-16T11:08:16.171Z]              "totalMs": 2870.176206
+[2026-11-16T11:08:16.171Z]            },
+[2026-11-16T11:08:16.171Z]            "registryUrls": {
+[2026-11-16T11:08:16.171Z]              "https://github.com": {
+[2026-11-16T11:08:16.171Z]                "stats": {
+[2026-11-16T11:08:16.171Z]                  "count": 1,
+[2026-11-16T11:08:16.171Z]                  "avgMs": 2870,
+[2026-11-16T11:08:16.171Z]                  "medianMs": 2870.176206,
+[2026-11-16T11:08:16.171Z]                  "maxMs": 2870.176206,
+[2026-11-16T11:08:16.171Z]                  "totalMs": 2870.176206
+[2026-11-16T11:08:16.171Z]                }
+[2026-11-16T11:08:16.171Z]              }
+[2026-11-16T11:08:16.171Z]            }
+[2026-11-16T11:08:16.171Z]          }
+[2026-11-16T11:08:16.171Z]        }
+[2026-11-16T11:08:16.172Z] DEBUG: Cache fallback URLs (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.172Z]        "count": 0,
+[2026-11-16T11:08:16.172Z]        "hits": {}
+[2026-11-16T11:08:16.172Z] DEBUG: Git operations statistics (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.172Z]        "other": {
+[2026-11-16T11:08:16.172Z]          "count": 5,
+[2026-11-16T11:08:16.172Z]          "avgMs": 35,
+[2026-11-16T11:08:16.172Z]          "medianMs": 13.516032,
+[2026-11-16T11:08:16.172Z]          "maxMs": 122.473216,
+[2026-11-16T11:08:16.172Z]          "totalMs": 175
+[2026-11-16T11:08:16.172Z]        },
+[2026-11-16T11:08:16.172Z]        "clone": {
+[2026-11-16T11:08:16.172Z]          "count": 1,
+[2026-11-16T11:08:16.172Z]          "avgMs": 271,
+[2026-11-16T11:08:16.172Z]          "medianMs": 270.507008,
+[2026-11-16T11:08:16.172Z]          "maxMs": 270.507008,
+[2026-11-16T11:08:16.172Z]          "totalMs": 271
+[2026-11-16T11:08:16.172Z]        }
+[2026-11-16T11:08:16.172Z]  INFO: Repository finished (repository=idelsink/ikea-openapi)
+[2026-11-16T11:08:16.172Z]        "cloned": true,
+[2026-11-16T11:08:16.172Z]        "durationMs": 11560,
+[2026-11-16T11:08:16.172Z]        "result": "done",
+[2026-11-16T11:08:16.172Z]        "status": "activated",
+[2026-11-16T11:08:16.172Z]        "enabled": true,
+[2026-11-16T11:08:16.172Z]        "onboarded": true,
+[2026-11-16T11:08:16.172Z]        "exitCode": 0
+[2026-11-16T11:08:16.172Z] DEBUG: Checking file package cache for expired items
+[2026-11-16T11:08:16.289Z] DEBUG: Cache GC: kept 28 content entries (726242 bytes), removed 0 orphaned (0 bytes) in 103ms
+[2026-11-16T11:08:16.289Z] DEBUG: Deleted 0 of 42 file cached entries in 116ms
